@@ -112,6 +112,14 @@ Changelog:
   - Created floating chat interface with professional styling
   - Added chat message storage and session management
   - Implemented company-specific AI assistant with knowledge about Qondala's services
+- June 27, 2025. Enhanced AI chat assistant with bot-like appearance
+  - Redesigned chat interface with larger size (700px-800px height, wider dialog)
+  - Added gradient backgrounds and robot-themed styling with Bot icons
+  - Implemented pulsing animations and "Bot Online" status indicator
+  - Enhanced message bubbles with larger sizes and better spacing
+  - Added "AI Bot is thinking..." loading state with animated dots
+  - Updated welcome message with system initialization theme
+  - Integrated official Qondala logo in header and footer
 ```
 
 ## User Preferences
