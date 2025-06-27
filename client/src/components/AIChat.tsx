@@ -103,21 +103,21 @@ export default function AIChat() {
           <DialogTrigger asChild>
             <Button
               size="lg"
-              className="rounded-full w-16 h-16 bg-gradient-to-br from-ms-blue to-ms-blue-dark hover:from-ms-blue-dark hover:to-ms-blue shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse border-2 border-white"
+              className="rounded-full w-16 h-16 bg-gradient-to-br from-black to-gray-800 hover:from-gray-800 hover:to-black shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse border-2 border-white"
             >
               <Bot className="h-8 w-8 text-white" />
               <span className="sr-only">Open AI Bot Assistant</span>
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-2xl max-w-4xl h-[700px] md:h-[800px] flex flex-col p-0 border-2 border-ms-blue">
-            <DialogHeader className="p-6 pb-4 bg-gradient-to-r from-ms-blue to-ms-blue-dark text-white rounded-t-lg border-b-2 border-white/20">
+          <DialogContent className="sm:max-w-2xl max-w-4xl h-[700px] md:h-[800px] flex flex-col p-0 border-2 border-black">
+            <DialogHeader className="p-6 pb-4 bg-gradient-to-r from-black to-gray-800 text-white rounded-t-lg border-b-2 border-white/20">
               <DialogTitle className="flex items-center text-white text-xl font-bold">
                 <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-3 animate-pulse">
                   <Bot className="h-6 w-6 text-white" />
                 </div>
-                🤖 Qondala AI Bot
+                Qondala Assistant
               </DialogTitle>
-              <p className="text-white/80 text-sm mt-2">Your intelligent assistant for enterprise solutions</p>
+              <p className="text-white/80 text-sm mt-2">AI-Powered Enterprise Technology Consultant | Ask me about our solutions</p>
             </DialogHeader>
             
             <div className="flex-1 flex flex-col min-h-0">
@@ -133,7 +133,7 @@ export default function AIChat() {
                       )}
                     >
                       {!message.isUser && (
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-ms-blue to-ms-blue-dark flex items-center justify-center flex-shrink-0 shadow-lg border-2 border-white animate-pulse">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-black to-gray-800 flex items-center justify-center flex-shrink-0 shadow-lg border-2 border-white animate-pulse">
                           <Bot className="h-6 w-6 text-white" />
                         </div>
                       )}
@@ -146,9 +146,9 @@ export default function AIChat() {
                         )}
                       >
                         {!message.isUser && (
-                          <div className="flex items-center gap-2 mb-2 text-sm font-semibold text-ms-blue">
+                          <div className="flex items-center gap-2 mb-2 text-sm font-semibold text-black">
                             <Bot className="h-4 w-4" />
-                            AI Bot
+                            Qondala Assistant
                           </div>
                         )}
                         <div className="whitespace-pre-wrap">{message.message}</div>
@@ -162,18 +162,18 @@ export default function AIChat() {
                   ))}
                   {sendMessageMutation.isPending && (
                     <div className="flex gap-4 justify-start">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-ms-blue to-ms-blue-dark flex items-center justify-center flex-shrink-0 shadow-lg border-2 border-white animate-pulse">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-black to-gray-800 flex items-center justify-center flex-shrink-0 shadow-lg border-2 border-white animate-pulse">
                         <Bot className="h-6 w-6 text-white" />
                       </div>
                       <div className="bg-white border-2 border-gray-100 rounded-2xl p-4 text-base shadow-md max-w-[75%]">
-                        <div className="flex items-center gap-2 mb-2 text-sm font-semibold text-ms-blue">
+                        <div className="flex items-center gap-2 mb-2 text-sm font-semibold text-black">
                           <Bot className="h-4 w-4" />
-                          AI Bot is thinking...
+                          Qondala Assistant is thinking...
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-3 h-3 bg-ms-blue rounded-full animate-bounce"></div>
-                          <div className="w-3 h-3 bg-ms-blue rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
-                          <div className="w-3 h-3 bg-ms-blue rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
+                          <div className="w-3 h-3 bg-black rounded-full animate-bounce"></div>
+                          <div className="w-3 h-3 bg-black rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                          <div className="w-3 h-3 bg-black rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
                         </div>
                       </div>
                     </div>
@@ -190,7 +190,7 @@ export default function AIChat() {
                     value={inputMessage}
                     onChange={(e) => setInputMessage(e.target.value)}
                     onKeyPress={handleKeyPress}
-                    placeholder="Ask the AI Bot about Qondala's solutions..."
+                    placeholder="Ask Qondala Assistant about our solutions..."
                     disabled={sendMessageMutation.isPending}
                     className="flex-1 h-12 text-base rounded-xl border-2 border-gray-200 focus:border-ms-blue"
                   />
@@ -205,12 +205,12 @@ export default function AIChat() {
                 </div>
                 <div className="flex items-center justify-between mt-3">
                   <p className="text-sm text-gray-600 flex items-center gap-2">
-                    <Bot className="h-4 w-4 text-ms-blue" />
-                    Powered by AI • Ask about solutions, industries, or services
+                    <Bot className="h-4 w-4 text-black" />
+                    Qondala Assistant • AI-powered technology consultant
                   </p>
                   <div className="flex items-center gap-1">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-green-600 font-medium">Bot Online</span>
+                    <span className="text-xs text-green-600 font-medium">Assistant Online</span>
                   </div>
                 </div>
               </div>
