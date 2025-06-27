@@ -98,15 +98,20 @@ export default function AIChat() {
   return (
     <>
       {/* Floating Chat Button */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
-        <div className="bg-white text-black px-3 py-2 rounded-lg shadow-lg text-sm font-medium border border-gray-200 opacity-90 animate-bounce">
-          💬 Qondala Assistant
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3">
+        <div className="bg-gradient-to-r from-black to-gray-800 text-white px-4 py-2 rounded-full shadow-xl text-sm font-semibold border-2 border-white/20 backdrop-blur-sm">
+          <div className="flex items-center gap-2">
+            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+              <Bot className="h-3 w-3 text-white" />
+            </div>
+            Qondala Assistant
+          </div>
         </div>
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogTrigger asChild>
             <Button
               size="lg"
-              className="rounded-full w-16 h-16 bg-gradient-to-br from-black to-gray-800 hover:from-gray-800 hover:to-black shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse border-2 border-white"
+              className="rounded-full w-16 h-16 bg-gradient-to-br from-black to-gray-800 hover:from-gray-800 hover:to-black shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 border-2 border-white"
             >
               <Bot className="h-8 w-8 text-white" />
               <span className="sr-only">Open Qondala Assistant</span>
