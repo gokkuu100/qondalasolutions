@@ -24,7 +24,7 @@ export default function Hero() {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-ms-blue font-semibold"
+                className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-ms-blue font-semibold transition-all duration-200"
                 asChild
               >
                 <Link href="/contact">Schedule Demo</Link>

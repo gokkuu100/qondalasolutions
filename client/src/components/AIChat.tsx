@@ -88,7 +88,7 @@ export default function AIChat() {
 
   const initialMessage = {
     id: "welcome",
-    message: "Hello! I'm Qondala AI Assistant. I can help you learn about our enterprise technology solutions, including software development, hardware solutions, and AI-driven automation. How can I assist you today?",
+    message: "Hello! I'm Qondala Assistant. I can help you learn about our enterprise technology solutions, including software development, hardware solutions, and AI-driven automation. How can I assist you today?",
     isUser: false,
     timestamp: new Date()
   };
@@ -113,7 +113,7 @@ export default function AIChat() {
             <DialogHeader className="p-4 pb-2 bg-ms-blue text-white rounded-t-lg">
               <DialogTitle className="flex items-center text-white">
                 <Bot className="mr-2 h-5 w-5" />
-                Qondala AI Assistant
+                Qondala Assistant
               </DialogTitle>
             </DialogHeader>
             

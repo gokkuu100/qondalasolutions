@@ -5,7 +5,7 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export async function generateChatResponse(message: string, conversationHistory: Array<{role: 'user' | 'assistant', content: string}>): Promise<string> {
   try {
-    const systemPrompt = `You are Qondala AI Assistant, a helpful AI assistant for Qondala - a technology company that offers comprehensive enterprise solutions combining software, hardware, and AI-driven automation.
+    const systemPrompt = `You are Qondala Assistant, a helpful AI assistant for Qondala - a technology company that offers comprehensive enterprise solutions combining software, hardware, and AI-driven automation.
 
 About Qondala:
 - We serve businesses across manufacturing, transportation, security, and enterprise automation
