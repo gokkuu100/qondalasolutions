@@ -88,7 +88,7 @@ export default function AIChat() {
 
   const initialMessage = {
     id: "welcome",
-    message: "🤖 SYSTEM INITIALIZED\n\nHello! I'm the Qondala AI Bot, your intelligent assistant for enterprise technology solutions.\n\nI'm equipped with knowledge about:\n• Software Development & Custom Applications\n• Hardware Solutions & Infrastructure\n• AI-Driven Automation & Integration\n• Healthcare Technology Systems\n• Logistics & Supply Chain Solutions\n\nHow may I assist you with your technology needs today?",
+    message: "Hello! I'm Qondala Assistant, your AI-powered technology consultant.\n\nI can help you learn about Qondala's enterprise solutions:\n\n• Software Development & Custom Applications\n• Hardware Solutions & IT Infrastructure\n• AI-Driven Automation & Process Integration\n• Healthcare Technology & Medical Systems\n• Logistics & Supply Chain Optimization\n• Security Solutions & Risk Management\n\nWhat would you like to know about our technology services?",
     isUser: false,
     timestamp: new Date()
   };
