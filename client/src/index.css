@@ -128,4 +128,49 @@
       transform: translateY(0); 
     }
   }
+
+  .chat-bubble-user {
+    background: linear-gradient(135deg, var(--ms-blue) 0%, var(--ms-blue-dark) 100%);
+  }
+
+  .chat-bubble-ai {
+    background: hsl(60, 4.8%, 95.9%);
+    border: 1px solid hsl(20, 5.9%, 90%);
+  }
+
+  .dark .chat-bubble-ai {
+    background: hsl(240, 3.7%, 15.9%);
+    border: 1px solid hsl(240, 3.7%, 15.9%);
+  }
+
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .typing-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: hsl(25, 5.3%, 44.7%);
+    animation: typing 1.4s infinite;
+  }
+
+  .typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes typing {
+    0%, 60%, 100% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+  }
 }

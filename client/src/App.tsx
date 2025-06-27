@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AIChat from "@/components/AIChat";
 import Home from "@/pages/Home";
 import Solutions from "@/pages/Solutions";
 import Industries from "@/pages/Industries";
@@ -27,6 +28,7 @@ function Router() {
         </Switch>
       </main>
       <Footer />
+      <AIChat />
     </div>
   );
 }

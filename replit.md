@@ -107,6 +107,11 @@ Qondala is a modern full-stack web application that serves as a company website 
 ```
 Changelog:
 - June 27, 2025. Initial setup
+- June 27, 2025. Added AI chat assistant powered by ChatGPT
+  - Integrated OpenAI API with GPT-4o model
+  - Created floating chat interface with professional styling
+  - Added chat message storage and session management
+  - Implemented company-specific AI assistant with knowledge about Qondala's services
 ```
 
 ## User Preferences
