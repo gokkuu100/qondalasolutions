@@ -8,55 +8,45 @@ import { Code, Cpu, Brain, Factory, Truck, Shield, ArrowRight, Rocket, Users, Sh
 export default function Home() {
   const solutions = [
     {
-      icon: Code,
-      title: "Software Solutions",
-      description: "Custom enterprise software development, cloud platforms, and digital transformation tools tailored to your business needs.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      icon: Truck,
+      title: "Logistics & Supply Chain Optimization",
+      description: "Advanced supply chain management solutions utilizing global trade intelligence for seamless, secure, and timely inventory, asset, and personnel movement.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     },
     {
-      icon: Cpu,
-      title: "Hardware Solutions",
-      description: "Advanced hardware systems, IoT devices, and infrastructure solutions for seamless technology integration.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      icon: Code,
+      title: "Healthcare Technology Solutions",
+      description: "Development of open, data-driven platforms to enhance patient outcomes, streamline operations, and foster collaboration across healthcare ecosystems.",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     },
     {
       icon: Brain,
-      title: "AI-Driven Solutions",
-      description: "Machine learning, predictive analytics, and intelligent automation to optimize operations and decision-making.",
+      title: "Connected Systems & Data Integration",
+      description: "Implementation of unified data and intelligent tools to improve efficiency, security, and real-time decision-making in logistics and healthcare.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     }
   ];
 
   const industries = [
     {
-      title: "Manufacturing",
-      description: "Smart factory solutions, predictive maintenance, and production optimization.",
-      image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
+      title: "Healthcare",
+      description: "Data-driven platforms that empower patients, providers, and public health organizations.",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
     },
     {
-      title: "Transportation",
-      description: "Fleet management, route optimization, and intelligent logistics systems.",
+      title: "Logistics",
+      description: "Global networks, advanced supply chain applications, and trade intelligence solutions.",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
     },
     {
-      title: "Security",
-      description: "Cybersecurity, surveillance systems, and threat detection solutions.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
-    },
-    {
-      title: "Business Automation",
-      description: "Workflow automation, process optimization, and digital transformation.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
-    },
-    {
-      title: "Enterprise",
-      description: "Large-scale enterprise solutions, integration, and digital platforms.",
+      title: "Government Agencies",
+      description: "High-quality office supplies, equipment, and integrated IT solutions for government operations.",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=250"
     },
     {
-      title: "Custom Solutions",
-      description: "Tailored technology solutions designed for your unique business needs.",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
+      title: "Enterprise",
+      description: "Connected systems and digital transformation solutions for large-scale operations.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
     }
   ];
 
@@ -86,9 +76,9 @@ export default function Home() {
       <section id="solutions" className="py-20 bg-ms-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-ms-dark mb-4">Our Solutions</h2>
+            <h2 className="text-4xl font-bold text-ms-dark mb-4">Our Core Capabilities</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Integrated technology stack designed to transform your business operations and drive sustainable growth.
+              Creating smarter, more connected ecosystems that drive progress across healthcare, logistics, and enterprise operations.
             </p>
           </div>
           
@@ -168,10 +158,10 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold text-ms-dark mb-6">About Qondala</h2>
               <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-                Founded on the principle of technological excellence, Qondala delivers comprehensive enterprise solutions that drive innovation and operational efficiency across industries.
+                Qondala is transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our integrated approach combines cutting-edge software development, robust hardware solutions, and AI-driven intelligence to solve complex business challenges and unlock new opportunities for growth.
+                Beyond technology, Qondala provides high-quality office supplies and equipment to government agencies and enterprises, integrating IT solutions with essential business needs. Driven by innovation and customer feedback, we create smarter, more connected ecosystems that drive progress across industries.
               </p>
               <div className="space-y-4">
                 {values.map((value, index) => {

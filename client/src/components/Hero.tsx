@@ -8,10 +8,10 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Empowering Enterprise Innovation
+              Transforming Healthcare and Logistics
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
-              Comprehensive technology solutions combining software, hardware, and AI-driven automation for modern businesses.
+              Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 

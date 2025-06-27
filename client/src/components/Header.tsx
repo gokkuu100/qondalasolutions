@@ -29,8 +29,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-ms-blue hover:text-ms-blue-dark transition-colors">
-              Qondala
+            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img 
+                src="@assets/qondala-logo.png" 
+                alt="Qondala" 
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
           
