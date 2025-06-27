@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import qondalaLogo from "@/assets/qondala-logo.png";
 
 export default function Header() {
   const [location] = useLocation();
@@ -31,7 +32,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
-                src="@assets/qondala-logo.png" 
+                src={qondalaLogo} 
                 alt="Qondala" 
                 className="h-8 w-auto"
               />

@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
+import qondalaLogo from "@/assets/qondala-logo.png";
 
 export default function Footer() {
   return (
@@ -7,9 +8,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-white mb-4">Qondala</div>
+            <img 
+              src={qondalaLogo} 
+              alt="Qondala" 
+              className="h-8 w-auto mb-4 filter invert"
+            />
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Empowering enterprises with innovative technology solutions that drive growth, efficiency, and digital transformation across industries.
+              Transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.
             </p>
             <div className="flex space-x-4">
               <a
