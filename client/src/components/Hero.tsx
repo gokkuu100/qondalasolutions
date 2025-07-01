@@ -27,29 +27,14 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left max-w-4xl">
           <div className="fade-in">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Smarter Systems. Real-Time Insight. Scalable Impact.
+            <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+              <div className="mb-2">Smarter Systems.</div>
+              <div className="mb-2">Real-Time Insight.</div>
+              <div>Scalable Impact.</div>
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
+            <p className="text-lg lg:text-xl mb-12 text-gray-200 leading-relaxed max-w-2xl">
               Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg"
-                className="bg-white text-ms-blue hover:bg-gray-100 font-semibold shadow-lg"
-                asChild
-              >
-                <Link href="/solutions">Explore Solutions</Link>
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-ms-blue font-semibold transition-all duration-200"
-                asChild
-              >
-                <Link href="/contact">Schedule Demo</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </div>
