@@ -30,7 +30,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+    <header className={`${isHomePage ? "absolute" : "sticky"} top-0 z-50 w-full transition-all duration-300 ${
       isHomePage 
         ? "bg-transparent" 
         : "bg-white shadow-sm border-b border-gray-200"
