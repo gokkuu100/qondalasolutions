@@ -148,11 +148,9 @@ export default function About() {
             {team.map((member, index) => (
               <Card key={index} className="text-center card-hover">
                 <CardContent className="p-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  />
+                  <div className="w-24 h-24 rounded-full bg-ms-blue text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    {member.initials}
+                  </div>
                   <h3 className="text-lg font-bold text-ms-dark mb-1">{member.name}</h3>
                   <Badge className="bg-ms-blue text-white mb-3">{member.role}</Badge>
                   <p className="text-gray-600 text-sm">{member.bio}</p>
