@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
-import qondalaLogo from "@/assets/qondala-logo.png";
+import qondalaLogo from "@assets/Logo Q_1751396176613.png";
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
             <img 
               src={qondalaLogo} 
               alt="Qondala" 
-              className="h-8 w-auto mb-4 filter invert"
+              className="h-8 w-auto mb-4"
             />
             <p className="text-gray-300 mb-6 leading-relaxed">
               Transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.

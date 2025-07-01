@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
-import qondalaLogo from "@/assets/qondala-logo.png";
+import qondalaLogo from "@assets/Logo Q_1751396176613.png";
 
 export default function Header() {
   const [location] = useLocation();
