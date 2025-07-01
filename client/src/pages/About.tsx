@@ -37,25 +37,25 @@ export default function About() {
     {
       name: "Sarah Johnson",
       role: "Chief Executive Officer",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      initials: "SJ",
       bio: "15+ years of experience in enterprise technology leadership"
     },
     {
       name: "Michael Chen",
       role: "Chief Technology Officer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      initials: "MC",
       bio: "Expert in AI/ML technologies and scalable system architecture"
     },
     {
       name: "Emily Rodriguez",
       role: "VP of Operations",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      initials: "ER",
       bio: "Specializes in operational excellence and process optimization"
     },
     {
       name: "David Kim",
       role: "Head of Security",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      initials: "DK",
       bio: "Cybersecurity expert with extensive enterprise protection experience"
     }
   ];
