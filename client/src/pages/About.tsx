@@ -96,11 +96,15 @@ export default function About() {
             </div>
           </div>
           <div>
-            <img
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Professional business team collaboration"
-              className="rounded-xl shadow-lg w-full h-auto"
-            />
+            <div className="bg-gradient-to-br from-ms-blue/10 to-ms-blue/20 rounded-xl shadow-lg p-12 flex items-center justify-center">
+              <div className="text-center">
+                <Target className="h-24 w-24 text-ms-blue mx-auto mb-6" />
+                <h3 className="text-2xl font-bold text-ms-dark mb-4">Vision & Excellence</h3>
+                <p className="text-gray-600 max-w-sm">
+                  Driving innovation and excellence in enterprise technology solutions across global markets
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
