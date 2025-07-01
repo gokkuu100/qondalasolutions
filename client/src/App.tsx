@@ -13,6 +13,9 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
+import Healthcare from "@/pages/Healthcare";
+import Logistics from "@/pages/Logistics";
+import ConnectedSystems from "@/pages/ConnectedSystems";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -28,6 +31,9 @@ function Router() {
           <Route path="/contact" component={Contact} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/terms" component={Terms} />
+          <Route path="/healthcare" component={Healthcare} />
+          <Route path="/logistics" component={Logistics} />
+          <Route path="/connected-systems" component={ConnectedSystems} />
           <Route component={NotFound} />
         </Switch>
       </main>

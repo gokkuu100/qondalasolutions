@@ -101,7 +101,7 @@ export default function Home() {
                       className="rounded-lg w-full h-48 object-cover mb-4"
                     />
                     <Link
-                      href="/solutions"
+                      href={index === 0 ? "/logistics" : index === 1 ? "/healthcare" : "/connected-systems"}
                       className="text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors duration-200 inline-flex items-center"
                     >
                       Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -136,7 +136,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-ms-dark mb-3">{industry.title}</h3>
                   <p className="text-gray-600 mb-4">{industry.description}</p>
                   <Link
-                    href="/industries"
+                    href={industry.title === "Healthcare" ? "/healthcare" : industry.title === "Logistics" ? "/logistics" : "/industries"}
                     className="inline-flex items-center text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors"
                   >
                     <span>Explore {industry.title}</span>
