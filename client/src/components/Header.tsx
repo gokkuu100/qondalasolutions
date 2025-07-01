@@ -4,10 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import qondalaLogo from "@assets/Logo Q_1751396176613.png";
+import qondalaLogoWhite from "@assets/Logo Q copy_1751396222158.png";
 
 export default function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  const isHomePage = location === "/";
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -27,13 +30,17 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      isHomePage 
+        ? "bg-transparent" 
+        : "bg-white shadow-sm border-b border-gray-200"
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
-                src={qondalaLogo} 
+                src={isHomePage ? qondalaLogoWhite : qondalaLogo} 
                 alt="Qondala" 
                 className="h-12 w-auto"
               />
@@ -46,8 +53,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-ms-dark hover:text-ms-blue transition-colors duration-200 ${
-                  location === item.href ? "text-ms-blue font-medium" : ""
+                className={`transition-colors duration-200 ${
+                  isHomePage 
+                    ? `text-white hover:text-gray-200 ${location === item.href ? "text-gray-200 font-medium" : ""}` 
+                    : `text-ms-dark hover:text-ms-blue ${location === item.href ? "text-ms-blue font-medium" : ""}`
                 }`}
               >
                 {item.label}
@@ -57,7 +66,11 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <Button 
-              className="hidden md:block bg-ms-blue text-white hover:bg-ms-blue-dark"
+              className={`hidden md:block ${
+                isHomePage 
+                  ? "bg-primary text-white hover:bg-primary/90 border border-primary"
+                  : "bg-ms-blue text-white hover:bg-ms-blue-dark"
+              }`}
               asChild
             >
               <Link href="/contact">Get Started</Link>
@@ -66,7 +79,11 @@ export default function Header() {
             {/* Mobile Menu */}
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className={`md:hidden ${isHomePage ? "text-white hover:text-gray-200" : ""}`}
+                >
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
