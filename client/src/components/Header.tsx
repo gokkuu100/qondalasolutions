@@ -35,7 +35,7 @@ export default function Header() {
               <img 
                 src={qondalaLogo} 
                 alt="Qondala" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
           </div>
