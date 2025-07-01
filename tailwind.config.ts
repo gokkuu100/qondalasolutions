@@ -51,6 +51,16 @@ export default {
           "4": "var(--chart-4)",
           "5": "var(--chart-5)",
         },
+        // Qondala brand colors
+        "ms-blue": "var(--qondala-blue)",
+        "ms-blue-dark": "var(--qondala-blue-dark)",
+        "ms-dark": "var(--qondala-black)",
+        "ms-gray": "var(--qondala-light-gray)",
+        "qondala-blue": "var(--qondala-blue)",
+        "qondala-blue-dark": "var(--qondala-blue-dark)",
+        "qondala-black": "var(--qondala-black)",
+        "qondala-dark-gray": "var(--qondala-dark-gray)",
+        "qondala-light-gray": "var(--qondala-light-gray)",
         sidebar: {
           DEFAULT: "var(--sidebar-background)",
           foreground: "var(--sidebar-foreground)",
