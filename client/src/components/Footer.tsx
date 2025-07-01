@@ -18,21 +18,27 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://linkedin.com/company/qondala"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/qondala"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://facebook.com/qondala"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
                 aria-label="Facebook"
               >
@@ -92,7 +98,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Qondala. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>
+            &copy; 2024 Qondala. All rights reserved. | 
+            <Link href="/privacy" className="hover:text-white transition-colors duration-200 ml-1 mr-1">Privacy Policy</Link> | 
+            <Link href="/terms" className="hover:text-white transition-colors duration-200 ml-1">Terms of Service</Link>
+          </p>
         </div>
       </div>
     </footer>
