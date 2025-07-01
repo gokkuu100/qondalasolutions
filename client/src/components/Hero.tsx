@@ -25,7 +25,7 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-left max-w-4xl">
+        <div className="text-left max-w-4xl ml-0">
           <div className="fade-in">
             <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
               <div className="mb-2">Smarter Systems.</div>
