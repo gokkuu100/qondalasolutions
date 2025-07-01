@@ -12,7 +12,7 @@ export default function Hero() {
     img.src = heroBackground;
   }, []);
   return (
-    <section className="relative text-white py-20 lg:py-28 bg-gray-900">
+    <section className="relative text-white h-screen bg-gray-900 flex items-center">
       {/* Fallback gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800"></div>
       
