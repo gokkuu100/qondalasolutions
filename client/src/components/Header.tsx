@@ -55,7 +55,7 @@ export default function Header() {
                 href={item.href}
                 className={`transition-colors duration-200 ${
                   isHomePage 
-                    ? `text-white hover:text-gray-200 ${location === item.href ? "text-gray-200 font-medium" : ""}` 
+                    ? `text-white hover:text-gray-200 ${location === item.href ? "text-white font-medium border-b-2 border-white pb-1" : ""}` 
                     : `text-ms-dark hover:text-ms-blue ${location === item.href ? "text-ms-blue font-medium" : ""}`
                 }`}
               >
