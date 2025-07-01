@@ -172,7 +172,7 @@ export default function Healthcare() {
                   <Heart className="h-24 w-24 text-ms-blue mx-auto mb-6" />
                   <h3 className="text-2xl font-bold text-ms-dark mb-4">Healthcare Technology</h3>
                   <p className="text-gray-600 max-w-sm">
-                    Advanced healthcare solutions transforming patient care and operational efficiency
+                    Advanced healthcare solutions transforming patient care and operational efficiency across all healthcare settings.
                   </p>
                 </div>
               </div>
