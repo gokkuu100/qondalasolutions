@@ -1,10 +1,15 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import heroBackground from "@assets/Untitled-1s_1751404058251.png";
 
 export default function Hero() {
   return (
-    <section className="gradient-hero text-white py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      className="relative text-white py-20 lg:py-28 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${heroBackground})` }}
+    >
+      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left max-w-4xl">
           <div className="fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
