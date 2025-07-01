@@ -1,13 +1,28 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import heroBackground from "@assets/Untitled-1s_1751404058251.png";
 
 export default function Hero() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => setImageLoaded(true);
+    img.src = heroBackground;
+  }, []);
   return (
-    <section 
-      className="relative text-white py-20 lg:py-28 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${heroBackground})` }}
-    >
+    <section className="relative text-white py-20 lg:py-28 bg-gray-900">
+      {/* Fallback gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800"></div>
+      
+      {/* Main background image with loading state */}
+      <div 
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-700 ${
+          imageLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left max-w-4xl">
