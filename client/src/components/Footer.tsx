@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
-import qondalaLogo from "@assets/Logo Q_1751396176613.png";
+import qondalaLogo from "@assets/Logo Q copy_1751396222158.png";
 
 export default function Footer() {
   return (
