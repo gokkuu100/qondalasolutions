@@ -1,9 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Factory, Truck, Shield, Building, Cog, Wrench } from "lucide-react";
+import { Factory, Truck, Shield, Building, Cog, Wrench, Heart } from "lucide-react";
 
 export default function Industries() {
   const industries = [
+    {
+      name: "Healthcare",
+      icon: Heart,
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      description: "Transform healthcare delivery with data-driven platforms that enhance patient outcomes, streamline operations, and foster collaboration across healthcare ecosystems.",
+      solutions: ["Electronic Health Records", "Patient Management Systems", "Medical Device Integration", "Healthcare Analytics"],
+      benefits: ["Improved Patient Care", "Operational Efficiency", "Data-Driven Decisions", "Enhanced Collaboration"]
+    },
     {
       name: "Manufacturing",
       icon: Factory,
