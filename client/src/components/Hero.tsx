@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="gradient-hero text-white py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="text-center max-w-4xl mx-auto">
           <div className="fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Transforming Healthcare and Logistics
@@ -13,7 +13,7 @@ export default function Hero() {
             <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
               Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg"
                 className="bg-white text-ms-blue hover:bg-gray-100 font-semibold shadow-lg"
@@ -30,13 +30,6 @@ export default function Hero() {
                 <Link href="/contact">Schedule Demo</Link>
               </Button>
             </div>
-          </div>
-          <div className="fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=700"
-              alt="Modern corporate technology workspace"
-              className="rounded-xl shadow-2xl w-full h-auto"
-            />
           </div>
         </div>
       </div>
