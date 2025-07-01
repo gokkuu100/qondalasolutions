@@ -42,7 +42,7 @@ export default function Header() {
               <img 
                 src={isHomePage ? qondalaLogoWhite : qondalaLogo} 
                 alt="Qondala" 
-                className="h-12 w-auto"
+                className={isHomePage ? "h-16 w-auto" : "h-12 w-auto"}
               />
             </Link>
           </div>
