@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="text-left max-w-4xl">
           <div className="fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Transforming Healthcare and Logistics
+              Smarter Systems. Real-Time Insight. Scalable Impact.
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
               Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
