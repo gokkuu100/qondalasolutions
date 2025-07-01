@@ -167,11 +167,15 @@ export default function Healthcare() {
             </div>
             
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Healthcare technology in action"
-                className="rounded-xl shadow-lg w-full h-auto"
-              />
+              <div className="bg-gradient-to-br from-ms-blue/10 to-ms-blue/20 rounded-xl shadow-lg p-12 flex items-center justify-center">
+                <div className="text-center">
+                  <Heart className="h-24 w-24 text-ms-blue mx-auto mb-6" />
+                  <h3 className="text-2xl font-bold text-ms-dark mb-4">Healthcare Technology</h3>
+                  <p className="text-gray-600 max-w-sm">
+                    Advanced healthcare solutions transforming patient care and operational efficiency
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
