@@ -28,7 +28,7 @@ export default function Hero() {
                 <div>Scalable Impact.</div>
               </h1>
               <p className="text-lg lg:text-xl mb-12 text-gray-200 leading-relaxed max-w-2xl">
-                Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
+                Qondala delivers advanced software, drone technology, high-performance computing, and AI solutions that connect operations, automate decisions, and accelerate progress across industries.
               </p>
             </div>
           </div>
