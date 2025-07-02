@@ -1,7 +1,8 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import heroBackground from "@assets/mobile image_1751424108770.png";
+import heroBackground from "@assets/Untitled-1s_1751422392117.png";
+import mobileBackground from "@assets/image_1751421724489.png";
 
 export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -13,10 +14,15 @@ export default function Hero() {
   }, []);
   return (
     <section className="relative text-white h-screen bg-gray-900 flex items-center">
-      {/* Main background image */}
+      {/* Desktop Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
         style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      {/* Mobile Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+        style={{ backgroundImage: `url(${mobileBackground})` }}
       />
       <div className="relative z-10 h-full flex items-end md:items-center pb-16 md:pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
