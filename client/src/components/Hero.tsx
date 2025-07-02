@@ -24,11 +24,11 @@ export default function Hero() {
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
       <div className="absolute inset-0 bg-black/80"></div>
-      <div className="relative z-10 h-full flex items-center pt-20">
+      <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center">
             <div className="text-left max-w-4xl">
-              <div className="fade-in">
+              <div className="fade-in mt-24">
                 <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
                   <div className="mb-2">Smarter Systems.</div>
                   <div className="mb-2">Real-Time Insight.</div>
