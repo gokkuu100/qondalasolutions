@@ -8,22 +8,22 @@ import { Code, Cpu, Brain, Factory, Truck, Shield, ArrowRight, Rocket, Users, Sh
 export default function Home() {
   const solutions = [
     {
-      icon: Truck,
-      title: "Logistics & Supply Chain Optimization",
-      description: "Advanced supply chain management solutions utilizing global trade intelligence for seamless, secure, and timely inventory, asset, and personnel movement.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      icon: Cpu,
+      title: "Advanced Software Solutions",
+      description: "Custom enterprise software platforms with AI-powered automation, real-time analytics, and seamless integration capabilities that transform business operations and accelerate digital transformation.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     },
     {
-      icon: Code,
-      title: "Healthcare Technology Solutions",
-      description: "Development of open, data-driven platforms to enhance patient outcomes, streamline operations, and foster collaboration across healthcare ecosystems.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      icon: Factory,
+      title: "Drone Technology & High-Performance Computing",
+      description: "Cutting-edge drone systems integrated with powerful computing infrastructure for autonomous operations, data collection, and mission-critical applications across industries.",
+      image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     },
     {
       icon: Brain,
-      title: "Connected Systems & Data Integration",
-      description: "Implementation of unified data and intelligent tools to improve efficiency, security, and real-time decision-making in logistics and healthcare.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      title: "AI Solutions & Connected Systems",
+      description: "Intelligent AI-driven platforms that connect operations, automate complex decisions, and provide real-time insights to accelerate progress and enhance operational efficiency.",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     }
   ];
 
@@ -78,7 +78,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-ms-dark mb-4">Our Core Capabilities</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Creating smarter, more connected ecosystems that drive progress across healthcare, logistics, and enterprise operations.
+              Delivering advanced software, drone technology, high-performance computing, and AI solutions that connect operations, automate decisions, and accelerate progress across industries.
             </p>
           </div>
           
