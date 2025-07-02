@@ -88,57 +88,31 @@ export default function Home() {
               return (
                 <div 
                   key={index} 
-                  className={`group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 flex flex-col justify-between ${
-                    index === 0 
-                      ? 'bg-ms-green text-white hover:bg-ms-green-dark' 
-                      : 'bg-white hover:bg-ms-green'
-                  }`}
+                  className="group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 flex flex-col justify-between bg-white hover:bg-ms-green"
                 >
                   {/* Title at top */}
-                  <h3 className={`text-lg font-medium mb-4 transition-all duration-300 ${
-                    index === 0 
-                      ? 'text-white' 
-                      : 'text-ms-dark group-hover:text-white'
-                  }`}>
+                  <h3 className="text-lg font-medium mb-4 transition-all duration-300 text-ms-dark group-hover:text-white">
                     {solution.title}
                   </h3>
                   
-                  {/* Description (first card always shows, others on hover) */}
-                  <div className={`flex-1 transition-all duration-300 ${
-                    index === 0 
-                      ? 'opacity-100' 
-                      : 'opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden'
-                  }`}>
-                    <p className={`text-sm leading-relaxed ${
-                      index === 0 ? 'text-white' : 'text-white'
-                    }`}>
+                  {/* Description (shows on hover) */}
+                  <div className="flex-1 transition-all duration-300 opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden">
+                    <p className="text-white text-sm leading-relaxed">
                       {solution.description}
                     </p>
                   </div>
                   
                   {/* Icon and arrow at bottom */}
                   <div className="flex items-center justify-between mt-4">
-                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
-                      index === 0 
-                        ? 'bg-white' 
-                        : 'bg-ms-green'
-                    }`}>
-                      <IconComponent className={`h-6 w-6 transition-all duration-300 stroke-1 ${
-                        index === 0 
-                          ? 'text-ms-green' 
-                          : 'text-white'
-                      }`} />
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-ms-green">
+                      <IconComponent className="text-white h-6 w-6 transition-all duration-300 stroke-1" />
                     </div>
                     
                     <Link
                       href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
                       className="transition-all duration-300"
                     >
-                      <ArrowRight className={`h-5 w-5 transition-all duration-300 ${
-                        index === 0 
-                          ? 'text-white' 
-                          : 'text-ms-green group-hover:text-white'
-                      }`} />
+                      <ArrowRight className="h-5 w-5 transition-all duration-300 text-ms-green group-hover:text-white" />
                     </Link>
                   </div>
                 </div>
