@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -9,8 +9,25 @@ import qondalaLogoWhite from "@assets/Logo Q copy_1751396222158.png";
 export default function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   
   const isHomePage = location === "/";
+
+  useEffect(() => {
+    if (!isHomePage) return;
+
+    const handleScroll = () => {
+      const heroSection = document.querySelector('section');
+      if (heroSection) {
+        const heroHeight = heroSection.offsetHeight;
+        const scrollPosition = window.scrollY;
+        setIsScrolled(scrollPosition > heroHeight * 0.8); // Change when 80% through hero
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isHomePage]);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -29,20 +46,23 @@ export default function Header() {
     }
   };
 
+  // Determine if we should show white background (scrolled on home page or not on home page)
+  const showWhiteBackground = !isHomePage || (isHomePage && isScrolled);
+  
   return (
-    <header className={`${isHomePage ? "absolute" : "sticky"} top-0 z-50 w-full transition-all duration-300 ${
-      isHomePage 
-        ? "bg-transparent" 
-        : "bg-white shadow-sm border-b border-gray-200"
+    <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-50 w-full transition-all duration-300 ${
+      showWhiteBackground
+        ? "bg-white shadow-sm border-b border-gray-200" 
+        : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center ${isHomePage ? "h-20 mt-4" : "h-16"}`}>
+        <div className={`flex justify-between items-center ${showWhiteBackground ? "h-16" : "h-20 mt-4"}`}>
           <div className="flex items-center">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
-                src={isHomePage ? qondalaLogoWhite : qondalaLogo} 
+                src={showWhiteBackground ? qondalaLogo : qondalaLogoWhite} 
                 alt="Qondala" 
-                className={isHomePage ? "h-16 w-auto" : "h-12 w-auto"}
+                className={showWhiteBackground ? "h-12 w-auto" : "h-16 w-auto"}
               />
             </Link>
           </div>
@@ -54,9 +74,9 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`transition-colors duration-200 ${
-                  isHomePage 
-                    ? `text-white hover:text-gray-200 ${location === item.href ? "text-white font-medium border-b-2 border-white pb-1" : ""}` 
-                    : `text-ms-dark hover:text-ms-blue ${location === item.href ? "text-ms-blue font-medium" : ""}`
+                  showWhiteBackground
+                    ? `text-ms-dark hover:text-ms-blue ${location === item.href ? "text-ms-blue font-medium" : ""}`
+                    : `text-white hover:text-gray-200 ${location === item.href ? "text-white font-medium border-b-2 border-white pb-1" : ""}`
                 }`}
               >
                 {item.label}
@@ -67,9 +87,9 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <Button 
               className={`hidden md:block ${
-                isHomePage 
-                  ? "bg-primary text-white hover:bg-primary/90 border border-primary"
-                  : "bg-ms-blue text-white hover:bg-ms-blue-dark"
+                showWhiteBackground
+                  ? "bg-ms-blue text-white hover:bg-ms-blue-dark"
+                  : "bg-primary text-white hover:bg-primary/90 border border-primary"
               }`}
               asChild
             >
@@ -82,7 +102,7 @@ export default function Header() {
                 <Button 
                   variant="ghost" 
                   size="icon" 
-                  className={`md:hidden ${isHomePage ? "text-white hover:text-gray-200" : ""}`}
+                  className={`md:hidden ${showWhiteBackground ? "text-ms-dark hover:text-ms-blue" : "text-white hover:text-gray-200"}`}
                 >
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
