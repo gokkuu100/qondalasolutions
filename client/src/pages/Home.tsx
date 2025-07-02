@@ -107,7 +107,7 @@ export default function Home() {
                     <IconComponent className="text-ms-green group-hover:text-black h-16 w-16 transition-all duration-300 stroke-[0.65]" />
                     
                     <Link
-                      href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
+                      href={index === 0 ? "/connected-systems" : index === 1 ? "/advanced-software" : "/drone-technology"}
                       className="transition-all duration-300"
                     >
                       <ArrowRight className="h-5 w-5 transition-all duration-300 text-ms-green group-hover:text-black" />
