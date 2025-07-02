@@ -5,23 +5,74 @@ import heroBackground from "@assets/Untitled-1s_1751422392117.png";
 import mobileBackground from "@assets/mobile-bg-new.png";
 
 export default function Hero() {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
+  const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const img = new Image();
-    img.onload = () => setImageLoaded(true);
-    img.src = heroBackground;
+    // Check if mobile
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    // Prioritize loading the appropriate image for current screen size
+    const isMobileScreen = window.innerWidth < 768;
+    
+    if (isMobileScreen) {
+      // Load mobile image first
+      const mobileImg = new Image();
+      mobileImg.onload = () => setMobileImageLoaded(true);
+      mobileImg.src = mobileBackground;
+      
+      // Then load desktop image
+      setTimeout(() => {
+        const desktopImg = new Image();
+        desktopImg.onload = () => setDesktopImageLoaded(true);
+        desktopImg.src = heroBackground;
+      }, 100);
+    } else {
+      // Load desktop image first
+      const desktopImg = new Image();
+      desktopImg.onload = () => setDesktopImageLoaded(true);
+      desktopImg.src = heroBackground;
+      
+      // Then load mobile image
+      setTimeout(() => {
+        const mobileImg = new Image();
+        mobileImg.onload = () => setMobileImageLoaded(true);
+        mobileImg.src = mobileBackground;
+      }, 100);
+    }
+    
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
+  const currentImageLoaded = isMobile ? mobileImageLoaded : desktopImageLoaded;
+
   return (
     <section className="relative text-white h-screen bg-gray-900 flex items-center">
+      {/* Loading state */}
+      {!currentImageLoaded && (
+        <div className="absolute inset-0 bg-gray-900 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-ms-green"></div>
+            <div className="text-white text-sm">Loading...</div>
+          </div>
+        </div>
+      )}
+      
       {/* Desktop Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block transition-opacity duration-500 ${
+          desktopImageLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
+      
       {/* Mobile Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden transition-opacity duration-500 ${
+          mobileImageLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
         style={{ backgroundImage: `url(${mobileBackground})` }}
       />
       <div className="relative z-10 h-full flex items-end md:items-center pb-16 md:pb-0">
