@@ -82,11 +82,11 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-0">
             {solutions.map((solution, index) => {
               const IconComponent = solution.icon;
               return (
-                <Card key={index} className="group bg-white shadow-lg hover:bg-ms-green transition-all duration-300 cursor-pointer border border-gray-200">
+                <Card key={index} className="group bg-white hover:bg-ms-green transition-all duration-300 cursor-pointer border border-black">
                   <CardContent className="p-8">
                     <div className="mb-6">
                       <IconComponent className="text-gray-400 group-hover:text-white h-12 w-12 transition-all duration-300 stroke-1" />
