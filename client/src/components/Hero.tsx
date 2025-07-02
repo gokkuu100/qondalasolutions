@@ -87,9 +87,11 @@ export default function Hero() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-12 text-gray-200 leading-relaxed max-w-2xl">
                 Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
               </p>
-              <button className="bg-ms-green hover:bg-ms-green-dark text-black font-semibold py-3 px-8 rounded-full transition-colors duration-200 text-sm md:text-base">
-                EXPLORE MORE
-              </button>
+              <Link href="/about">
+                <button className="bg-ms-green hover:bg-ms-green-dark text-black font-semibold py-3 px-8 rounded-full transition-colors duration-200 text-sm md:text-base">
+                  EXPLORE MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
