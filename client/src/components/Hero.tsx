@@ -26,17 +26,19 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/80"></div>
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center">
-            <div className="text-left max-w-4xl">
-              <div className="fade-in mt-24">
-                <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-                  <div className="mb-2">Smarter Systems.</div>
-                  <div className="mb-2">Real-Time Insight.</div>
-                  <div>Scalable Impact.</div>
-                </h1>
-                <p className="text-lg lg:text-xl mb-12 text-gray-200 leading-relaxed max-w-2xl">
-                  Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
-                </p>
+          <div className="flex justify-between items-center h-20 mt-4">
+            <div className="flex items-center">
+              <div className="text-left max-w-4xl">
+                <div className="fade-in">
+                  <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+                    <div className="mb-2">Smarter Systems.</div>
+                    <div className="mb-2">Real-Time Insight.</div>
+                    <div>Scalable Impact.</div>
+                  </h1>
+                  <p className="text-lg lg:text-xl mb-12 text-gray-200 leading-relaxed max-w-2xl">
+                    Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
