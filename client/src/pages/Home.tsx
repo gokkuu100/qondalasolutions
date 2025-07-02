@@ -8,22 +8,22 @@ import { Code, Cpu, Brain, Factory, Truck, Shield, ArrowRight, Rocket, Users, Sh
 export default function Home() {
   const solutions = [
     {
+      icon: Brain,
+      title: "Connected Systems & Data Integration",
+      description: "Unified data platforms and intelligent tools that seamlessly connect operations, improve efficiency, security, and enable real-time decision-making across complex enterprise environments.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+    },
+    {
       icon: Cpu,
       title: "Advanced Software Solutions",
       description: "Custom enterprise software platforms with AI-powered automation, real-time analytics, and seamless integration capabilities that transform business operations and accelerate digital transformation.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     },
     {
       icon: Factory,
       title: "Drone Technology & High-Performance Computing",
       description: "Cutting-edge drone systems integrated with powerful computing infrastructure for autonomous operations, data collection, and mission-critical applications across industries.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
-    },
-    {
-      icon: Brain,
-      title: "AI Solutions & Connected Systems",
-      description: "Intelligent AI-driven platforms that connect operations, automate complex decisions, and provide real-time insights to accelerate progress and enhance operational efficiency.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     }
   ];
 
@@ -101,7 +101,7 @@ export default function Home() {
                       className="rounded-lg w-full h-48 object-cover mb-4"
                     />
                     <Link
-                      href={index === 0 ? "/logistics" : index === 1 ? "/healthcare" : "/connected-systems"}
+                      href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
                       className="text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors duration-200 inline-flex items-center"
                     >
                       Learn More <ArrowRight className="ml-2 h-4 w-4" />
