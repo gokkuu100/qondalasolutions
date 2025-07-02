@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import heroBackground from "@assets/Untitled-1s_1751409791446.png";
+import heroBackground from "@assets/Untitled-1s_1751422134373.png";
 
 export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -23,7 +23,6 @@ export default function Hero() {
         }`}
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
-      <div className="absolute inset-0 bg-black/80"></div>
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20 mt-4">
