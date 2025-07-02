@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import heroBackground from "@assets/Untitled-1s_1751422392117.png";
-import mobileBackground from "@assets/mobile-bg.png";
+import mobileBackground from "@assets/mobile-bg-new.png";
 
 export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false);
