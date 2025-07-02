@@ -104,7 +104,7 @@ export default function Home() {
                   
                   {/* Icon and arrow at bottom */}
                   <div className="flex items-center justify-between mt-4">
-                    <IconComponent className="text-ms-green group-hover:text-white h-16 w-16 transition-all duration-300 stroke-1" />
+                    <IconComponent className="text-ms-green group-hover:text-white h-16 w-16 transition-all duration-300 stroke-[0.5]" />
                     
                     <Link
                       href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
