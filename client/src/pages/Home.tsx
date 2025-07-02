@@ -130,7 +130,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
               <Card key={index} className="group bg-ms-gray card-hover">
                 <CardContent className="p-6">
