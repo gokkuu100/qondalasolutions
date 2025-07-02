@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import heroBackground from "@assets/Untitled-1s_1751422392117.png";
-import mobileBackground from "@assets/image_1751421724489.png";
+import mobileBackground from "@assets/mobile-bg.png";
 
 export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -34,7 +34,7 @@ export default function Hero() {
                 <div>Scalable Impact.</div>
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-12 text-gray-200 leading-relaxed max-w-2xl">
-                Qondala delivers advanced software, drone technology, high-performance computing, and AI solutions that connect operations, automate decisions, and accelerate progress across industries.
+                Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
               </p>
               <button className="bg-ms-green hover:bg-ms-green-dark text-black font-semibold py-3 px-8 rounded-full transition-colors duration-200 text-sm md:text-base">
                 EXPLORE MORE
