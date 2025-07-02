@@ -86,25 +86,39 @@ export default function Home() {
             {solutions.map((solution, index) => {
               const IconComponent = solution.icon;
               return (
-                <Card key={index} className="card-hover bg-white shadow-lg">
-                  <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-ms-blue rounded-lg flex items-center justify-center mb-6">
-                      <IconComponent className="text-white h-8 w-8" />
+                <Card key={index} className="group bg-white shadow-lg hover:bg-ms-green transition-all duration-300 cursor-pointer overflow-hidden">
+                  <CardContent className="p-8 h-full">
+                    <div className="w-16 h-16 bg-ms-blue group-hover:bg-white rounded-lg flex items-center justify-center mb-6 transition-all duration-300">
+                      <IconComponent className="text-white group-hover:text-ms-green h-8 w-8 transition-all duration-300" />
                     </div>
-                    <h3 className="text-2xl font-bold text-ms-dark mb-4">{solution.title}</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {solution.description}
-                    </p>
-                    <img
-                      src={solution.image}
-                      alt={solution.title}
-                      className="rounded-lg w-full h-48 object-cover mb-4"
-                    />
+                    
+                    <h3 className="text-2xl font-bold text-ms-dark group-hover:text-white mb-4 transition-all duration-300">
+                      {solution.title}
+                    </h3>
+                    
+                    {/* Default state - show image */}
+                    <div className="group-hover:opacity-0 group-hover:h-0 transition-all duration-300 overflow-hidden">
+                      <img
+                        src={solution.image}
+                        alt={solution.title}
+                        className="rounded-lg w-full h-48 object-cover mb-6"
+                      />
+                    </div>
+                    
+                    {/* Hover state - show description */}
+                    <div className="opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-300 overflow-hidden">
+                      <p className="text-white mb-6 leading-relaxed">
+                        {solution.description}
+                      </p>
+                    </div>
+                    
                     <Link
                       href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
-                      className="text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors duration-200 inline-flex items-center"
+                      className="text-ms-blue group-hover:text-white font-semibold transition-all duration-300 inline-flex items-center"
                     >
-                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      <span className="group-hover:hidden">Learn More</span>
+                      <span className="hidden group-hover:inline">Explore more</span>
+                      <ArrowRight className="ml-2 h-4 w-4 transition-all duration-300" />
                     </Link>
                   </CardContent>
                 </Card>
