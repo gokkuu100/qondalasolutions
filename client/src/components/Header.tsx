@@ -21,7 +21,7 @@ export default function Header() {
       if (heroSection) {
         const heroHeight = heroSection.offsetHeight;
         const scrollPosition = window.scrollY;
-        setIsScrolled(scrollPosition > heroHeight * 0.8); // Change when 80% through hero
+        setIsScrolled(scrollPosition > heroHeight * 0.7); // Change when 70% through hero
       }
     };
 
