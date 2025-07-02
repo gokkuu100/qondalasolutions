@@ -125,7 +125,7 @@ export default function Home() {
         id="industries" 
         className="py-20 relative"
         style={{
-          backgroundImage: `url('/attached_assets/developers-working-on-code-2025-02-11-14-07-34-utc (1)_1751500573093.jpg')`,
+          backgroundImage: `url('/attached_assets/developers-working-on-code-2025-02-11-14-07-34-utc (1)_1751500687282.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
