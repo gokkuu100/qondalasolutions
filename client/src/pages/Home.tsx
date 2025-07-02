@@ -82,13 +82,13 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="flex flex-col md:flex-row border border-black">
+          <div className="flex flex-col md:flex-row border border-gray-300">
             {solutions.map((solution, index) => {
               const IconComponent = solution.icon;
               return (
                 <div 
                   key={index} 
-                  className="group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 flex flex-col justify-between bg-white hover:bg-ms-green"
+                  className="group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-gray-300 last:border-r-0 flex flex-col justify-between bg-white hover:bg-ms-green"
                 >
                   {/* Title at top */}
                   <h3 className="text-lg font-medium mb-4 transition-all duration-300 text-ms-dark group-hover:text-white">
