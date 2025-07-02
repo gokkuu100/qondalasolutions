@@ -88,21 +88,14 @@ export default function Home() {
               return (
                 <div 
                   key={index} 
-                  className={`group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 ${
+                  className={`group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 flex flex-col justify-between ${
                     index === 0 
                       ? 'bg-ms-blue text-white hover:bg-ms-green' 
                       : 'bg-white hover:bg-ms-green'
                   }`}
                 >
-                  <div className="mb-6">
-                    <IconComponent className={`h-12 w-12 transition-all duration-300 stroke-1 ${
-                      index === 0 
-                        ? 'text-white' 
-                        : 'text-gray-400 group-hover:text-white'
-                    }`} />
-                  </div>
-                  
-                  <h3 className={`text-xl font-semibold mb-4 transition-all duration-300 ${
+                  {/* Title at top */}
+                  <h3 className={`text-lg font-medium mb-4 transition-all duration-300 ${
                     index === 0 
                       ? 'text-white' 
                       : 'text-ms-dark group-hover:text-white'
@@ -110,8 +103,8 @@ export default function Home() {
                     {solution.title}
                   </h3>
                   
-                  {/* First card always shows description, others show on hover */}
-                  <div className={`mb-4 transition-all duration-300 ${
+                  {/* Description (first card always shows, others on hover) */}
+                  <div className={`flex-1 transition-all duration-300 ${
                     index === 0 
                       ? 'opacity-100' 
                       : 'opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden'
@@ -123,25 +116,26 @@ export default function Home() {
                     </p>
                   </div>
                   
-                  <div className="flex items-center justify-between mt-auto">
+                  {/* Icon and arrow at bottom */}
+                  <div className="flex items-center justify-between mt-4">
+                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                      index === 0 
+                        ? 'bg-ms-green' 
+                        : 'bg-ms-green'
+                    }`}>
+                      <IconComponent className="text-white h-6 w-6 transition-all duration-300 stroke-1" />
+                    </div>
+                    
                     <Link
                       href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
-                      className={`font-medium transition-all duration-300 inline-flex items-center text-sm ${
-                        index === 0 
-                          ? 'text-white hover:text-gray-200' 
-                          : 'text-ms-blue group-hover:text-white'
-                      }`}
+                      className="transition-all duration-300"
                     >
-                      <span className={index === 0 ? '' : 'group-hover:hidden'}>
-                        {index === 0 ? 'Explore more' : 'Learn More'}
-                      </span>
-                      {index !== 0 && <span className="hidden group-hover:inline">Explore more</span>}
+                      <ArrowRight className={`h-5 w-5 transition-all duration-300 ${
+                        index === 0 
+                          ? 'text-white' 
+                          : 'text-ms-blue group-hover:text-white'
+                      }`} />
                     </Link>
-                    <ArrowRight className={`h-4 w-4 transition-all duration-300 ${
-                      index === 0 
-                        ? 'text-white' 
-                        : 'text-ms-blue group-hover:text-white'
-                    }`} />
                   </div>
                 </div>
               );
