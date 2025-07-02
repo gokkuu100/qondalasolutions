@@ -88,7 +88,7 @@ export default function Home() {
               return (
                 <div 
                   key={index} 
-                  className="group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-gray-300 last:border-r-0 flex flex-col justify-between bg-white hover:bg-ms-green"
+                  className="group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-gray-300 last:border-r-0 flex flex-col justify-between hover:bg-ms-green"
                 >
                   {/* Title at top */}
                   <h3 className="text-lg font-medium mb-4 transition-all duration-300 text-ms-dark group-hover:text-white">
