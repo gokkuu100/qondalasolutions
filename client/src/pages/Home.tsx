@@ -90,7 +90,7 @@ export default function Home() {
                   key={index} 
                   className={`group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 flex flex-col justify-between ${
                     index === 0 
-                      ? 'bg-ms-blue text-white hover:bg-ms-green' 
+                      ? 'bg-ms-green text-white hover:bg-ms-green-dark' 
                       : 'bg-white hover:bg-ms-green'
                   }`}
                 >
@@ -133,7 +133,7 @@ export default function Home() {
                       <ArrowRight className={`h-5 w-5 transition-all duration-300 ${
                         index === 0 
                           ? 'text-white' 
-                          : 'text-ms-blue group-hover:text-white'
+                          : 'text-ms-green group-hover:text-white'
                       }`} />
                     </Link>
                   </div>
