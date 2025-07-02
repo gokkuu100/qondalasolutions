@@ -82,39 +82,68 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-0">
+          <div className="flex flex-col md:flex-row border border-black">
             {solutions.map((solution, index) => {
               const IconComponent = solution.icon;
               return (
-                <Card key={index} className="group bg-white hover:bg-ms-green transition-all duration-300 cursor-pointer border border-black">
-                  <CardContent className="p-8">
-                    <div className="mb-6">
-                      <IconComponent className="text-gray-400 group-hover:text-white h-12 w-12 transition-all duration-300 stroke-1" />
-                    </div>
-                    
-                    <h3 className="text-xl font-semibold text-ms-dark group-hover:text-white mb-4 transition-all duration-300">
-                      {solution.title}
-                    </h3>
-                    
-                    {/* Hover state - show description */}
-                    <div className="opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-300 overflow-hidden mb-4">
-                      <p className="text-white text-sm leading-relaxed">
-                        {solution.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center justify-between mt-auto">
-                      <Link
-                        href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
-                        className="text-ms-blue group-hover:text-white font-medium transition-all duration-300 inline-flex items-center text-sm"
-                      >
-                        <span className="group-hover:hidden">Learn More</span>
-                        <span className="hidden group-hover:inline">Explore more</span>
-                      </Link>
-                      <ArrowRight className="text-ms-blue group-hover:text-white h-4 w-4 transition-all duration-300" />
-                    </div>
-                  </CardContent>
-                </Card>
+                <div 
+                  key={index} 
+                  className={`group transition-all duration-300 cursor-pointer flex-1 p-8 border-r border-black last:border-r-0 ${
+                    index === 0 
+                      ? 'bg-ms-blue text-white hover:bg-ms-green' 
+                      : 'bg-white hover:bg-ms-green'
+                  }`}
+                >
+                  <div className="mb-6">
+                    <IconComponent className={`h-12 w-12 transition-all duration-300 stroke-1 ${
+                      index === 0 
+                        ? 'text-white' 
+                        : 'text-gray-400 group-hover:text-white'
+                    }`} />
+                  </div>
+                  
+                  <h3 className={`text-xl font-semibold mb-4 transition-all duration-300 ${
+                    index === 0 
+                      ? 'text-white' 
+                      : 'text-ms-dark group-hover:text-white'
+                  }`}>
+                    {solution.title}
+                  </h3>
+                  
+                  {/* First card always shows description, others show on hover */}
+                  <div className={`mb-4 transition-all duration-300 ${
+                    index === 0 
+                      ? 'opacity-100' 
+                      : 'opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden'
+                  }`}>
+                    <p className={`text-sm leading-relaxed ${
+                      index === 0 ? 'text-white' : 'text-white'
+                    }`}>
+                      {solution.description}
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center justify-between mt-auto">
+                    <Link
+                      href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
+                      className={`font-medium transition-all duration-300 inline-flex items-center text-sm ${
+                        index === 0 
+                          ? 'text-white hover:text-gray-200' 
+                          : 'text-ms-blue group-hover:text-white'
+                      }`}
+                    >
+                      <span className={index === 0 ? '' : 'group-hover:hidden'}>
+                        {index === 0 ? 'Explore more' : 'Learn More'}
+                      </span>
+                      {index !== 0 && <span className="hidden group-hover:inline">Explore more</span>}
+                    </Link>
+                    <ArrowRight className={`h-4 w-4 transition-all duration-300 ${
+                      index === 0 
+                        ? 'text-white' 
+                        : 'text-ms-blue group-hover:text-white'
+                    }`} />
+                  </div>
+                </div>
               );
             })}
           </div>
