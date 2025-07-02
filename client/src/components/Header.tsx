@@ -53,7 +53,7 @@ export default function Header() {
     <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-[100] w-full transition-all duration-300 ${
       showWhiteBackground
         ? "bg-white shadow-sm border-b border-gray-200" 
-        : "bg-transparent"
+        : "bg-black/80"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex justify-between items-center ${showWhiteBackground ? "h-16" : "h-20 mt-4"}`}>
