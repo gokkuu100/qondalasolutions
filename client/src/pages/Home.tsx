@@ -120,10 +120,14 @@ export default function Home() {
                   <div className="flex items-center justify-between mt-4">
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
                       index === 0 
-                        ? 'bg-ms-green' 
+                        ? 'bg-white' 
                         : 'bg-ms-green'
                     }`}>
-                      <IconComponent className="text-white h-6 w-6 transition-all duration-300 stroke-1" />
+                      <IconComponent className={`h-6 w-6 transition-all duration-300 stroke-1 ${
+                        index === 0 
+                          ? 'text-ms-green' 
+                          : 'text-white'
+                      }`} />
                     </div>
                     
                     <Link
