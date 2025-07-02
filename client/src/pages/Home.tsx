@@ -91,26 +91,26 @@ export default function Home() {
                   className="group transition-all duration-300 cursor-pointer flex-1 p-6 border-r border-gray-300 last:border-r-0 flex flex-col justify-between hover:bg-ms-green"
                 >
                   {/* Title at top */}
-                  <h3 className="text-lg font-light mb-4 transition-all duration-300 text-ms-dark group-hover:text-white">
+                  <h3 className="text-lg font-light mb-4 transition-all duration-300 text-ms-dark group-hover:text-black">
                     {solution.title}
                   </h3>
                   
                   {/* Description (shows on hover) */}
                   <div className="flex-1 transition-all duration-300 opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden">
-                    <p className="text-white text-sm leading-relaxed">
+                    <p className="text-black text-sm leading-relaxed">
                       {solution.description}
                     </p>
                   </div>
                   
                   {/* Icon and arrow at bottom */}
                   <div className="flex items-center justify-between mt-4">
-                    <IconComponent className="text-ms-green group-hover:text-white h-16 w-16 transition-all duration-300 stroke-[0.65]" />
+                    <IconComponent className="text-ms-green group-hover:text-black h-16 w-16 transition-all duration-300 stroke-[0.65]" />
                     
                     <Link
                       href={index === 0 ? "/connected-systems" : index === 1 ? "/solutions" : "/solutions"}
                       className="transition-all duration-300"
                     >
-                      <ArrowRight className="h-5 w-5 transition-all duration-300 text-ms-green group-hover:text-white" />
+                      <ArrowRight className="h-5 w-5 transition-all duration-300 text-ms-green group-hover:text-black" />
                     </Link>
                   </div>
                 </div>
