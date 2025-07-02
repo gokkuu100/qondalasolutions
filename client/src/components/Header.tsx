@@ -50,7 +50,7 @@ export default function Header() {
   const showWhiteBackground = !isHomePage || (isHomePage && isScrolled);
   
   return (
-    <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-50 w-full transition-all duration-300 ${
+    <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-[100] w-full transition-all duration-300 ${
       showWhiteBackground
         ? "bg-white shadow-sm border-b border-gray-200" 
         : "bg-transparent"
