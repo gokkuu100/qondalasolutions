@@ -121,8 +121,18 @@ export default function Home() {
       </section>
 
       {/* Industries Section */}
-      <section id="industries" className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        id="industries" 
+        className="py-20 relative"
+        style={{
+          backgroundImage: `url('/attached_assets/developers-working-on-code-2025-02-11-14-07-34-utc (1)_1751500573093.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-85"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Industries We Serve</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
