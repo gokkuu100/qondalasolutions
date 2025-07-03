@@ -176,14 +176,14 @@ export default function Industries() {
         </Tabs>
 
         {/* Call to Action */}
-        <div className="mt-20 bg-ms-light rounded-2xl p-12 text-center relative overflow-hidden">
-          <div className="relative z-10">
+        <div className="mt-20 bg-ms-light rounded-2xl p-12 relative overflow-hidden">
+          <div className="relative z-10 text-left max-w-2xl">
             <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8">
               We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
               Contact us to discuss how we can help transform your business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="/contact"
                 className="bg-ms-blue text-black px-8 py-3 rounded-md font-semibold hover:bg-ms-blue-dark transition-colors duration-200 inline-block"
@@ -200,11 +200,11 @@ export default function Industries() {
           </div>
           
           {/* Sales Lady Image */}
-          <div className="absolute bottom-0 right-8 hidden lg:block">
+          <div className="absolute bottom-0 right-0 hidden lg:block">
             <img 
               src="/industries-sales-lady.png" 
               alt="Qondala Industry Expert" 
-              className="w-48 h-auto object-contain object-bottom opacity-80"
+              className="w-80 h-auto object-contain object-bottom"
             />
           </div>
         </div>
