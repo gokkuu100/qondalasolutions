@@ -57,10 +57,10 @@ export default function Hero() {
     checkMobile();
     window.addEventListener('resize', checkMobile);
     
-    // Auto-advance slides every 6 seconds
+    // Auto-advance slides every 8 seconds
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 8000);
 
     return () => {
       window.removeEventListener('resize', checkMobile);
@@ -86,7 +86,7 @@ export default function Hero() {
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1500 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
