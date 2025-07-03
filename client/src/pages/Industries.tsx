@@ -50,7 +50,7 @@ export default function Industries() {
     {
       name: "Business Automation",
       icon: Cog,
-      image: "/business-automation-new.jpg",
+      image: "/business-automation-updated.png",
       description: "Streamline your business processes with workflow automation, process optimization, and digital transformation solutions.",
       solutions: ["Workflow Automation", "Process Optimization", "Digital Transformation", "Business Intelligence"],
       benefits: ["Process Efficiency", "Cost Reduction", "Accuracy", "Competitive Advantage"]
