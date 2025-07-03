@@ -186,10 +186,10 @@ export default function Solutions() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="mt-20 relative">
-          <div className="bg-gray-100 rounded-lg overflow-hidden min-h-[300px]">
-            <div className="flex flex-col lg:flex-row items-end h-full">
-              <div className="text-left p-8 lg:p-12 lg:flex-1 z-10 flex flex-col justify-center">
+        <div className="mt-20 relative overflow-visible">
+          <div className="bg-gray-100 rounded-lg relative">
+            <div className="flex flex-col lg:flex-row items-center lg:items-end">
+              <div className="text-left p-8 lg:p-12 lg:flex-1 z-10">
                 <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-6">Ready to Transform Your Business?</h2>
                 <p className="text-lg lg:text-xl text-gray-700 mb-8 max-w-lg">
                   Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
@@ -201,11 +201,12 @@ export default function Solutions() {
                   </Link>
                 </Button>
               </div>
-              <div className="relative lg:flex-shrink-0">
+              <div className="relative">
                 <img 
                   src="/qondala-team-member.png" 
                   alt="Qondala Team Member" 
-                  className="w-96 lg:w-[450px] h-auto object-contain transform translate-y-8"
+                  className="w-80 lg:w-96 h-auto object-contain relative z-20"
+                  style={{ transform: 'translateY(-60px)' }}
                 />
               </div>
             </div>
