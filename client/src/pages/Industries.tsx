@@ -176,36 +176,63 @@ export default function Industries() {
         </Tabs>
 
         {/* Call to Action */}
-        <div className="mt-20 bg-ms-light rounded-2xl p-12 relative overflow-visible min-h-[320px] flex items-end">
-          <div className="relative z-10 text-left max-w-2xl pb-8">
-            <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
-            <p className="text-lg text-gray-600 mb-8">
+        <div className="mt-20 bg-ms-light rounded-2xl p-8 lg:p-12 relative overflow-visible">
+          {/* Mobile Layout - Stacked */}
+          <div className="lg:hidden flex flex-col text-center">
+            <h2 className="text-2xl font-bold text-ms-green mb-4">Don't See Your Industry?</h2>
+            <p className="text-base text-gray-600 mb-6">
               We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
               Contact us to discuss how we can help transform your business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col gap-4 mb-6">
               <a
                 href="/contact"
-                className="bg-ms-blue text-black px-8 py-3 rounded-md font-semibold hover:bg-ms-blue-dark transition-colors duration-200 inline-block"
+                className="bg-ms-green text-black px-8 py-3 rounded-md font-semibold hover:bg-green-400 transition-colors duration-200 inline-block"
               >
                 Contact Our Experts
               </a>
-              <a
-                href="/solutions"
-                className="border-2 border-ms-blue text-ms-blue px-8 py-3 rounded-md font-semibold hover:bg-ms-blue hover:text-white transition-all duration-200 inline-block"
-              >
-                View All Solutions
-              </a>
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="/industries-sales-lady.png" 
+                alt="Qondala Industry Expert" 
+                className="w-64 h-auto object-contain"
+              />
             </div>
           </div>
-          
-          {/* Sales Lady Image */}
-          <div className="absolute bottom-0 right-0">
-            <img 
-              src="/industries-sales-lady.png" 
-              alt="Qondala Industry Expert" 
-              className="w-[200px] lg:w-[550px] h-auto object-contain object-bottom"
-            />
+
+          {/* Desktop Layout - Side by Side */}
+          <div className="hidden lg:flex items-end min-h-[320px]">
+            <div className="relative z-10 text-left max-w-2xl pb-8">
+              <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
+              <p className="text-lg text-gray-600 mb-8">
+                We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
+                Contact us to discuss how we can help transform your business.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/contact"
+                  className="bg-ms-blue text-black px-8 py-3 rounded-md font-semibold hover:bg-ms-blue-dark transition-colors duration-200 inline-block"
+                >
+                  Contact Our Experts
+                </a>
+                <a
+                  href="/solutions"
+                  className="border-2 border-ms-blue text-ms-blue px-8 py-3 rounded-md font-semibold hover:bg-ms-blue hover:text-white transition-all duration-200 inline-block"
+                >
+                  View All Solutions
+                </a>
+              </div>
+            </div>
+            
+            {/* Desktop Sales Lady Image */}
+            <div className="absolute bottom-0 right-0">
+              <img 
+                src="/industries-sales-lady.png" 
+                alt="Qondala Industry Expert" 
+                className="w-[550px] h-auto object-contain object-bottom"
+              />
+            </div>
           </div>
         </div>
       </div>
