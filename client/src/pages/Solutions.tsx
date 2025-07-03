@@ -151,36 +151,7 @@ export default function Solutions() {
           </Tabs>
         </div>
 
-        {/* Additional Services Section */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-ms-dark mb-8 text-center">Additional Services</h2>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Shield className="h-12 w-12 text-ms-green mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-ms-dark mb-2">Cybersecurity</h3>
-                <p className="text-gray-600">Comprehensive security audits and protection services</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Settings className="h-12 w-12 text-ms-green mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-ms-dark mb-2">Maintenance</h3>
-                <p className="text-gray-600">24/7 system monitoring and maintenance support</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Database className="h-12 w-12 text-ms-green mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-ms-dark mb-2">Data Migration</h3>
-                <p className="text-gray-600">Seamless data transfer and system migration services</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+
 
         {/* Additional Services */}
         <div className="mt-20 bg-ms-light rounded-2xl p-12">
