@@ -183,6 +183,11 @@ Changelog:
   - Features customer support team with headsets and Qondala branding
   - Implemented full-width hero section with overlay and centered text
   - Enhanced Contact page visual appeal with branded customer service imagery
+- July 3, 2025. Updated Enterprise tab image on Industries page
+  - Replaced generic stock photo with professional businessman analytics environment
+  - Shows modern office setting with data visualization and business intelligence
+  - Enhanced Enterprise section with authentic business decision-making imagery
+  - Improved visual representation of enterprise technology solutions
 ```
 
 ## User Preferences

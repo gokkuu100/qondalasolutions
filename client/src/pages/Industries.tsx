@@ -42,7 +42,7 @@ export default function Industries() {
     {
       name: "Enterprise",
       icon: Building,
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
+      image: "/enterprise-business-new.jpg",
       description: "Scale your enterprise operations with large-scale solutions, system integration, and comprehensive digital platforms.",
       solutions: ["Enterprise Resource Planning", "System Integration", "Digital Platforms", "Data Analytics"],
       benefits: ["Scalability", "Integration", "Efficiency", "Data-Driven Decisions"]
