@@ -189,10 +189,7 @@ export default function Solutions() {
         <div className="mt-20 relative overflow-visible max-w-4xl mx-auto">
           <div className="bg-gray-100 rounded-lg relative min-h-[280px] flex flex-col lg:flex-row">
             <div className="text-left p-6 lg:p-8 lg:flex-1 z-10 flex flex-col justify-center">
-              <h2 className="text-2xl lg:text-3xl font-bold text-ms-green mb-4">Ready to Transform Your Business?</h2>
-              <p className="text-base lg:text-lg text-gray-700 mb-6 max-w-md">
-                Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
-              </p>
+              <h2 className="text-2xl lg:text-3xl font-bold text-ms-green mb-6">Ready to Transform Your Business?</h2>
               <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
                 <Link href="/contact" className="flex items-center gap-2">
                   Start Your Project
