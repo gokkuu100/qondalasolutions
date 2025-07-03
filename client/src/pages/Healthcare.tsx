@@ -3,8 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Heart, Users, Database, Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
-// Import medical workers image
+// Import images
 const medicalWorkersImage = "/medical-workers.jpg";
+const healthHeaderImage = "/health-header.png";
 
 export default function Healthcare() {
   const features = [
@@ -60,20 +61,28 @@ export default function Healthcare() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-ms-blue to-ms-blue-dark text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="py-20 relative"
+        style={{
+          backgroundImage: `url(${healthHeaderImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="h-8 w-8 text-white" />
+            <div className="w-16 h-16 bg-black/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Heart className="h-8 w-8 text-black" />
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-black">
               Healthcare Technology Solutions
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl mb-8 text-black max-w-4xl mx-auto">
               Transform healthcare delivery with data-driven platforms that enhance patient outcomes, 
               streamline operations, and foster collaboration across healthcare ecosystems.
             </p>
-            <Button size="lg" className="bg-white text-ms-blue hover:bg-gray-100" asChild>
+            <Button size="lg" className="bg-black text-white hover:bg-gray-800" asChild>
               <Link href="/contact">Schedule Healthcare Consultation</Link>
             </Button>
           </div>
