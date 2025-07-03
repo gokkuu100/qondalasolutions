@@ -206,7 +206,7 @@ export default function Contact() {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-ms-blue text-white hover:bg-ms-blue-dark"
+                    className="w-full bg-ms-blue text-black hover:bg-ms-blue-dark"
                     disabled={submitContactMutation.isPending}
                   >
                     {submitContactMutation.isPending ? "Sending..." : "Send Message"}
@@ -269,7 +269,7 @@ export default function Contact() {
             </Card>
 
             {/* Additional CTA */}
-            <Card className="bg-ms-blue text-white shadow-lg">
+            <Card className="bg-ms-blue text-black shadow-lg">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-2">Need Immediate Assistance?</h3>
                 <p className="mb-4 text-blue-100">

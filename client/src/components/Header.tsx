@@ -88,8 +88,8 @@ export default function Header() {
             <Button 
               className={`hidden md:block ${
                 showWhiteBackground
-                  ? "bg-ms-green text-white hover:bg-ms-green-dark"
-                  : "bg-primary text-white hover:bg-primary/90 border border-primary"
+                  ? "bg-ms-green text-black hover:bg-ms-green-dark"
+                  : "bg-primary text-black hover:bg-primary/90 border border-primary"
               }`}
               asChild
             >
@@ -123,7 +123,7 @@ export default function Header() {
                     </Link>
                   ))}
                   <Button 
-                    className="bg-ms-green text-white hover:bg-ms-green-dark mt-4"
+                    className="bg-ms-green text-black hover:bg-ms-green-dark mt-4"
                     asChild
                   >
                     <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>

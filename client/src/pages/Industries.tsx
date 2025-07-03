@@ -97,7 +97,7 @@ export default function Industries() {
                     <h4 className="font-semibold text-ms-dark mb-3">Key Solutions:</h4>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {industry.solutions.map((solution, solutionIndex) => (
-                        <Badge key={solutionIndex} className="bg-ms-blue text-white">
+                        <Badge key={solutionIndex} className="bg-ms-blue text-black">
                           {solution}
                         </Badge>
                       ))}
@@ -130,7 +130,7 @@ export default function Industries() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-ms-blue text-white px-8 py-3 rounded-md font-semibold hover:bg-ms-blue-dark transition-colors duration-200 inline-block"
+              className="bg-ms-blue text-black px-8 py-3 rounded-md font-semibold hover:bg-ms-blue-dark transition-colors duration-200 inline-block"
             >
               Contact Our Experts
             </a>

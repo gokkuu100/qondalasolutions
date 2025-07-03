@@ -134,8 +134,8 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Industries We Serve</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-black mb-4">Industries We Serve</h2>
+            <p className="text-xl text-black max-w-3xl mx-auto">
               Specialized solutions across key industry verticals, delivering measurable impact and innovation.
             </p>
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
                   return (
                     <div key={index} className="flex items-center">
                       <div className="w-12 h-12 bg-ms-blue rounded-full flex items-center justify-center mr-4">
-                        <IconComponent className="text-white h-6 w-6" />
+                        <IconComponent className="text-black h-6 w-6" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-ms-dark">{value.title}</h4>

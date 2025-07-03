@@ -24,7 +24,7 @@ export default function Footer() {
                 className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5 text-black" />
               </a>
               <a
                 href="https://twitter.com/qondala"
@@ -33,7 +33,7 @@ export default function Footer() {
                 className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
                 aria-label="Twitter"
               >
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-5 w-5 text-black" />
               </a>
               <a
                 href="https://facebook.com/qondala"
@@ -42,7 +42,7 @@ export default function Footer() {
                 className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
                 aria-label="Facebook"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5 text-black" />
               </a>
             </div>
           </div>
