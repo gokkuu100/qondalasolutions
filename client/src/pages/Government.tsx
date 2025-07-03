@@ -80,18 +80,24 @@ export default function Government() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <section className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/" className="inline-flex items-center text-ms-blue hover:text-ms-blue-dark mb-6">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Link>
-          <h1 className="text-4xl font-bold text-ms-dark mb-4">Government Agencies</h1>
-          <p className="text-xl text-gray-600 max-w-3xl">
-            Trusted technology solutions for federal, state, and local government agencies. 
-            Secure, compliant, and designed to improve citizen services and operational efficiency.
-          </p>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-ms-blue to-ms-blue-dark text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Building className="h-8 w-8 text-white" />
+            </div>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+              Government Technology Solutions
+            </h1>
+            <p className="text-xl lg:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
+              Trusted technology solutions for federal, state, and local government agencies. 
+              Secure, compliant, and designed to improve citizen services and operational efficiency.
+            </p>
+            <Button size="lg" className="bg-white text-ms-blue hover:bg-gray-100" asChild>
+              <Link href="/contact">Schedule a Consultation</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
