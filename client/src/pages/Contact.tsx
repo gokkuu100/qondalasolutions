@@ -83,16 +83,27 @@ export default function Contact() {
   ];
 
   return (
-    <div className="py-20 bg-ms-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-ms-dark mb-4">Ready to Transform Your Business?</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+    <div>
+      {/* Hero Section */}
+      <section 
+        className="relative h-96 bg-cover bg-center bg-no-repeat flex items-center"
+        style={{ backgroundImage: 'url(/contact-hero.png)' }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Ready to Transform Your Business?
+          </h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Connect with our experts to discuss your technology needs and discover how Qondala can drive your digital transformation.
           </p>
         </div>
-        
-        <div className="grid lg:grid-cols-2 gap-16">
+      </section>
+
+      {/* Contact Content */}
+      <div className="py-20 bg-ms-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
           <Card className="shadow-lg">
             <CardHeader>
@@ -309,6 +320,7 @@ export default function Contact() {
               </div>
             </CardContent>
           </Card>
+          </div>
         </div>
       </div>
     </div>
