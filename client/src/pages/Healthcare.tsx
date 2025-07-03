@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Heart, Users, Database, Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
+import medicalWorkersImage from "@assets/medical-workers-discussing-chest-x-ray-2025-01-31-00-40-57-utc_1751506280044.jpg";
 
 export default function Healthcare() {
   const features = [
@@ -167,14 +168,14 @@ export default function Healthcare() {
             </div>
             
             <div>
-              <div className="bg-gradient-to-br from-ms-blue/10 to-ms-blue/20 rounded-xl shadow-lg p-12 flex items-center justify-center">
-                <div className="text-center">
-                  <Heart className="h-24 w-24 text-ms-blue mx-auto mb-6" />
-                  <h3 className="text-2xl font-bold text-ms-dark mb-4">Healthcare Technology</h3>
-                  <p className="text-gray-600 max-w-sm">
-                    Advanced healthcare solutions transforming patient care and operational efficiency across all healthcare settings.
-                  </p>
-                </div>
+              <div className="rounded-xl shadow-lg overflow-hidden">
+                <img 
+                  src={medicalWorkersImage}
+                  alt="Medical professionals collaborating with digital healthcare technology"
+                  className="w-full h-full object-cover rounded-xl"
+                  loading="lazy"
+                  style={{ aspectRatio: '4/3' }}
+                />
               </div>
             </div>
           </div>
