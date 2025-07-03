@@ -187,28 +187,26 @@ export default function Solutions() {
 
         {/* Call to Action Section */}
         <div className="mt-20 relative overflow-visible">
-          <div className="bg-gray-100 rounded-lg relative min-h-[280px]">
-            <div className="flex flex-col lg:flex-row h-full">
-              <div className="text-left p-8 lg:p-12 lg:flex-1 z-10 flex flex-col justify-center">
-                <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-6">Ready to Transform Your Business?</h2>
-                <p className="text-lg lg:text-xl text-gray-700 mb-8 max-w-lg">
-                  Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
-                </p>
-                <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
-                  <Link href="/contact" className="flex items-center gap-2">
-                    Start Your Project
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-              <div className="relative flex items-end justify-end lg:w-96">
-                <img 
-                  src="/qondala-team-member.png" 
-                  alt="Qondala Team Member" 
-                  className="w-80 lg:w-96 h-auto object-contain"
-                  style={{ transform: 'translateY(-40px)' }}
-                />
-              </div>
+          <div className="bg-gray-100 rounded-lg relative min-h-[280px] flex flex-col lg:flex-row">
+            <div className="text-left p-8 lg:p-12 lg:flex-1 z-10 flex flex-col justify-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-6">Ready to Transform Your Business?</h2>
+              <p className="text-lg lg:text-xl text-gray-700 mb-8 max-w-lg">
+                Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
+              </p>
+              <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
+                <Link href="/contact" className="flex items-center gap-2">
+                  Start Your Project
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+            <div className="relative flex items-end justify-end">
+              <img 
+                src="/qondala-team-member.png" 
+                alt="Qondala Team Member" 
+                className="w-80 lg:w-96 h-auto object-contain object-right"
+                style={{ transform: 'translateY(-40px)', marginRight: '-20px' }}
+              />
             </div>
           </div>
         </div>
