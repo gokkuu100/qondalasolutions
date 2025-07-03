@@ -86,8 +86,11 @@ export default function Contact() {
     <div>
       {/* Hero Section */}
       <section 
-        className="relative h-96 bg-cover bg-center bg-no-repeat flex items-center"
-        style={{ backgroundImage: 'url(/contact-hero.png)' }}
+        className="relative h-96 bg-cover bg-no-repeat flex items-center"
+        style={{ 
+          backgroundImage: 'url(/contact-hero.png)',
+          backgroundPosition: 'center 60%'
+        }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
