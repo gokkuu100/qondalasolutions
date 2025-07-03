@@ -32,22 +32,22 @@ export default function Home() {
     {
       title: "Healthcare",
       description: "Data-driven platforms that empower patients, providers, and public health organizations.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
+      image: "/medical-workers.jpg"
     },
     {
       title: "Logistics",
       description: "Global networks, advanced supply chain applications, and trade intelligence solutions.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
+      image: "/logistics-warehouse.jpg"
     },
     {
       title: "Government Agencies",
       description: "High-quality office supplies, equipment, and integrated IT solutions for government operations.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=250"
+      image: "/government-voting.jpg"
     },
     {
       title: "Enterprise",
       description: "Connected systems and digital transformation solutions for large-scale operations.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=250"
+      image: "/enterprise-business.jpg"
     }
   ];
 
