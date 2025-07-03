@@ -176,9 +176,9 @@ export default function Industries() {
         </Tabs>
 
         {/* Call to Action */}
-        <div className="mt-20 bg-ms-light rounded-2xl p-8 lg:p-12 relative overflow-visible">
+        <div className="mt-20 bg-ms-light rounded-2xl relative overflow-hidden">
           {/* Mobile Layout - Stacked */}
-          <div className="lg:hidden text-center">
+          <div className="lg:hidden text-center p-8 pb-4">
             <h2 className="text-2xl font-bold text-ms-green mb-4">Don't See Your Industry?</h2>
             <p className="text-base text-gray-600 mb-6">
               We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
@@ -192,17 +192,17 @@ export default function Industries() {
                 Contact Our Experts
               </a>
             </div>
-            <div className="w-full flex justify-center mt-4">
-              <img 
-                src="/industries-sales-lady.png" 
-                alt="Qondala Industry Expert" 
-                className="w-64 h-auto object-contain block"
-              />
-            </div>
+          </div>
+          <div className="lg:hidden flex justify-center bg-ms-light">
+            <img 
+              src="/industries-sales-lady.png" 
+              alt="Qondala Industry Expert" 
+              className="w-64 h-auto object-contain"
+            />
           </div>
 
           {/* Desktop Layout - Side by Side */}
-          <div className="hidden lg:flex items-end min-h-[320px]">
+          <div className="hidden lg:flex items-end min-h-[320px] p-12 overflow-visible">
             <div className="relative z-10 text-left max-w-2xl pb-8">
               <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
               <p className="text-lg text-gray-600 mb-8">
