@@ -84,40 +84,38 @@ export default function About() {
       {/* Content */}
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Mission & Vision */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h2 className="text-3xl font-bold text-ms-dark mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                To empower businesses with innovative technology solutions that transform operations, enhance efficiency, and drive sustainable growth across all industries.
+          {/* Mission Statement */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-ms-dark mb-6">Our Mission</h2>
+            <p className="text-xl text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto">
+              To empower businesses with innovative technology solutions that transform operations, enhance efficiency, and drive sustainable growth across all industries.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              We believe that the right combination of software, hardware, and AI-driven intelligence can solve the most complex business challenges and unlock new opportunities for success.
+            </p>
+          </div>
+
+          {/* Vision & Achievements */}
+          <div className="bg-gradient-to-br from-ms-blue/5 to-ms-blue/10 rounded-2xl p-12 mb-20">
+            <div className="text-center mb-12">
+              <Target className="h-16 w-16 text-ms-blue mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-ms-dark mb-4">Vision & Excellence</h3>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Driving innovation and excellence in enterprise technology solutions across global markets
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We believe that the right combination of software, hardware, and AI-driven intelligence can solve the most complex business challenges and unlock new opportunities for success.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-6">
-                {achievements.map((achievement, index) => {
-                  const IconComponent = achievement.icon;
-                  return (
-                    <div key={index} className="text-center p-4 bg-ms-light rounded-lg">
-                      <IconComponent className="h-8 w-8 text-ms-blue mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-ms-dark">{achievement.value}</div>
-                      <div className="text-sm text-gray-600">{achievement.label}</div>
-                    </div>
-                  );
-                })}
-              </div>
             </div>
-            <div>
-              <div className="bg-gradient-to-br from-ms-blue/10 to-ms-blue/20 rounded-xl shadow-lg p-12 flex items-center justify-center">
-                <div className="text-center">
-                  <Target className="h-24 w-24 text-ms-blue mx-auto mb-6" />
-                  <h3 className="text-2xl font-bold text-ms-dark mb-4">Vision & Excellence</h3>
-                  <p className="text-gray-600 max-w-sm">
-                    Driving innovation and excellence in enterprise technology solutions across global markets
-                  </p>
-                </div>
-              </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {achievements.map((achievement, index) => {
+                const IconComponent = achievement.icon;
+                return (
+                  <div key={index} className="text-center p-4 bg-white rounded-lg shadow-sm">
+                    <IconComponent className="h-8 w-8 text-ms-blue mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-ms-dark">{achievement.value}</div>
+                    <div className="text-sm text-gray-600">{achievement.label}</div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
