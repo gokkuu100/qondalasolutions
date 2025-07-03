@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Code, Cpu, Brain, Cloud, Database, Shield, Zap, Settings } from "lucide-react";
 
 export default function Solutions() {
@@ -90,21 +91,35 @@ export default function Solutions() {
           </p>
         </div>
 
-        <div className="space-y-16">
-          {solutions.map((solution, categoryIndex) => {
-            const IconComponent = solution.icon;
-            return (
-              <div key={categoryIndex} className="space-y-8">
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className={`w-12 h-12 ${solution.color} rounded-lg flex items-center justify-center`}>
-                    <IconComponent className="text-white h-6 w-6" />
-                  </div>
-                  <h2 className="text-3xl font-bold text-ms-dark">{solution.category}</h2>
-                </div>
-                
-                <div className="grid md:grid-cols-3 gap-8">
+        {/* Solutions Section with Tabs */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-ms-dark mb-8 text-center">Our Solutions</h2>
+          
+          <Tabs defaultValue="software" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsTrigger value="software" className="flex items-center gap-2">
+                <Code className="h-4 w-4" />
+                Software Solutions
+              </TabsTrigger>
+              <TabsTrigger value="hardware" className="flex items-center gap-2">
+                <Cpu className="h-4 w-4" />
+                Hardware Solutions
+              </TabsTrigger>
+              <TabsTrigger value="ai" className="flex items-center gap-2">
+                <Brain className="h-4 w-4" />
+                AI & Analytics
+              </TabsTrigger>
+            </TabsList>
+
+            {solutions.map((solution, categoryIndex) => (
+              <TabsContent 
+                key={categoryIndex} 
+                value={categoryIndex === 0 ? "software" : categoryIndex === 1 ? "hardware" : "ai"}
+                className="space-y-6"
+              >
+                <div className="grid md:grid-cols-3 gap-6">
                   {solution.services.map((service, serviceIndex) => (
-                    <Card key={serviceIndex} className="card-hover">
+                    <Card key={serviceIndex} className="bg-white/90 backdrop-blur-sm hover:bg-white/95 transition-all duration-300">
                       <CardHeader>
                         <CardTitle className="text-xl text-ms-dark">{service.name}</CardTitle>
                       </CardHeader>
@@ -124,9 +139,48 @@ export default function Solutions() {
                     </Card>
                   ))}
                 </div>
-              </div>
-            );
-          })}
+              </TabsContent>
+            ))}
+          </Tabs>
+        </div>
+
+        {/* Additional Services Section */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8">
+          <h2 className="text-3xl font-bold text-ms-dark mb-8 text-center">Additional Services</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <Shield className="h-12 w-12 text-ms-green mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-ms-dark mb-2">Cybersecurity</h3>
+                <p className="text-gray-600">Comprehensive security audits and protection services</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <Settings className="h-12 w-12 text-ms-green mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-ms-dark mb-2">Maintenance</h3>
+                <p className="text-gray-600">24/7 system monitoring and maintenance support</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <Database className="h-12 w-12 text-ms-green mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-ms-dark mb-2">Data Migration</h3>
+                <p className="text-gray-600">Seamless data transfer and system migration services</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <Zap className="h-12 w-12 text-ms-green mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-ms-dark mb-2">Performance Optimization</h3>
+                <p className="text-gray-600">System performance analysis and optimization</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Additional Services */}
