@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Code, Cpu, Brain, Factory, Truck, Shield, ArrowRight, Rocket, Users, ShieldCheck } from "lucide-react";
+import industriesBackground from "@assets/12_1751503697250.png";
 
 export default function Home() {
   const solutions = [
@@ -125,7 +126,7 @@ export default function Home() {
         id="industries" 
         className="py-20 relative"
         style={{
-          backgroundImage: `url('/attached_assets/12_1751503697250.png')`,
+          backgroundImage: `url(${industriesBackground})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
