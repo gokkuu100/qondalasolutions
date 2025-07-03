@@ -59,7 +59,6 @@ export default function Hero() {
           </div>
         </div>
       )}
-      
       {/* Desktop Background */}
       <div 
         className={`absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block transition-opacity duration-500 ${
@@ -67,7 +66,6 @@ export default function Hero() {
         }`}
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
-      
       {/* Mobile Background */}
       <div 
         className={`absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden transition-opacity duration-500 ${
@@ -84,9 +82,8 @@ export default function Hero() {
                 <div className="mb-1 md:mb-2">Real-Time Insight.</div>
                 <div>Scalable Impact.</div>
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-12 text-gray-200 leading-relaxed max-w-2xl">
-                Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.
-              </p>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-12 text-gray-200 leading-relaxed max-w-2xl">Connected systems, unified data, and intelligent tools that 
+              enhance efficiency, security, and collaboration across industries.</p>
               <Link href="/about">
                 <button className="bg-ms-green hover:bg-ms-green-dark text-black font-semibold py-3 px-8 rounded-full transition-colors duration-200 text-sm md:text-base">
                   EXPLORE MORE
