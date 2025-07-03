@@ -18,7 +18,7 @@ export default function Industries() {
     {
       name: "Manufacturing",
       icon: Factory,
-      image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "/manufacturing-image.jpg",
       description: "Transform your manufacturing operations with smart factory solutions, predictive maintenance, and production optimization technologies.",
       solutions: ["Smart Factory Automation", "Predictive Maintenance", "Quality Control Systems", "Supply Chain Optimization"],
       benefits: ["Increased Efficiency", "Reduced Downtime", "Cost Savings", "Quality Improvement"]
