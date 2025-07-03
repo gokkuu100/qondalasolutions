@@ -200,11 +200,11 @@ export default function Industries() {
           </div>
           
           {/* Sales Lady Image */}
-          <div className="absolute bottom-0 right-0 hidden lg:block">
+          <div className="absolute bottom-0 right-0">
             <img 
               src="/industries-sales-lady.png" 
               alt="Qondala Industry Expert" 
-              className="w-[550px] h-auto object-contain object-bottom"
+              className="w-[200px] lg:w-[550px] h-auto object-contain object-bottom"
             />
           </div>
         </div>
