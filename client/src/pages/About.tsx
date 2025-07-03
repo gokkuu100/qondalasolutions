@@ -86,7 +86,6 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* About Us Overview */}
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-bold text-ms-dark mb-8">About Qondala</h2>
             <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
                 Qondala delivers tailored enterprise solutions by integrating leading technologies with deep customization expertise, ensuring alignment with each client's operational requirements.
