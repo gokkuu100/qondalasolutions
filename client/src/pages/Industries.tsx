@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Factory, Truck, Shield, Building, Cog, Wrench, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Factory, Truck, Shield, Building, Cog, Wrench, Heart, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Industries() {
   const industries = [
@@ -83,53 +86,94 @@ export default function Industries() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <Tabs defaultValue="healthcare" className="w-full">
+          <TabsList className="grid w-full grid-cols-3 lg:grid-cols-7 gap-2 h-auto p-1 bg-white/90 backdrop-blur-sm rounded-xl">
+            {industries.map((industry, index) => {
+              const IconComponent = industry.icon;
+              return (
+                <TabsTrigger
+                  key={index}
+                  value={industry.name.toLowerCase().replace(/ /g, '-')}
+                  className="flex flex-col items-center gap-2 p-4 text-center data-[state=active]:bg-ms-green data-[state=active]:text-black hover:bg-ms-green/20 transition-all duration-200 rounded-lg"
+                >
+                  <IconComponent className="h-6 w-6" />
+                  <span className="text-xs lg:text-sm font-medium">{industry.name}</span>
+                </TabsTrigger>
+              );
+            })}
+          </TabsList>
+
           {industries.map((industry, index) => {
             const IconComponent = industry.icon;
             return (
-              <Card key={index} className="card-hover overflow-hidden">
-                <div className="relative">
-                  <img 
-                    src={industry.image} 
-                    alt={industry.name}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-ms-blue rounded-full p-3">
-                    <IconComponent className="text-white h-6 w-6" />
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-2xl text-ms-dark">{industry.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <p className="text-gray-600 leading-relaxed">{industry.description}</p>
-                  
-                  <div>
-                    <h4 className="font-semibold text-ms-dark mb-3">Key Solutions:</h4>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {industry.solutions.map((solution, solutionIndex) => (
-                        <Badge key={solutionIndex} className="bg-ms-blue text-black">
-                          {solution}
-                        </Badge>
-                      ))}
+              <TabsContent 
+                key={index} 
+                value={industry.name.toLowerCase().replace(/ /g, '-')}
+                className="mt-8"
+              >
+                <Card className="overflow-hidden">
+                  <div className="relative">
+                    <img 
+                      src={industry.image} 
+                      alt={industry.name}
+                      className="w-full h-80 object-cover"
+                    />
+                    <div className="absolute top-6 left-6 bg-ms-green rounded-full p-4">
+                      <IconComponent className="text-black h-8 w-8" />
                     </div>
                   </div>
+                  <CardContent className="p-8">
+                    <div className="grid lg:grid-cols-2 gap-8">
+                      <div>
+                        <h2 className="text-3xl font-bold text-ms-dark mb-6">{industry.name}</h2>
+                        <p className="text-lg text-gray-600 leading-relaxed mb-6">{industry.description}</p>
+                        
+                        <div className="space-y-6">
+                          <div>
+                            <h4 className="font-semibold text-ms-dark mb-3 text-lg">Key Solutions:</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {industry.solutions.map((solution, solutionIndex) => (
+                                <Badge key={solutionIndex} className="bg-ms-green/20 text-black font-normal px-3 py-1">
+                                  {solution}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
 
-                  <div>
-                    <h4 className="font-semibold text-ms-dark mb-3">Key Benefits:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {industry.benefits.map((benefit, benefitIndex) => (
-                        <Badge key={benefitIndex} variant="secondary">
-                          {benefit}
-                        </Badge>
-                      ))}
+                          <div>
+                            <h4 className="font-semibold text-ms-dark mb-3 text-lg">Key Benefits:</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {industry.benefits.map((benefit, benefitIndex) => (
+                                <Badge key={benefitIndex} variant="secondary" className="px-3 py-1">
+                                  {benefit}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex flex-col justify-center space-y-4">
+                        <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-full" asChild>
+                          <Link href="/contact" className="flex items-center justify-center gap-2">
+                            Get Started with {industry.name}
+                            <ArrowRight className="h-5 w-5" />
+                          </Link>
+                        </Button>
+                        <Button size="lg" variant="outline" className="border-ms-green text-ms-green hover:bg-ms-green hover:text-black w-full" asChild>
+                          <Link href="/solutions" className="flex items-center justify-center gap-2">
+                            View All Solutions
+                            <ArrowRight className="h-5 w-5" />
+                          </Link>
+                        </Button>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </TabsContent>
             );
           })}
-        </div>
+        </Tabs>
 
         {/* Call to Action */}
         <div className="mt-20 bg-ms-light rounded-2xl p-12 text-center">
