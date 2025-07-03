@@ -201,7 +201,7 @@ export default function Solutions() {
                   </Link>
                 </Button>
               </div>
-              <div className="relative">
+              <div className="relative lg:absolute lg:right-0 lg:bottom-0">
                 <img 
                   src="/qondala-team-member.png" 
                   alt="Qondala Team Member" 
