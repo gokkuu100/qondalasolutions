@@ -3,7 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Heart, Users, Database, Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
-import medicalWorkersImage from "@assets/medical-workers-discussing-chest-x-ray-2025-01-31-00-40-57-utc_1751532079594.jpg";
+// Import medical workers image
+const medicalWorkersImage = "/attached_assets/medical-workers-discussing-chest-x-ray-2025-01-31-00-40-57-utc_1751532079594.jpg";
 
 export default function Healthcare() {
   const features = [
