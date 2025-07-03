@@ -34,7 +34,7 @@ export default function Industries() {
     {
       name: "Security",
       icon: Shield,
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "/security-image.jpg",
       description: "Protect your assets and data with comprehensive cybersecurity solutions, surveillance systems, and advanced threat detection.",
       solutions: ["Cybersecurity Solutions", "Surveillance Systems", "Access Control", "Threat Detection"],
       benefits: ["Enhanced Security", "Risk Mitigation", "Compliance", "Peace of Mind"]
