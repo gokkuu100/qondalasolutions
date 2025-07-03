@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Heart, Users, Database, Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
 // Import images
 const medicalWorkersImage = "/medical-workers.jpg";
-const healthHeaderImage = "/health-header.png";
+const healthHeaderImage = "/health-header-dark.png";
 
 export default function Healthcare() {
   const features = [
@@ -72,17 +72,17 @@ export default function Healthcare() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="w-16 h-16 bg-black/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="h-8 w-8 text-black" />
+            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Heart className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-black">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white">
               Healthcare Technology Solutions
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-black max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl mb-8 text-white max-w-4xl mx-auto">
               Transform healthcare delivery with data-driven platforms that enhance patient outcomes, 
               streamline operations, and foster collaboration across healthcare ecosystems.
             </p>
-            <Button size="lg" className="bg-black text-white hover:bg-gray-800" asChild>
+            <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
               <Link href="/contact">Schedule Healthcare Consultation</Link>
             </Button>
           </div>
