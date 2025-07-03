@@ -158,6 +158,10 @@ Changelog:
   - Added multi-ethnic programmers image to Custom Enterprise Software service
   - Shows collaborative development environment with source code review
   - Enhanced visual representation of custom software development process
+- July 3, 2025. Updated Enterprise page hero image
+  - Replaced enterprise business image with professional businessman and analytics dashboard
+  - Shows modern business environment with data visualization and team collaboration
+  - Optimized image display with lazy loading and proper aspect ratio
 ```
 
 ## User Preferences
