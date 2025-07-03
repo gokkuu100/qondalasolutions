@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Truck, MapPin, Package, BarChart3, Globe, Zap, CheckCircle, ArrowRight } from "lucide-react";
 
+// Warehouse logistics image
+const warehouseImage = "/logistics-warehouse.jpg";
+
 export default function Logistics() {
   const features = [
     {
@@ -167,11 +170,15 @@ export default function Logistics() {
             </div>
             
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Logistics and supply chain management"
-                className="rounded-xl shadow-lg w-full h-auto"
-              />
+              <div className="rounded-xl shadow-lg overflow-hidden">
+                <img
+                  src={warehouseImage}
+                  alt="Smiling warehouse worker scanning packages with digital technology"
+                  className="w-full h-full object-cover rounded-xl"
+                  loading="lazy"
+                  style={{ aspectRatio: '4/3' }}
+                />
+              </div>
             </div>
           </div>
         </div>

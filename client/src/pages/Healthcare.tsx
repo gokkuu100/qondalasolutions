@@ -176,6 +176,13 @@ export default function Healthcare() {
                   className="w-full h-full object-cover rounded-xl"
                   loading="lazy"
                   style={{ aspectRatio: '4/3' }}
+                  onError={(e) => {
+                    console.error('Image failed to load:', medicalWorkersImage);
+                    console.error('Error event:', e);
+                  }}
+                  onLoad={() => {
+                    console.log('Image loaded successfully:', medicalWorkersImage);
+                  }}
                 />
               </div>
             </div>
