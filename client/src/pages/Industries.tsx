@@ -26,7 +26,7 @@ export default function Industries() {
     {
       name: "Transportation",
       icon: Truck,
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "/transportation-image.jpg",
       description: "Optimize your logistics and transportation networks with intelligent fleet management, route optimization, and real-time tracking systems.",
       solutions: ["Fleet Management", "Route Optimization", "Real-time Tracking", "Fuel Management"],
       benefits: ["Reduced Costs", "Improved Delivery Times", "Enhanced Safety", "Environmental Impact"]
