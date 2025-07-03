@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Truck, MapPin, Package, BarChart3, Globe, Zap, CheckCircle, ArrowRight } from "lucide-react";
+import { Truck, MapPin, Package, BarChart3, Globe, Zap, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
 
 // Warehouse logistics image
 const warehouseImage = "/logistics-warehouse.jpg";
@@ -62,16 +62,18 @@ export default function Logistics() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section 
-        className="relative text-white py-20 min-h-[600px] flex items-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${logisticsHeaderImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+      <section className="relative bg-black text-white py-20 min-h-[600px] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Back Button */}
+          <div className="mb-8">
+            <Button variant="ghost" className="text-white hover:bg-white/10" asChild>
+              <Link href="/">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to Home
+              </Link>
+            </Button>
+          </div>
+          
           <div className="text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Truck className="h-8 w-8 text-white" />
