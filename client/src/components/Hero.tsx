@@ -75,7 +75,7 @@ export default function Hero() {
       />
       <div className="relative z-10 h-full flex items-end md:items-center pb-16 md:pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="text-left max-w-4xl pt-16 md:pt-20">
+          <div className="text-left max-w-4xl pt-16 md:pt-20 ml-[45px] mr-[45px]">
             <div className="fade-in">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-8 leading-tight">
                 <div className="mb-1 md:mb-2">Smarter Systems.</div>
