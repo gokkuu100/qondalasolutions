@@ -97,21 +97,21 @@ export default function Solutions() {
             <TabsList className="flex justify-center gap-4 bg-transparent mb-8 h-auto p-0">
               <TabsTrigger 
                 value="software" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all duration-300 border-0 shadow-sm"
+                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm"
               >
                 <Code className="h-4 w-4" />
                 Software Solutions
               </TabsTrigger>
               <TabsTrigger 
                 value="hardware" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all duration-300 border-0 shadow-sm"
+                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm"
               >
                 <Cpu className="h-4 w-4" />
                 Hardware Solutions
               </TabsTrigger>
               <TabsTrigger 
                 value="ai" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all duration-300 border-0 shadow-sm"
+                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm"
               >
                 <Brain className="h-4 w-4" />
                 AI & Analytics
