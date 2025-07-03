@@ -204,8 +204,8 @@ export default function Solutions() {
               <img 
                 src="/qondala-team-member.png" 
                 alt="Qondala Team Member" 
-                className="w-80 lg:w-96 h-auto object-contain object-right"
-                style={{ transform: 'translateY(-40px)', marginRight: '-20px' }}
+                className="w-80 lg:w-96 h-auto object-contain object-bottom"
+                style={{ marginRight: '-20px' }}
               />
             </div>
           </div>
