@@ -138,7 +138,7 @@ export default function Solutions() {
                           <h4 className="font-semibold text-ms-dark mb-3">Key Features:</h4>
                           <div className="flex flex-wrap gap-2">
                             {service.features.map((feature, featureIndex) => (
-                              <Badge key={featureIndex} variant="secondary" className="text-sm bg-gray-700 text-white hover:bg-gray-600">
+                              <Badge key={featureIndex} variant="secondary" className="text-sm bg-green-100 text-black font-normal hover:bg-green-200">
                                 {feature}
                               </Badge>
                             ))}
