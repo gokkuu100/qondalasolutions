@@ -96,27 +96,27 @@ export default function Solutions() {
         {/* Solutions Section with Tabs */}
         <div className="mb-20">
           <Tabs defaultValue="software" className="w-full">
-            <TabsList className="flex justify-center gap-4 bg-transparent mb-8 h-auto p-0">
+            <TabsList className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 bg-transparent mb-8 h-auto p-0">
               <TabsTrigger 
                 value="software" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm"
+                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
               >
                 <Code className="h-4 w-4" />
-                Software Solutions
+                <span className="whitespace-nowrap">Software Solutions</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="hardware" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm"
+                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
               >
                 <Cpu className="h-4 w-4" />
-                Hardware Solutions
+                <span className="whitespace-nowrap">Hardware Solutions</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="ai" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm"
+                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
               >
                 <Brain className="h-4 w-4" />
-                AI & Analytics
+                <span className="whitespace-nowrap">AI & Analytics</span>
               </TabsTrigger>
             </TabsList>
 
