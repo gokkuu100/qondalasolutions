@@ -176,7 +176,7 @@ export default function Industries() {
         </Tabs>
 
         {/* Call to Action */}
-        <div className="mt-20 bg-ms-light rounded-2xl p-12 relative overflow-hidden">
+        <div className="mt-20 bg-ms-light rounded-2xl p-12 relative overflow-visible min-h-[400px]">
           <div className="relative z-10 text-left max-w-2xl">
             <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -204,7 +204,7 @@ export default function Industries() {
             <img 
               src="/industries-sales-lady.png" 
               alt="Qondala Industry Expert" 
-              className="w-[500px] h-auto object-contain object-bottom"
+              className="w-[400px] h-auto object-contain object-bottom"
             />
           </div>
         </div>
