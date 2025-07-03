@@ -152,7 +152,13 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-ms-dark mb-3">{industry.title}</h3>
                   <p className="text-gray-600 mb-4 flex-grow">{industry.description}</p>
                   <Link
-                    href={industry.title === "Healthcare" ? "/healthcare" : industry.title === "Logistics" ? "/logistics" : "/industries"}
+                    href={
+                      industry.title === "Healthcare" ? "/healthcare" : 
+                      industry.title === "Logistics" ? "/logistics" :
+                      industry.title === "Government Agencies" ? "/government" :
+                      industry.title === "Enterprise" ? "/enterprise" :
+                      "/industries"
+                    }
                     className="inline-flex items-center text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors mt-auto"
                   >
                     <span>Learn More</span>

@@ -18,6 +18,8 @@ import Logistics from "@/pages/Logistics";
 import ConnectedSystems from "@/pages/ConnectedSystems";
 import AdvancedSoftware from "@/pages/AdvancedSoftware";
 import DroneTechnology from "@/pages/DroneTechnology";
+import Government from "@/pages/Government";
+import Enterprise from "@/pages/Enterprise";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -35,6 +37,8 @@ function Router() {
           <Route path="/terms" component={Terms} />
           <Route path="/healthcare" component={Healthcare} />
           <Route path="/logistics" component={Logistics} />
+          <Route path="/government" component={Government} />
+          <Route path="/enterprise" component={Enterprise} />
           <Route path="/connected-systems" component={ConnectedSystems} />
           <Route path="/advanced-software" component={AdvancedSoftware} />
           <Route path="/drone-technology" component={DroneTechnology} />
