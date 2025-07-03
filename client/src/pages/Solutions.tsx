@@ -64,7 +64,8 @@ export default function Solutions() {
         {
           name: "Process Automation",
           description: "Intelligent automation systems that optimize workflows and reduce manual effort.",
-          features: ["Workflow Automation", "Document Processing", "Quality Control", "Performance Monitoring"]
+          features: ["Workflow Automation", "Document Processing", "Quality Control", "Performance Monitoring"],
+          image: "/business-automation-image.jpg"
         },
         {
           name: "Data Analytics",
@@ -128,7 +129,18 @@ export default function Solutions() {
               >
                 <div className="grid md:grid-cols-3 gap-6">
                   {solution.services.map((service, serviceIndex) => (
-                    <Card key={serviceIndex} className="bg-white/90 backdrop-blur-sm hover:bg-white/95 transition-all duration-300">
+                    <Card key={serviceIndex} className="bg-white/90 backdrop-blur-sm hover:bg-white/95 transition-all duration-300 overflow-hidden">
+                      {service.image && (
+                        <div className="relative h-48 overflow-hidden">
+                          <img 
+                            src={service.image} 
+                            alt={service.name}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      )}
                       <CardHeader>
                         <CardTitle className="text-xl text-ms-dark">{service.name}</CardTitle>
                       </CardHeader>
