@@ -84,24 +84,39 @@ export default function About() {
       {/* Content */}
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Mission Statement */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-ms-dark mb-6">Our Mission</h2>
-            <p className="text-xl text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto">
-              To empower businesses with innovative technology solutions that transform operations, enhance efficiency, and drive sustainable growth across all industries.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              We believe that the right combination of software, hardware, and AI-driven intelligence can solve the most complex business challenges and unlock new opportunities for success.
-            </p>
+          {/* Mission & Vision */}
+          <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
+            {/* Mission */}
+            <div className="text-center lg:text-left">
+              <Rocket className="h-16 w-16 text-ms-blue mx-auto lg:mx-0 mb-6" />
+              <h2 className="text-3xl font-bold text-ms-dark mb-6">Our Mission</h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                To empower businesses with innovative technology solutions that transform operations, enhance efficiency, and drive sustainable growth across all industries.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We believe that the right combination of software, hardware, and AI-driven intelligence can solve the most complex business challenges and unlock new opportunities for success.
+              </p>
+            </div>
+
+            {/* Vision */}
+            <div className="text-center lg:text-left">
+              <Target className="h-16 w-16 text-ms-blue mx-auto lg:mx-0 mb-6" />
+              <h2 className="text-3xl font-bold text-ms-dark mb-6">Our Vision</h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Driving innovation and excellence in enterprise technology solutions across global markets, becoming the trusted partner for digital transformation.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We envision a future where businesses seamlessly integrate advanced technology to achieve unprecedented levels of efficiency, security, and growth.
+              </p>
+            </div>
           </div>
 
-          {/* Vision & Achievements */}
+          {/* Achievements */}
           <div className="bg-gradient-to-br from-ms-blue/5 to-ms-blue/10 rounded-2xl p-12 mb-20">
             <div className="text-center mb-12">
-              <Target className="h-16 w-16 text-ms-blue mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-ms-dark mb-4">Vision & Excellence</h3>
+              <h3 className="text-2xl font-bold text-ms-dark mb-4">Our Achievements</h3>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Driving innovation and excellence in enterprise technology solutions across global markets
+                Key milestones that demonstrate our commitment to excellence and client success
               </p>
             </div>
             
