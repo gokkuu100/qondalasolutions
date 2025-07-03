@@ -187,14 +187,14 @@ export default function Solutions() {
 
         {/* Call to Action Section */}
         <div className="mt-20 relative">
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
-            <div className="flex flex-col lg:flex-row items-end">
-              <div className="text-left p-8 lg:p-12 lg:flex-1 z-10">
-                <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-4">Ready to Transform Your Business?</h2>
-                <p className="text-lg lg:text-xl text-gray-700 mb-6 max-w-lg">
+          <div className="bg-gray-100 rounded-lg overflow-hidden min-h-[300px]">
+            <div className="flex flex-col lg:flex-row items-end h-full">
+              <div className="text-left p-8 lg:p-12 lg:flex-1 z-10 flex flex-col justify-center">
+                <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-6">Ready to Transform Your Business?</h2>
+                <p className="text-lg lg:text-xl text-gray-700 mb-8 max-w-lg">
                   Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
                 </p>
-                <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
+                <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
                   <Link href="/contact" className="flex items-center gap-2">
                     Start Your Project
                     <ArrowRight className="h-5 w-5" />
@@ -205,7 +205,7 @@ export default function Solutions() {
                 <img 
                   src="/qondala-team-member.png" 
                   alt="Qondala Team Member" 
-                  className="w-80 h-auto object-contain transform translate-y-4"
+                  className="w-96 lg:w-[450px] h-auto object-contain transform translate-y-8"
                 />
               </div>
             </div>
