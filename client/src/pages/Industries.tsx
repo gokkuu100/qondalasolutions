@@ -178,13 +178,13 @@ export default function Industries() {
         {/* Call to Action */}
         <div className="mt-20 bg-ms-light rounded-2xl p-8 lg:p-12 relative overflow-visible">
           {/* Mobile Layout - Stacked */}
-          <div className="lg:hidden flex flex-col text-center">
+          <div className="lg:hidden text-center">
             <h2 className="text-2xl font-bold text-ms-green mb-4">Don't See Your Industry?</h2>
             <p className="text-base text-gray-600 mb-6">
               We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
               Contact us to discuss how we can help transform your business.
             </p>
-            <div className="flex flex-col gap-4 mb-6">
+            <div className="mb-8">
               <a
                 href="/contact"
                 className="bg-ms-green text-black px-8 py-3 rounded-md font-semibold hover:bg-green-400 transition-colors duration-200 inline-block"
@@ -192,11 +192,11 @@ export default function Industries() {
                 Contact Our Experts
               </a>
             </div>
-            <div className="flex justify-center">
+            <div className="w-full flex justify-center mt-4">
               <img 
                 src="/industries-sales-lady.png" 
                 alt="Qondala Industry Expert" 
-                className="w-64 h-auto object-contain"
+                className="w-64 h-auto object-contain block"
               />
             </div>
           </div>
