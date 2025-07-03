@@ -290,7 +290,7 @@ export default function Contact() {
                 </p>
                 <Button 
                   variant="secondary" 
-                  className="bg-white text-ms-blue hover:bg-gray-100"
+                  className="bg-white text-[#000000] hover:bg-gray-100"
                   asChild
                 >
                   <a href="tel:+15551234567">Call Now: +1 (555) 123-4567</a>
