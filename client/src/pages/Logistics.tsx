@@ -6,6 +6,7 @@ import { Truck, MapPin, Package, BarChart3, Globe, Zap, CheckCircle, ArrowRight 
 
 // Warehouse logistics image
 const warehouseImage = "/logistics-warehouse.jpg";
+const logisticsHeaderImage = "/logistics-header.png";
 
 export default function Logistics() {
   const features = [
@@ -61,8 +62,16 @@ export default function Logistics() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-ms-blue to-ms-blue-dark text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative text-white py-20 min-h-[600px] flex items-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${logisticsHeaderImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Truck className="h-8 w-8 text-white" />
@@ -70,11 +79,11 @@ export default function Logistics() {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               Logistics & Supply Chain Solutions
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl mb-8 text-white max-w-4xl mx-auto">
               Advanced supply chain management solutions utilizing global trade intelligence for seamless, 
               secure, and timely inventory, asset, and personnel movement.
             </p>
-            <Button size="lg" className="bg-white text-ms-blue hover:bg-gray-100" asChild>
+            <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
               <Link href="/contact">Optimize Your Supply Chain</Link>
             </Button>
           </div>
