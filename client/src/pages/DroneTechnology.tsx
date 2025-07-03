@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft, Plane, Eye, Shield, Radio, MapPin, Cpu, Database, Clock } from "lucide-react";
+import { ArrowLeft, Target, Eye, Shield, Radio, MapPin, Cpu, Database, Clock } from "lucide-react";
 
 export default function DroneTechnology() {
   const capabilities = [
@@ -103,7 +103,7 @@ export default function DroneTechnology() {
           </Link>
           
           <div className="flex items-center mb-6">
-            <Plane className="h-16 w-16 text-ms-green mr-6" />
+            <Target className="h-16 w-16 text-ms-green mr-6" />
             <div>
               <h1 className="text-5xl font-bold mb-4">Drone Technology & High-Performance Computing</h1>
               <p className="text-xl text-gray-300 max-w-3xl">

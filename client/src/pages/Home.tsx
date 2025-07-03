@@ -3,7 +3,7 @@ import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Code, Cpu, Brain, Plane, Truck, Shield, ArrowRight, Rocket, Users, ShieldCheck } from "lucide-react";
+import { Code, Cpu, Brain, Target, Truck, Shield, ArrowRight, Rocket, Users, ShieldCheck } from "lucide-react";
 import industriesBackground from "@assets/12_1751503697250.png";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
     },
     {
-      icon: Plane,
+      icon: Target,
       title: "Drone Technology & High-Performance Computing",
       description: "Cutting-edge drone systems integrated with powerful computing infrastructure for autonomous operations, data collection, and mission-critical applications across industries.",
       image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
