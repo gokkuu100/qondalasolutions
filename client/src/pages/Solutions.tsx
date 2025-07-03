@@ -15,7 +15,8 @@ export default function Solutions() {
         {
           name: "Custom Enterprise Software",
           description: "Tailored software solutions designed specifically for your business processes and requirements.",
-          features: ["Custom Development", "Legacy System Integration", "Scalable Architecture", "24/7 Support"]
+          features: ["Custom Development", "Legacy System Integration", "Scalable Architecture", "24/7 Support"],
+          image: "/custom-solutions-image.jpg"
         },
         {
           name: "Cloud Platforms",

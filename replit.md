@@ -154,6 +154,10 @@ Changelog:
   - Added professional business automation image to Process Automation service
   - Enhanced Solutions page card template to display service images
   - Optimized image loading with lazy loading and responsive design
+- July 3, 2025. Added Custom Enterprise Software imagery
+  - Added multi-ethnic programmers image to Custom Enterprise Software service
+  - Shows collaborative development environment with source code review
+  - Enhanced visual representation of custom software development process
 ```
 
 ## User Preferences
