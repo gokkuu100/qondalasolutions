@@ -186,11 +186,11 @@ export default function Solutions() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="mt-20 bg-white/90 backdrop-blur-sm rounded-lg p-12">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="mt-20 bg-white/90 backdrop-blur-sm rounded-lg p-8">
+          <div className="grid lg:grid-cols-2 gap-4 items-center">
             <div className="text-left">
               <h2 className="text-3xl font-bold text-ms-green mb-4">Ready to Transform Your Business?</h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 mb-6">
                 Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
               </p>
               <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
@@ -204,7 +204,7 @@ export default function Solutions() {
               <img 
                 src="/qondala-team-member.png" 
                 alt="Qondala Team Member" 
-                className="max-w-sm w-full h-auto"
+                className="max-w-xs w-full h-auto"
               />
             </div>
           </div>
