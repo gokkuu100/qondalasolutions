@@ -122,28 +122,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Achievements */}
-          <div className="bg-gradient-to-br from-ms-blue/5 to-ms-blue/10 rounded-2xl p-12 mb-20">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl font-bold text-ms-dark mb-4">Our Achievements</h3>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Key milestones that demonstrate our commitment to excellence and client success
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {achievements.map((achievement, index) => {
-                const IconComponent = achievement.icon;
-                return (
-                  <div key={index} className="text-center p-4 bg-white rounded-lg shadow-sm">
-                    <IconComponent className="h-8 w-8 text-ms-blue mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-ms-dark">{achievement.value}</div>
-                    <div className="text-sm text-gray-600">{achievement.label}</div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          
 
           {/* Core Values */}
           <div className="mb-20">
