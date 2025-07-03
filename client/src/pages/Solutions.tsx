@@ -186,26 +186,28 @@ export default function Solutions() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="mt-20 bg-white/90 backdrop-blur-sm rounded-lg p-8">
-          <div className="grid lg:grid-cols-2 gap-4 items-center">
-            <div className="text-left">
-              <h2 className="text-3xl font-bold text-ms-green mb-4">Ready to Transform Your Business?</h2>
-              <p className="text-xl text-gray-600 mb-6">
-                Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
-              </p>
-              <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
-                <Link href="/contact" className="flex items-center gap-2">
-                  Start Your Project
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="/qondala-team-member.png" 
-                alt="Qondala Team Member" 
-                className="max-w-xs w-full h-auto"
-              />
+        <div className="mt-20 relative">
+          <div className="bg-gray-100 rounded-lg overflow-hidden">
+            <div className="flex flex-col lg:flex-row items-end">
+              <div className="text-left p-8 lg:p-12 lg:flex-1 z-10">
+                <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-4">Ready to Transform Your Business?</h2>
+                <p className="text-lg lg:text-xl text-gray-700 mb-6 max-w-lg">
+                  Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
+                </p>
+                <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
+                  <Link href="/contact" className="flex items-center gap-2">
+                    Start Your Project
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="relative lg:flex-shrink-0">
+                <img 
+                  src="/qondala-team-member.png" 
+                  alt="Qondala Team Member" 
+                  className="w-80 h-auto object-contain transform translate-y-4"
+                />
+              </div>
             </div>
           </div>
         </div>
