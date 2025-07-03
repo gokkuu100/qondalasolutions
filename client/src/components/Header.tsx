@@ -75,8 +75,8 @@ export default function Header() {
                 href={item.href}
                 className={`transition-colors duration-200 ${
                   showWhiteBackground
-                    ? `text-ms-dark hover:text-ms-blue ${location === item.href ? "text-ms-blue font-medium" : ""}`
-                    : `text-white hover:text-gray-200 ${location === item.href ? "text-white font-medium" : ""}`
+                    ? `text-ms-dark hover:text-ms-blue ${location === item.href ? "text-ms-green font-medium" : ""}`
+                    : `text-white hover:text-gray-200 ${location === item.href ? "text-ms-green font-medium" : ""}`
                 }`}
               >
                 {item.label}
