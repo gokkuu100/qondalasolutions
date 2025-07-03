@@ -173,6 +173,11 @@ Changelog:
   - Replaced generic stock photo with authentic developer collaboration image
   - Shows developers working on code in modern office environment
   - Enhanced About section with realistic representation of Qondala's technical team
+- July 3, 2025. Added Google Maps integration to Contact page
+  - Updated office address to "200 Southdale Ctr, Edina, MN 55435 US"
+  - Embedded interactive Google Maps showing exact location
+  - Added "Visit Our Office" section with professional map display
+  - Made address clickable to open Google Maps for directions
 ```
 
 ## User Preferences

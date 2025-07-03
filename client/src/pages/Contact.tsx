@@ -71,8 +71,8 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Address",
-      value: "123 Innovation Drive\nTech City, TC 12345",
-      href: "#"
+      value: "200 Southdale Ctr\nEdina, MN 55435 US",
+      href: "https://maps.google.com/?q=200+Southdale+Ctr,+Edina,+MN+55435"
     }
   ];
 
@@ -285,6 +285,30 @@ export default function Contact() {
               </CardContent>
             </Card>
           </div>
+        </div>
+        
+        {/* Map Section */}
+        <div className="mt-16">
+          <Card className="shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl text-ms-dark">Visit Our Office</CardTitle>
+              <p className="text-gray-600">Located in Edina, Minnesota</p>
+            </CardHeader>
+            <CardContent className="p-0">
+              <div className="w-full h-96 rounded-b-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.7806394444444!2d-93.34829832345678!3d44.87619997909877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f62a7c8c7b7b7b%3A0x8c8c8c8c8c8c8c8c!2s200%20Southdale%20Ctr%2C%20Edina%2C%20MN%2055435!5e0!3m2!1sen!2sus!4v1625097600000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Qondala Office Location"
+                />
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
