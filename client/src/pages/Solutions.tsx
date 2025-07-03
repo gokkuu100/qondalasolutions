@@ -188,9 +188,9 @@ export default function Solutions() {
         {/* Call to Action Section */}
         <div className="mt-20 relative overflow-visible max-w-4xl mx-auto">
           <div className="bg-gray-100 rounded-lg relative min-h-[280px] flex flex-col lg:flex-row">
-            <div className="text-left p-6 lg:p-8 lg:flex-1 z-10 flex flex-col justify-center">
-              <h2 className="text-2xl lg:text-3xl font-bold text-ms-green mb-4">Ready to Transform Your Business?</h2>
-              <p className="text-base lg:text-lg text-gray-700 mb-6 max-w-md">
+            <div className="text-left p-8 lg:p-12 lg:flex-1 z-10 flex flex-col justify-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-ms-green mb-6">Ready to Transform Your Business?</h2>
+              <p className="text-lg lg:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed">
                 Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
               </p>
               <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
