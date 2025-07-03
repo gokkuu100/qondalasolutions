@@ -204,8 +204,8 @@ export default function Home() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Professional business team in modern office"
+                src="/developers-working.jpg"
+                alt="Developers collaborating on code in modern office environment"
                 className="rounded-xl shadow-lg w-full h-auto"
               />
             </div>
