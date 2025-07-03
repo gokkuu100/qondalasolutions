@@ -176,8 +176,8 @@ export default function Industries() {
         </Tabs>
 
         {/* Call to Action */}
-        <div className="mt-20 bg-ms-light rounded-2xl p-12 relative overflow-visible min-h-[400px]">
-          <div className="relative z-10 text-left max-w-2xl">
+        <div className="mt-20 bg-ms-light rounded-2xl p-12 relative overflow-visible min-h-[320px] flex items-end">
+          <div className="relative z-10 text-left max-w-2xl pb-8">
             <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
             <p className="text-lg text-gray-600 mb-8">
               We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
