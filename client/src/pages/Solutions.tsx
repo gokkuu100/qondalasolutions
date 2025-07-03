@@ -155,7 +155,7 @@ export default function Solutions() {
         <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8">
           <h2 className="text-3xl font-bold text-ms-dark mb-8 text-center">Additional Services</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <Shield className="h-12 w-12 text-ms-green mx-auto mb-4" />
@@ -177,14 +177,6 @@ export default function Solutions() {
                 <Database className="h-12 w-12 text-ms-green mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-ms-dark mb-2">Data Migration</h3>
                 <p className="text-gray-600">Seamless data transfer and system migration services</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Zap className="h-12 w-12 text-ms-green mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-ms-dark mb-2">Performance Optimization</h3>
-                <p className="text-gray-600">System performance analysis and optimization</p>
               </CardContent>
             </Card>
           </div>
