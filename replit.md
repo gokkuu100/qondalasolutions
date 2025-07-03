@@ -165,7 +165,7 @@ Changelog:
 - July 3, 2025. Implemented dynamic hero carousel with multiple slides
   - Created 3-slide hero carousel with auto-advance and manual navigation
   - Slide 1: Original "Smarter Systems" content with existing background
-  - Slide 2: "Advanced AI" messaging focusing on AI solutions
+  - Slide 2: "Advanced AI" messaging with Qondala business consultation image
   - Slide 3: "Innovation Driven" content with Qondala developer image
   - Added smooth transitions, navigation arrows, and slide indicators
   - Maintained responsive design for mobile and desktop

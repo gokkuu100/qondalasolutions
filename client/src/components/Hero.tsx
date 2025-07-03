@@ -34,8 +34,8 @@ export default function Hero() {
       description: "Harness the power of artificial intelligence to transform your business operations and unlock new possibilities for growth.",
       ctaText: "DISCOVER AI SOLUTIONS",
       ctaLink: "/solutions",
-      desktopBg: heroBackground,
-      mobileBg: mobileBackground
+      desktopBg: "/hero-slide-2.png",
+      mobileBg: "/hero-slide-2.png"
     },
     {
       id: 3,
