@@ -87,21 +87,12 @@ export default function About() {
           {/* About Us Overview */}
           <div className="text-center mb-20">
             <h2 className="text-3xl font-bold text-ms-dark mb-8">About Qondala</h2>
-            <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-600 leading-relaxed">
+            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                Qondala delivers tailored enterprise solutions by integrating leading third-party technologies with deep expertise in customization, ensuring alignment with the distinct operational requirements of each client.
+                Qondala delivers tailored enterprise solutions by integrating leading technologies with deep customization expertise, ensuring alignment with each client's operational requirements.
               </p>
               <p>
-                In the logistics sector, we streamline supply chain management and asset mobility through advanced, high-reliability solutions.
-              </p>
-              <p>
-                We strengthen clinical systems in the healthcare sector and elevate patient engagement leveraging data-driven, interoperable platforms.
-              </p>
-              <p>
-                Beyond sector-specific offerings, we provide comprehensive IT infrastructure services and office supply solutions to both government institutions and private enterprises, reinforcing administrative efficiency and service delivery.
-              </p>
-              <p>
-                Guided by innovation and grounded in sectoral insight, Qondala refines off-the-shelf solutions into high-performance, mission-aligned digital ecosystems that enable sustainable growth and operational excellence.
+                We specialize in logistics optimization, healthcare systems enhancement, and comprehensive IT infrastructure services for government and private enterprises. Our mission-aligned digital ecosystems enable sustainable growth and operational excellence.
               </p>
             </div>
           </div>
