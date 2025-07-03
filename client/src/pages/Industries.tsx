@@ -204,7 +204,7 @@ export default function Industries() {
             <img 
               src="/industries-sales-lady.png" 
               alt="Qondala Industry Expert" 
-              className="w-[400px] h-auto object-contain object-bottom"
+              className="w-[550px] h-auto object-contain object-bottom"
             />
           </div>
         </div>
