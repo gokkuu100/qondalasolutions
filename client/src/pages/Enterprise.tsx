@@ -1,7 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft, Zap, TrendingUp, Shield, Cpu, Cloud, Users, BarChart, Globe, Settings, CheckCircle, Award } from "lucide-react";
+import { ArrowLeft, Zap, TrendingUp, Shield, Cpu, Cloud, Users, BarChart, Globe, Settings, CheckCircle, Award, ArrowRight } from "lucide-react";
+
+// Enterprise business meeting image
+const enterpriseBusinessImage = "/enterprise-business.jpg";
 
 export default function Enterprise() {
   const capabilities = [
@@ -218,6 +221,57 @@ export default function Enterprise() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Enterprise Business Intelligence */}
+      <section className="py-20 bg-ms-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-ms-dark mb-6">Enterprise Business Intelligence</h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Transform your enterprise data into actionable insights with advanced analytics, reporting, and decision-making tools designed for large-scale operations.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-700 font-medium">Real-time Data Analytics</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-700 font-medium">Executive Dashboards</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-700 font-medium">Predictive Analytics</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-700 font-medium">Strategic Decision Support</span>
+                </div>
+              </div>
+
+              <Button className="mt-8 bg-ms-blue hover:bg-ms-blue-dark" asChild>
+                <Link href="/contact">
+                  Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+            
+            <div>
+              <div className="rounded-xl shadow-lg overflow-hidden">
+                <img
+                  src={enterpriseBusinessImage}
+                  alt="Modern enterprise business meeting with data analytics and strategic planning"
+                  className="w-full h-full object-cover rounded-xl"
+                  loading="lazy"
+                  style={{ aspectRatio: '4/3' }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
