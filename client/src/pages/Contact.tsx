@@ -102,7 +102,6 @@ export default function Contact() {
           </p>
         </div>
       </section>
-
       {/* Contact Content */}
       <div className="py-20 bg-ms-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -286,7 +285,7 @@ export default function Contact() {
             <Card className="bg-ms-blue text-black shadow-lg">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-2">Need Immediate Assistance?</h3>
-                <p className="mb-4 text-blue-100">
+                <p className="mb-4 text-[#000000]">
                   For urgent inquiries, our support team is available 24/7
                 </p>
                 <Button 
