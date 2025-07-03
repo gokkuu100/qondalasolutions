@@ -88,7 +88,7 @@ export default function Header() {
             <Button 
               className={`hidden md:block ${
                 showWhiteBackground
-                  ? "bg-ms-blue text-white hover:bg-ms-blue-dark"
+                  ? "bg-ms-green text-white hover:bg-ms-green-dark"
                   : "bg-primary text-white hover:bg-primary/90 border border-primary"
               }`}
               asChild
@@ -102,7 +102,7 @@ export default function Header() {
                 <Button 
                   variant="ghost" 
                   size="icon" 
-                  className={`md:hidden ${showWhiteBackground ? "text-ms-dark hover:text-ms-blue" : "text-white hover:text-gray-200"}`}
+                  className={`md:hidden ${showWhiteBackground ? "text-ms-dark hover:text-ms-green" : "text-white hover:text-gray-200"}`}
                 >
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
@@ -114,8 +114,8 @@ export default function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`text-lg font-medium text-ms-dark hover:text-ms-blue transition-colors ${
-                        location === item.href ? "text-ms-blue" : ""
+                      className={`text-lg font-medium text-ms-dark hover:text-ms-green transition-colors ${
+                        location === item.href ? "text-ms-green" : ""
                       }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
@@ -123,7 +123,7 @@ export default function Header() {
                     </Link>
                   ))}
                   <Button 
-                    className="bg-ms-blue text-white hover:bg-ms-blue-dark mt-4"
+                    className="bg-ms-green text-white hover:bg-ms-green-dark mt-4"
                     asChild
                   >
                     <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
