@@ -93,8 +93,6 @@ export default function Solutions() {
 
         {/* Solutions Section with Tabs */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-ms-dark mb-8 text-center">Our Solutions</h2>
-          
           <Tabs defaultValue="software" className="w-full">
             <TabsList className="flex justify-center gap-4 bg-transparent mb-8 h-auto p-0">
               <TabsTrigger 
