@@ -142,18 +142,18 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
-              <Card key={index} className="group bg-ms-gray card-hover">
-                <CardContent className="p-6">
+              <Card key={index} className="group bg-ms-gray card-hover h-full flex flex-col">
+                <CardContent className="p-6 flex flex-col h-full">
                   <img
                     src={industry.image}
                     alt={industry.title}
                     className="rounded-lg w-full h-40 object-cover mb-4"
                   />
                   <h3 className="text-xl font-bold text-ms-dark mb-3">{industry.title}</h3>
-                  <p className="text-gray-600 mb-4">{industry.description}</p>
+                  <p className="text-gray-600 mb-4 flex-grow">{industry.description}</p>
                   <Link
                     href={industry.title === "Healthcare" ? "/healthcare" : industry.title === "Logistics" ? "/logistics" : "/industries"}
-                    className="inline-flex items-center text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors"
+                    className="inline-flex items-center text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors mt-auto"
                   >
                     <span>Learn More</span>
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" />
