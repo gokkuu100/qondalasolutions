@@ -176,25 +176,25 @@ export default function Industries() {
         </Tabs>
 
         {/* Call to Action */}
-        <div className="mt-20 relative overflow-visible max-w-4xl mx-auto">
-          <div className="bg-gray-100 rounded-lg relative min-h-[280px] flex flex-col lg:flex-row">
-            <div className="text-left p-6 lg:p-8 lg:flex-1 z-10 flex flex-col justify-center">
-              <h2 className="text-2xl lg:text-3xl font-bold text-ms-green mb-6">Don't See Your Industry?</h2>
-              <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
-                <Link href="/contact" className="flex items-center gap-2">
-                  Contact Our Experts
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-            <div className="relative flex items-end justify-end">
-              <img 
-                src="/industries-sales-lady.png" 
-                alt="Qondala Industry Expert" 
-                className="w-[400px] lg:w-[550px] h-auto object-contain object-bottom"
-                style={{ marginRight: '-20px' }}
-              />
-            </div>
+        <div className="mt-20 bg-ms-light rounded-2xl p-12 text-center">
+          <h2 className="text-3xl font-bold text-ms-dark mb-4">Don't See Your Industry?</h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
+            Contact us to discuss how we can help transform your business.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="bg-ms-blue text-black px-8 py-3 rounded-md font-semibold hover:bg-ms-blue-dark transition-colors duration-200 inline-block"
+            >
+              Contact Our Experts
+            </a>
+            <a
+              href="/solutions"
+              className="border-2 border-ms-blue text-ms-blue px-8 py-3 rounded-md font-semibold hover:bg-ms-blue hover:text-white transition-all duration-200 inline-block"
+            >
+              View All Solutions
+            </a>
           </div>
         </div>
       </div>
