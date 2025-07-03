@@ -155,7 +155,7 @@ export default function Home() {
                     href={industry.title === "Healthcare" ? "/healthcare" : industry.title === "Logistics" ? "/logistics" : "/industries"}
                     className="inline-flex items-center text-ms-blue font-semibold hover:text-ms-blue-dark transition-colors"
                   >
-                    <span>Explore {industry.title}</span>
+                    <span>Learn More</span>
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" />
                   </Link>
                 </CardContent>
