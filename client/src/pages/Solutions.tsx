@@ -153,20 +153,6 @@ export default function Solutions() {
           </Tabs>
         </div>
 
-        {/* Call to Action Section */}
-        <div className="text-center bg-white/90 backdrop-blur-sm rounded-lg p-12">
-          <h2 className="text-3xl font-bold text-ms-dark mb-4">Ready to Transform Your Business?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
-          </p>
-          <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
-            <Link href="/contact" className="flex items-center gap-2">
-              Start Your Project
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
-
 
 
         {/* Additional Services */}
@@ -197,6 +183,20 @@ export default function Solutions() {
               );
             })}
           </div>
+        </div>
+
+        {/* Call to Action Section */}
+        <div className="mt-20 text-center bg-white/90 backdrop-blur-sm rounded-lg p-12">
+          <h2 className="text-3xl font-bold text-ms-dark mb-4">Ready to Transform Your Business?</h2>
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Get in touch with our experts to discuss your specific requirements and learn how our solutions can drive your business forward.
+          </p>
+          <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
+            <Link href="/contact" className="flex items-center gap-2">
+              Start Your Project
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </div>
     </div>
