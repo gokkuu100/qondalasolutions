@@ -58,7 +58,7 @@ export default function Industries() {
     {
       name: "Custom Solutions",
       icon: Wrench,
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "/custom-solutions-new.png",
       description: "Get tailored technology solutions designed specifically for your unique business needs and operational requirements.",
       solutions: ["Custom Development", "Specialized Integration", "Unique Requirements", "Consultative Approach"],
       benefits: ["Perfect Fit", "Unique Advantage", "Specialized Support", "Long-term Partnership"]
