@@ -10,7 +10,7 @@ export default function Industries() {
     {
       name: "Healthcare",
       icon: Heart,
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: "/healthcare-image.jpg",
       description: "Transform healthcare delivery with data-driven platforms that enhance patient outcomes, streamline operations, and foster collaboration across healthcare ecosystems.",
       solutions: ["Electronic Health Records", "Patient Management Systems", "Medical Device Integration", "Healthcare Analytics"],
       benefits: ["Improved Patient Care", "Operational Efficiency", "Data-Driven Decisions", "Enhanced Collaboration"]
@@ -117,6 +117,8 @@ export default function Industries() {
                       src={industry.image} 
                       alt={industry.name}
                       className="w-full h-80 object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute top-6 left-6 bg-ms-green rounded-full p-4">
                       <IconComponent className="text-black h-8 w-8" />
