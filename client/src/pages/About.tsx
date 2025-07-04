@@ -154,34 +154,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Our Journey */}
-          <div className="mb-20 bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Journey</h2>
-              <p className="text-gray-600 mb-16">Key milestones in our emergence as a forward-thinking technology solutions company.</p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
-                <div className="flex flex-col items-center">
-                  <div className="text-5xl font-bold text-green-500 mb-4">2023</div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">Qondala Founded</h3>
-                  <p className="text-gray-600 text-center">Launched with a mission to engineer intelligent software and digital infrastructure that bridges innovation and impact.</p>
-                </div>
-                
-                <div className="flex flex-col items-center">
-                  <div className="text-5xl font-bold text-green-500 mb-4">2024</div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">Strategic Collaborations</h3>
-                  <p className="text-gray-600 text-center">Formed pivotal partnerships with private sector, laying the foundation for trusted delivery in complex technology environments.</p>
-                </div>
-                
-                <div className="flex flex-col items-center">
-                  <div className="text-5xl font-bold text-green-500 mb-4">2025</div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">Digital Evolution</h3>
-                  <p className="text-gray-600 text-center">Introduced next-gen solutions in cloud, AI, and drone technologies—driving transformation across logistics, defense, and public service landscapes.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Leadership Team */}
           <div className="mb-20 bg-green-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
