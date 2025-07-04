@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 import qondalaLogo from "@assets/Logo Q copy_1751396222158.png";
 
 export default function Footer() {
@@ -43,15 +43,6 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-black" />
-              </a>
-              <a
-                href="https://facebook.com/qondala"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-ms-blue rounded-full flex items-center justify-center hover:bg-ms-blue-dark transition-colors duration-200"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5 text-black" />
               </a>
             </div>
           </div>
