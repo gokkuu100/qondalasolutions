@@ -99,10 +99,10 @@ export default function About() {
           <div className="text-center mb-20">
             <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                Qondala delivers tailored enterprise solutions by integrating leading technologies with deep customization expertise, ensuring alignment with each client's operational requirements.
+                Qondala is a technology company delivering innovative software, drone solutions, advanced hardware, and AI services to power smarter, more connected operations. With 22 years of combined experience, our team builds solutions that integrate systems and accelerate outcomes. Our platforms streamline workflows, unify data, and enable intelligent decisions. We provide real-time aerial insights through drone systems for logistics, agriculture, security, and environmental monitoring.
               </p>
               <p>
-                We specialize in logistics optimization, healthcare systems enhancement, and comprehensive IT infrastructure services for government and private enterprises. Our mission-aligned digital ecosystems enable sustainable growth and operational excellence.
+                From high-performance computing to predictive AI, we help organizations automate, optimize, and scale. By bridging digital intelligence with physical assets, Qondala drives measurable impact across industries.
               </p>
             </div>
           </div>
