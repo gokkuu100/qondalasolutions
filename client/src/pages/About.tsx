@@ -154,6 +154,34 @@ export default function About() {
             </div>
           </div>
 
+          {/* Our Journey */}
+          <div className="mb-20 bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Journey</h2>
+              <p className="text-gray-600 mb-16">Key milestones in our growth and evolution as a leading technology solutions provider.</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
+                <div className="flex flex-col items-center">
+                  <div className="text-5xl font-bold text-green-500 mb-4">2009</div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">Company Founded</h3>
+                  <p className="text-gray-600 text-center">Established with a vision to transform enterprise technology solutions</p>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                  <div className="text-5xl font-bold text-green-500 mb-4">2015</div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">Global Expansion</h3>
+                  <p className="text-gray-600 text-center">Expanded operations to serve clients across 25+ countries worldwide</p>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                  <div className="text-5xl font-bold text-green-500 mb-4">2020</div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">AI Innovation</h3>
+                  <p className="text-gray-600 text-center">Launched advanced AI and machine learning capabilities for enterprise clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Leadership Team */}
           <div className="mb-20 bg-green-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
