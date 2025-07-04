@@ -104,7 +104,7 @@ export default function Hero() {
           {/* Content */}
           <div className="relative z-10 h-full flex items-end md:items-center pb-16 md:pb-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="text-left max-w-4xl pt-16 md:pt-20 ml-[44px] mr-[44px]">
+              <div className="text-left max-w-4xl pt-16 md:pt-20 ml-[16px] mr-[16px]">
                 <div className="fade-in">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-8 leading-tight">
                     <div className="mb-1 md:mb-2">{slide.title.line1}</div>
@@ -125,7 +125,6 @@ export default function Hero() {
           </div>
         </div>
       ))}
-
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
@@ -139,7 +138,6 @@ export default function Hero() {
       >
         <ChevronRight className="h-6 w-6" />
       </button>
-
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
         {slides.map((_, index) => (
