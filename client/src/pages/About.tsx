@@ -64,7 +64,16 @@ export default function About() {
   ];
 
   return (
-    <div>
+    <div 
+      className="relative min-h-screen"
+      style={{
+        backgroundImage: 'url(/about-background.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       {/* Hero Section */}
       <section 
         className="relative h-96 bg-cover bg-no-repeat flex items-center"
