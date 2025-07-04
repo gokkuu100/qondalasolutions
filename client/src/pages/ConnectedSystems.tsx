@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Brain, Database, Zap, Shield, Network, Cloud, CheckCircle, ArrowRight } from "lucide-react";
+import { Brain, Database, Zap, Shield, Network, Cloud, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
 
 export default function ConnectedSystems() {
   const features = [
@@ -76,22 +76,27 @@ export default function ConnectedSystems() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-ms-blue to-ms-blue-dark text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Brain className="h-8 w-8 text-white" />
+      <section className="bg-black text-white py-20 min-h-[400px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="flex items-start mb-8">
+            <Link href="/" className="flex items-center text-gray-400 hover:text-white transition-colors duration-200">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to Home
+            </Link>
+          </div>
+          <div className="flex items-start">
+            <div className="mr-6">
+              <Network className="h-12 w-12 text-ms-green" />
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Connected Systems & Data Integration
-            </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
-              Implementation of unified data and intelligent tools to improve efficiency, security, 
-              and real-time decision-making in logistics and healthcare.
-            </p>
-            <Button size="lg" className="bg-white text-ms-blue hover:bg-gray-100" asChild>
-              <Link href="/contact">Connect Your Systems</Link>
-            </Button>
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+                Connected Systems & Data Integration
+              </h1>
+              <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl">
+                Implementation of unified data and intelligent tools to improve efficiency, security, 
+                and real-time decision-making in logistics and healthcare.
+              </p>
+            </div>
           </div>
         </div>
       </section>
