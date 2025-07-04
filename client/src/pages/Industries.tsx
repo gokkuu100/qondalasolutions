@@ -162,7 +162,7 @@ export default function Industries() {
                             <ArrowRight className="h-5 w-5" />
                           </Link>
                         </Button>
-                        <Button size="lg" variant="outline" className="border-ms-green text-ms-green hover:bg-ms-green hover:text-black w-full" asChild>
+                        <Button size="lg" variant="outline" className="border-ms-green text-black hover:bg-ms-green hover:text-black w-full" asChild>
                           <Link href="/solutions" className="flex items-center justify-center gap-2">
                             View All Solutions
                             <ArrowRight className="h-5 w-5" />
