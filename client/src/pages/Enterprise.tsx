@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { ArrowLeft, Zap, TrendingUp, Shield, Cpu, Cloud, Users, BarChart, Globe, Settings, CheckCircle, Award, ArrowRight } from "lucide-react";
 
 // Enterprise business meeting image
-const enterpriseBusinessImage = "/enterprise-business.jpg";
+const enterpriseBusinessImage = "/enterprise-business-optimized.jpg";
 
 export default function Enterprise() {
   const capabilities = [

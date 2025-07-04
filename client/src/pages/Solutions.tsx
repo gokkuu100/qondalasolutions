@@ -65,7 +65,7 @@ export default function Solutions() {
           name: "Process Automation",
           description: "Intelligent automation systems that optimize workflows and reduce manual effort.",
           features: ["Workflow Automation", "Document Processing", "Quality Control", "Performance Monitoring"],
-          image: "/business-automation-image.jpg"
+          image: "/business-automation-optimized.jpg"
         },
         {
           name: "Data Analytics",

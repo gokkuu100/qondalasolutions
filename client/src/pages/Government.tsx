@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { ArrowLeft, Shield, Database, FileText, Users, Clock, CheckCircle, Building, Lock, Globe, ArrowRight } from "lucide-react";
 
 // Government voting station image
-const votingStationImage = "/government-voting.jpg";
+const votingStationImage = "/government-voting-optimized.jpg";
 
 export default function Government() {
   const capabilities = [

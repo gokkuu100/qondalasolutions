@@ -26,7 +26,7 @@ export default function Industries() {
     {
       name: "Transportation",
       icon: Truck,
-      image: "/transportation-image.jpg",
+      image: "/transportation-optimized.jpg",
       description: "Optimize your logistics and transportation networks with intelligent fleet management, route optimization, and real-time tracking systems.",
       solutions: ["Fleet Management", "Route Optimization", "Real-time Tracking", "Fuel Management"],
       benefits: ["Reduced Costs", "Improved Delivery Times", "Enhanced Safety", "Environmental Impact"]
@@ -34,7 +34,7 @@ export default function Industries() {
     {
       name: "Security",
       icon: Shield,
-      image: "/security-image.jpg",
+      image: "/security-optimized.jpg",
       description: "Protect your assets and data with comprehensive cybersecurity solutions, surveillance systems, and advanced threat detection.",
       solutions: ["Cybersecurity Solutions", "Surveillance Systems", "Access Control", "Threat Detection"],
       benefits: ["Enhanced Security", "Risk Mitigation", "Compliance", "Peace of Mind"]
@@ -42,7 +42,7 @@ export default function Industries() {
     {
       name: "Enterprise",
       icon: Building,
-      image: "/enterprise-business-new.jpg",
+      image: "/enterprise-business-new-optimized.jpg",
       description: "Scale your enterprise operations with large-scale solutions, system integration, and comprehensive digital platforms.",
       solutions: ["Enterprise Resource Planning", "System Integration", "Digital Platforms", "Data Analytics"],
       benefits: ["Scalability", "Integration", "Efficiency", "Data-Driven Decisions"]

@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Truck, MapPin, Package, BarChart3, Globe, Zap, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
 
 // Warehouse logistics image
-const warehouseImage = "/logistics-warehouse.jpg";
+const warehouseImage = "/logistics-warehouse-optimized.jpg";
 const logisticsHeaderImage = "/logistics-header.png";
 
 export default function Logistics() {

@@ -37,17 +37,17 @@ export default function Home() {
     {
       title: "Logistics",
       description: "Global networks, advanced supply chain applications, and trade intelligence solutions.",
-      image: "/logistics-warehouse.jpg"
+      image: "/logistics-warehouse-optimized.jpg"
     },
     {
       title: "Government Agencies",
       description: "High-quality office supplies, equipment, and integrated IT solutions for government operations.",
-      image: "/government-voting.jpg"
+      image: "/government-voting-optimized.jpg"
     },
     {
       title: "Enterprise",
       description: "Connected systems and digital transformation solutions for large-scale operations.",
-      image: "/enterprise-business.jpg"
+      image: "/enterprise-business-optimized.jpg"
     }
   ];
 
@@ -204,7 +204,7 @@ export default function Home() {
             </div>
             <div>
               <img
-                src="/developers-working.jpg"
+                src="/developers-working-optimized.jpg"
                 alt="Developers collaborating on code in modern office environment"
                 className="rounded-xl shadow-lg w-full h-auto"
               />

@@ -88,7 +88,7 @@ export default function Contact() {
       <section 
         className="relative h-96 bg-cover bg-no-repeat flex items-center"
         style={{ 
-          backgroundImage: 'url(/contact-hero.png)',
+          backgroundImage: 'url(/contact-hero-optimized.jpg)',
           backgroundPosition: 'center 60%'
         }}
       >
