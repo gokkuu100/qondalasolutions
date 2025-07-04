@@ -10,7 +10,7 @@ export default function Industries() {
     {
       name: "Healthcare",
       icon: Heart,
-      image: "/healthcare-image.jpg",
+      image: "/medical-workers-optimized.jpg",
       description: "Transform healthcare delivery with data-driven platforms that enhance patient outcomes, streamline operations, and foster collaboration across healthcare ecosystems.",
       solutions: ["Electronic Health Records", "Patient Management Systems", "Medical Device Integration", "Healthcare Analytics"],
       benefits: ["Improved Patient Care", "Operational Efficiency", "Data-Driven Decisions", "Enhanced Collaboration"]
@@ -18,7 +18,7 @@ export default function Industries() {
     {
       name: "Manufacturing",
       icon: Factory,
-      image: "/manufacturing-image.jpg",
+      image: "/manufacturing-optimized.jpg",
       description: "Transform your manufacturing operations with smart factory solutions, predictive maintenance, and production optimization technologies.",
       solutions: ["Smart Factory Automation", "Predictive Maintenance", "Quality Control Systems", "Supply Chain Optimization"],
       benefits: ["Increased Efficiency", "Reduced Downtime", "Cost Savings", "Quality Improvement"]
@@ -50,7 +50,7 @@ export default function Industries() {
     {
       name: "Business Automation",
       icon: Cog,
-      image: "/business-automation-updated.png",
+      image: "/business-automation-optimized.jpg",
       description: "Streamline your business processes with workflow automation, process optimization, and digital transformation solutions.",
       solutions: ["Workflow Automation", "Process Optimization", "Digital Transformation", "Business Intelligence"],
       benefits: ["Process Efficiency", "Cost Reduction", "Accuracy", "Competitive Advantage"]
@@ -58,7 +58,7 @@ export default function Industries() {
     {
       name: "Custom Solutions",
       icon: Wrench,
-      image: "/custom-solutions-new.png",
+      image: "/custom-solutions-optimized.jpg",
       description: "Get tailored technology solutions designed specifically for your unique business needs and operational requirements.",
       solutions: ["Custom Development", "Specialized Integration", "Unique Requirements", "Consultative Approach"],
       benefits: ["Perfect Fit", "Unique Advantage", "Specialized Support", "Long-term Partnership"]
