@@ -203,6 +203,12 @@ Changelog:
   - Applied optimization to Home, Industries, Solutions, Government, Logistics, Enterprise, and Contact pages
   - Ensured consistent loading performance with compressed images under 228KB
   - Maintained visual quality while achieving 99%+ file size reduction across all website assets
+- July 4, 2025. Enhanced footer and Connected Systems page design
+  - Increased footer logo size from 32px to 48px for better visibility
+  - Updated social media links with authentic Qondala accounts (Twitter: @Qondala1, Instagram: @qondala4)
+  - Added Instagram social media icon to footer navigation
+  - Applied black hero section design to Connected Systems page matching drone technology style
+  - Added "Back to Home" navigation and green Network icon to Connected Systems hero
 ```
 
 ## User Preferences
