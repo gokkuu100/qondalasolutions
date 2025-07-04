@@ -190,42 +190,6 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          {/* Company Timeline */}
-          <div className="bg-ms-light rounded-2xl p-12">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-ms-dark mb-4">Our Journey</h2>
-              <p className="text-lg text-gray-600">
-                Key milestones in our growth and evolution as a leading technology solutions provider.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  year: "2009",
-                  title: "Company Founded",
-                  description: "Established with a vision to transform enterprise technology solutions"
-                },
-                {
-                  year: "2015",
-                  title: "Global Expansion",
-                  description: "Expanded operations to serve clients across 25+ countries worldwide"
-                },
-                {
-                  year: "2020",
-                  title: "AI Innovation",
-                  description: "Launched advanced AI and machine learning capabilities for enterprise clients"
-                }
-              ].map((milestone, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl font-bold text-ms-blue mb-2">{milestone.year}</div>
-                  <h3 className="text-xl font-bold text-ms-dark mb-2">{milestone.title}</h3>
-                  <p className="text-gray-600">{milestone.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>
