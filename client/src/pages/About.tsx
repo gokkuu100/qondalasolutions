@@ -49,9 +49,9 @@ export default function About() {
       image: "/ben-nielsen.png"
     },
     {
-      name: "Emily Rodriguez",
+      name: "Hussein Mohamed",
       role: "VP of Operations",
-      initials: "ER",
+      initials: "HM",
       bio: "Operations excellence with focus on process optimization and efficiency"
     },
     {
