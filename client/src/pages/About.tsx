@@ -160,23 +160,17 @@ export default function About() {
               </p>
             </div>
             
-            <div className="space-y-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {team.map((member, index) => (
-                <div key={index} className="bg-gradient-to-r from-ms-light/50 to-white rounded-xl p-8 flex flex-col md:flex-row items-center md:items-start gap-6 hover:shadow-lg transition-shadow">
-                  <div className="flex-shrink-0">
-                    <div className="w-24 h-24 bg-gradient-to-br from-ms-blue to-ms-blue/80 rounded-full flex items-center justify-center shadow-lg">
-                      <span className="text-white text-2xl font-bold">{member.initials}</span>
-                    </div>
+                <div key={index} className="text-center hover:shadow-lg transition-shadow bg-white rounded-xl p-6 border border-gray-100">
+                  <div className="w-20 h-20 bg-gradient-to-br from-ms-blue to-ms-blue/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <span className="text-white text-xl font-bold">{member.initials}</span>
                   </div>
-                  <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-2xl font-bold text-ms-dark mb-2">{member.name}</h3>
-                    <div className="mb-4">
-                      <Badge variant="outline" className="text-ms-blue border-ms-blue bg-ms-blue/10 px-4 py-1">
-                        {member.role}
-                      </Badge>
-                    </div>
-                    <p className="text-gray-600 text-lg leading-relaxed">{member.bio}</p>
-                  </div>
+                  <h3 className="text-lg font-bold text-ms-dark mb-2">{member.name}</h3>
+                  <Badge variant="outline" className="text-ms-blue border-ms-blue bg-ms-blue/10 mb-3 text-xs">
+                    {member.role}
+                  </Badge>
+                  <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               ))}
             </div>
