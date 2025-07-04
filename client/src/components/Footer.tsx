@@ -50,7 +50,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Solutions</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link href="/solutions" className="hover:text-white transition-colors duration-200">
+                <Link href="/advanced-software" className="hover:text-white transition-colors duration-200">
                   Software Development
                 </Link>
               </li>
@@ -60,12 +60,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/solutions" className="hover:text-white transition-colors duration-200">
+                <Link href="/drone-technology" className="hover:text-white transition-colors duration-200">
                   AI & Automation
                 </Link>
               </li>
               <li>
-                <Link href="/solutions" className="hover:text-white transition-colors duration-200">
+                <Link href="/connected-systems" className="hover:text-white transition-colors duration-200">
                   Cloud Services
                 </Link>
               </li>
@@ -75,22 +75,22 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Industries</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link href="/industries" className="hover:text-white transition-colors duration-200">
-                  Manufacturing
+                <Link href="/logistics" className="hover:text-white transition-colors duration-200">
+                  Logistics
                 </Link>
               </li>
               <li>
-                <Link href="/industries" className="hover:text-white transition-colors duration-200">
-                  Transportation
+                <Link href="/healthcare" className="hover:text-white transition-colors duration-200">
+                  Healthcare
                 </Link>
               </li>
               <li>
-                <Link href="/industries" className="hover:text-white transition-colors duration-200">
-                  Security
+                <Link href="/government" className="hover:text-white transition-colors duration-200">
+                  Government
                 </Link>
               </li>
               <li>
-                <Link href="/industries" className="hover:text-white transition-colors duration-200">
+                <Link href="/enterprise" className="hover:text-white transition-colors duration-200">
                   Enterprise
                 </Link>
               </li>
@@ -100,8 +100,8 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
           <p>
             &copy; 2024 Qondala. All rights reserved. | 
-            <Link href="/privacy" className="hover:text-white transition-colors duration-200 ml-1 mr-1">Privacy Policy</Link> | 
-            <Link href="/terms" className="hover:text-white transition-colors duration-200 ml-1">Terms of Service</Link>
+            <Link href="/about" className="hover:text-white transition-colors duration-200 ml-1 mr-1">About Us</Link> | 
+            <Link href="/contact" className="hover:text-white transition-colors duration-200 ml-1">Contact</Link>
           </p>
         </div>
       </div>
