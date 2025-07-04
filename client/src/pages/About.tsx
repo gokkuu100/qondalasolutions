@@ -55,10 +55,11 @@ export default function About() {
       bio: "Operations excellence with focus on process optimization and efficiency"
     },
     {
-      name: "David Kim",
-      role: "Chief Security Officer",
-      initials: "DK",
-      bio: "Cybersecurity expert with extensive enterprise protection experience"
+      name: "Morris Mbetsa",
+      role: "Head of Security",
+      initials: "MM",
+      bio: "Security expert specializing in enterprise protection and risk management",
+      image: "/morris-mbetsa.jpg"
     }
   ];
 
