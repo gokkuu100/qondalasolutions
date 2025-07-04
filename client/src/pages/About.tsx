@@ -154,44 +154,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Our Journey */}
-          <div className="mb-20">
-            <h2 className="text-4xl font-bold text-gray-600 mb-4 text-left">Our Journey</h2>
-            <p className="text-gray-600 mb-12 text-left">Key milestones in our emergence as a forward-thinking technology solutions company.</p>
-            
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-green-600">2023</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Qondala Founded</h3>
-                  <p className="text-gray-600">Launched with a mission to engineer intelligent software and digital infrastructure that bridges innovation and impact.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-blue-600">2024</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Strategic Collaborations</h3>
-                  <p className="text-gray-600">Formed pivotal partnerships with private sector, laying the foundation for trusted delivery in complex technology environments.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-yellow-600">2025</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Digital Evolution</h3>
-                  <p className="text-gray-600">Introduced next-gen solutions in cloud, AI, and drone technologies—driving transformation across logistics, defense, and public service landscapes.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Leadership Team */}
           <div className="mb-20 bg-green-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
