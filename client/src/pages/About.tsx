@@ -192,7 +192,7 @@ export default function About() {
           </div>
 
           {/* Our Journey */}
-          <div className="mb-20 bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8 -mb-4 sm:-mb-6 lg:-mb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Journey</h2>
               <p className="text-gray-600 mb-16">Key milestones in our emergence as a forward-thinking technology solutions company.</p>
