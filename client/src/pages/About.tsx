@@ -153,26 +153,56 @@ export default function About() {
 
           {/* Leadership Team */}
           <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-ms-dark mb-4">Leadership Team</h2>
-              <p className="text-lg text-gray-600">
-                Meet the experienced professionals driving Qondala's vision and innovation.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {team.map((member, index) => (
-                <div key={index} className="text-center hover:shadow-lg transition-shadow bg-white rounded-xl p-6 border border-gray-100">
-                  <div className="w-20 h-20 bg-gradient-to-br from-ms-blue to-ms-blue/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <span className="text-white text-xl font-bold">{member.initials}</span>
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              {/* Left Content */}
+              <div>
+                <h2 className="text-4xl font-bold text-ms-dark mb-4">Meet The Team</h2>
+                <h3 className="text-4xl font-bold text-ms-dark mb-6">Our Professionals</h3>
+                <div className="w-16 h-1 bg-ms-blue mb-6"></div>
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  Meet the experienced professionals driving Qondala's vision and innovation with deep expertise in enterprise technology solutions.
+                </p>
+                <button className="bg-ms-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-ms-blue/90 transition-colors">
+                  READ MORE
+                </button>
+              </div>
+
+              {/* Right Content - Team Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {team.map((member, index) => (
+                  <div key={index} className="text-center">
+                    {/* Profile Image */}
+                    <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-ms-blue/20 to-ms-blue/40 flex items-center justify-center">
+                        <span className="text-ms-blue text-4xl font-bold">{member.initials}</span>
+                      </div>
+                    </div>
+                    
+                    {/* Name */}
+                    <h4 className="text-lg font-bold text-ms-dark mb-1 uppercase tracking-wide">
+                      {member.name}
+                    </h4>
+                    
+                    {/* Role */}
+                    <p className="text-ms-blue text-sm font-medium mb-3">
+                      {member.role}
+                    </p>
+                    
+                    {/* Social Icons */}
+                    <div className="flex justify-center space-x-2">
+                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center hover:bg-ms-blue transition-colors cursor-pointer">
+                        <span className="text-white text-xs font-bold">f</span>
+                      </div>
+                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center hover:bg-ms-blue transition-colors cursor-pointer">
+                        <span className="text-white text-xs font-bold">@</span>
+                      </div>
+                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center hover:bg-ms-blue transition-colors cursor-pointer">
+                        <span className="text-white text-xs font-bold">in</span>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-ms-dark mb-2">{member.name}</h3>
-                  <Badge variant="outline" className="text-ms-blue border-ms-blue bg-ms-blue/10 mb-3 text-xs">
-                    {member.role}
-                  </Badge>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 
