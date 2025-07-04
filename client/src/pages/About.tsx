@@ -64,17 +64,16 @@ export default function About() {
   ];
 
   return (
-    <div 
-      className="relative min-h-screen"
-      style={{
-        backgroundImage: 'url(/about-background.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      {/* Hero Section */}
+    <div className="relative min-h-screen">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: 'url(/about-background.png)' }}
+      ></div>
+      
+      {/* Content Wrapper */}
+      <div className="relative z-10">
+        {/* Hero Section */}
       <section 
         className="relative h-96 bg-cover bg-no-repeat flex items-center"
         style={{ 
@@ -228,6 +227,7 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
