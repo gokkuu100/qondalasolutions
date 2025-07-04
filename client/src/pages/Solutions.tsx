@@ -211,7 +211,7 @@ export default function Solutions() {
             </div>
             <div className="relative flex items-end justify-end">
               <img 
-                src="/qondala-team-member.png" 
+                src="/qondala-team-member-optimized.jpg" 
                 alt="Qondala Team Member" 
                 className="w-[400px] lg:w-[550px] h-auto object-contain object-bottom"
                 style={{ marginRight: '-20px' }}

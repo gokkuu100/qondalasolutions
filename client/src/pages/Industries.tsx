@@ -197,7 +197,7 @@ export default function Industries() {
           </div>
           <div className="lg:hidden flex justify-center bg-ms-light">
             <img 
-              src="/industries-sales-lady.png" 
+              src="/industries-sales-lady-optimized.jpg" 
               alt="Qondala Industry Expert" 
               className="w-64 h-auto object-contain"
             />
@@ -230,7 +230,7 @@ export default function Industries() {
             {/* Desktop Sales Lady Image */}
             <div className="absolute bottom-0 right-0">
               <img 
-                src="/industries-sales-lady.png" 
+                src="/industries-sales-lady-optimized.jpg" 
                 alt="Qondala Industry Expert" 
                 className="w-[550px] h-auto object-contain object-bottom"
               />

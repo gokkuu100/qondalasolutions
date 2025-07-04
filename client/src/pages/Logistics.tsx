@@ -6,7 +6,7 @@ import { Truck, MapPin, Package, BarChart3, Globe, Zap, CheckCircle, ArrowRight,
 
 // Warehouse logistics image
 const warehouseImage = "/logistics-warehouse-optimized.jpg";
-const logisticsHeaderImage = "/logistics-header.png";
+const logisticsHeaderImage = "/logistics-header-optimized.jpg";
 
 export default function Logistics() {
   const features = [

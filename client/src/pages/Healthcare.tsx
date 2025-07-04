@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Heart, Users, Database, Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
 // Import images
 const medicalWorkersImage = "/medical-workers.jpg";
-const healthHeaderImage = "/health-header-dark.png";
+const healthHeaderImage = "/health-header-dark-optimized.jpg";
 
 export default function Healthcare() {
   const features = [
