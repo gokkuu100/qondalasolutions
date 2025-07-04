@@ -42,10 +42,11 @@ export default function About() {
       image: "/misky-abshir.jpg"
     },
     {
-      name: "Michael Chen",
+      name: "Ben J. Nielsen",
       role: "Chief Technology Officer",
-      initials: "MC",
-      bio: "Expert in AI/ML technologies and scalable system architecture"
+      initials: "BN",
+      bio: "Technology visionary with expertise in enterprise systems and innovation",
+      image: "/ben-nielsen.png"
     },
     {
       name: "Emily Rodriguez",
