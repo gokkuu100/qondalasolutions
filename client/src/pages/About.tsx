@@ -152,56 +152,28 @@ export default function About() {
           </div>
 
           {/* Leadership Team */}
-          <div className="mb-20">
-            <div className="grid lg:grid-cols-2 gap-16 items-start">
-              {/* Left Content */}
-              <div>
-                <h2 className="text-4xl font-bold text-ms-dark mb-4">Meet The Team</h2>
-                <h3 className="text-4xl font-bold text-ms-dark mb-6">Our Professionals</h3>
-                <div className="w-16 h-1 bg-ms-blue mb-6"></div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  Meet the experienced professionals driving Qondala's vision and innovation with deep expertise in enterprise technology solutions.
-                </p>
-                <button className="bg-ms-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-ms-blue/90 transition-colors">
-                  READ MORE
-                </button>
-              </div>
-
-              {/* Right Content - Team Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {team.map((member, index) => (
-                  <div key={index} className="text-center">
-                    {/* Profile Image */}
-                    <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-ms-blue/20 to-ms-blue/40 flex items-center justify-center">
-                        <span className="text-ms-blue text-4xl font-bold">{member.initials}</span>
+          <div className="mb-20 bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold text-gray-600 mb-12 text-left">Meet our team!</h2>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {team.map((member, index) => {
+                  const bgColors = ['bg-yellow-100', 'bg-blue-100', 'bg-yellow-100', 'bg-blue-100'];
+                  return (
+                    <div key={index} className={`relative h-80 rounded-lg overflow-hidden ${bgColors[index]}`}>
+                      {/* Profile Image Area */}
+                      <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                        <span className="text-gray-600 text-6xl font-bold">{member.initials}</span>
+                      </div>
+                      
+                      {/* Overlay Text */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4">
+                        <h3 className="font-bold text-lg mb-1">{member.name}</h3>
+                        <p className="text-sm opacity-90">{member.role}</p>
                       </div>
                     </div>
-                    
-                    {/* Name */}
-                    <h4 className="text-lg font-bold text-ms-dark mb-1 uppercase tracking-wide">
-                      {member.name}
-                    </h4>
-                    
-                    {/* Role */}
-                    <p className="text-ms-blue text-sm font-medium mb-3">
-                      {member.role}
-                    </p>
-                    
-                    {/* Social Icons */}
-                    <div className="flex justify-center space-x-2">
-                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center hover:bg-ms-blue transition-colors cursor-pointer">
-                        <span className="text-white text-xs font-bold">f</span>
-                      </div>
-                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center hover:bg-ms-blue transition-colors cursor-pointer">
-                        <span className="text-white text-xs font-bold">@</span>
-                      </div>
-                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center hover:bg-ms-blue transition-colors cursor-pointer">
-                        <span className="text-white text-xs font-bold">in</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
