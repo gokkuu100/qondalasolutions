@@ -11,7 +11,7 @@ export default function Footer() {
             <img 
               src={qondalaLogo} 
               alt="Qondala" 
-              className="h-8 w-auto mb-4"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-gray-300 mb-6 leading-relaxed">
               Transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.
