@@ -35,10 +35,11 @@ export default function About() {
 
   const team = [
     {
-      name: "Sarah Johnson",
+      name: "Misky Abshir",
       role: "Chief Executive Officer",
-      initials: "SJ",
-      bio: "15+ years of experience in enterprise technology leadership"
+      initials: "MA",
+      bio: "Visionary leader driving Qondala's strategic growth and innovation",
+      image: "/misky-abshir.jpg"
     },
     {
       name: "Michael Chen",
@@ -162,9 +163,19 @@ export default function About() {
                   return (
                     <div key={index} className={`relative h-80 rounded-lg overflow-hidden ${bgColors[index]}`}>
                       {/* Profile Image Area */}
-                      <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-                        <span className="text-gray-600 text-6xl font-bold">{member.initials}</span>
-                      </div>
+                      {member.image ? (
+                        <div className="w-full h-full">
+                          <img 
+                            src={member.image} 
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                          <span className="text-gray-600 text-6xl font-bold">{member.initials}</span>
+                        </div>
+                      )}
                       
                       {/* Overlay Text */}
                       <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4">
