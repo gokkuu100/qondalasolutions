@@ -1,9 +1,9 @@
 export default function Stats() {
   const stats = [
-    { value: "5", label: "Enterprise Clients" },
-    { value: "50", label: "Projects Delivered" },
-    { value: "10", label: "Countries Served" },
-    { value: "99.9%", label: "System Uptime" },
+    { value: "1", label: "Enterprise Clients" },
+    { value: "3", label: "Projects Delivered" },
+    { value: "25+", label: "Countries Served" },
+    { value: "99.99%", label: "System Uptime" },
   ];
 
   return (
