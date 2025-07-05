@@ -39,14 +39,14 @@ export default function About() {
       role: "Chief Executive Officer",
       initials: "MA",
       bio: "Visionary leader driving Qondala's strategic growth and innovation",
-      image: "/misky-abshir.jpg"
+      image: "/misky-abshir-optimized.jpg"
     },
     {
       name: "Ben J. Nielsen",
       role: "Chief Technology Officer",
       initials: "BN",
       bio: "Technology visionary with expertise in enterprise systems and innovation",
-      image: "/ben-nielsen.png"
+      image: "/ben-nielsen-optimized.jpg"
     },
     {
       name: "Hussein Mohamed",
@@ -59,7 +59,7 @@ export default function About() {
       role: "Head of Security",
       initials: "MM",
       bio: "Security expert specializing in enterprise protection and risk management",
-      image: "/morris-mbetsa.jpg"
+      image: "/morris-mbetsa-optimized.jpg"
     }
   ];
 
@@ -68,7 +68,7 @@ export default function About() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: 'url(/about-background.png)' }}
+        style={{ backgroundImage: 'url(/about-background-optimized.jpg)' }}
       ></div>
       
       {/* Content Wrapper */}
@@ -77,7 +77,7 @@ export default function About() {
       <section 
         className="relative h-96 bg-cover bg-no-repeat flex items-center"
         style={{ 
-          backgroundImage: 'url(/about-hero.png)',
+          backgroundImage: 'url(/about-hero-optimized.jpg)',
           backgroundPosition: 'center center'
         }}
       >

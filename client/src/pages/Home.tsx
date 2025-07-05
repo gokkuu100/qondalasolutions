@@ -32,7 +32,7 @@ export default function Home() {
     {
       title: "Healthcare",
       description: "Data-driven platforms that empower patients, providers, and public health organizations.",
-      image: "/medical-workers.jpg"
+      image: "/medical-workers-optimized.jpg"
     },
     {
       title: "Logistics",

@@ -34,8 +34,8 @@ export default function Hero() {
       description: "Harness the power of artificial intelligence to transform your business operations and unlock new possibilities for growth.",
       ctaText: "DISCOVER AI SOLUTIONS",
       ctaLink: "/solutions",
-      desktopBg: "/hero-slide-2.png",
-      mobileBg: "/hero-slide-2.png"
+      desktopBg: "/hero-slide-2-optimized.jpg",
+      mobileBg: "/hero-slide-2-optimized.jpg"
     },
     {
       id: 3,
@@ -47,8 +47,8 @@ export default function Hero() {
       description: "Experience next-generation technology solutions designed to propel your organization into the digital future.",
       ctaText: "START YOUR JOURNEY",
       ctaLink: "/contact",
-      desktopBg: "/hero-slide-3.png",
-      mobileBg: "/hero-slide-3.png"
+      desktopBg: "/hero-slide-3-optimized.jpg",
+      mobileBg: "/hero-slide-3-optimized.jpg"
     }
   ];
 

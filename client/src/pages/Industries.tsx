@@ -71,7 +71,7 @@ export default function Industries() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{
-          backgroundImage: 'url(/industries-bg.png)',
+          backgroundImage: 'url(/industries-bg-optimized.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
