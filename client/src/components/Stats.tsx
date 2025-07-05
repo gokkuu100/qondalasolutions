@@ -1,6 +1,6 @@
 export default function Stats() {
   const stats = [
-    { value: "20", label: "Enterprise Clients" },
+    { value: "5", label: "Enterprise Clients" },
     { value: "50", label: "Projects Delivered" },
     { value: "10", label: "Countries Served" },
     { value: "99.9%", label: "System Uptime" },

@@ -217,6 +217,14 @@ Changelog:
   - Updated all page references to use optimized image versions
   - Implemented lazy loading and responsive image sizing for faster page loads
   - Total bandwidth reduction: Over 100MB of image data optimized across the website
+- July 5, 2025. Updated contact information and statistics
+  - Changed email from contact@qondala.com to info@qondala.com
+  - Updated phone number to +1 (612) 508-8704
+  - Updated company statistics to reflect accurate business metrics:
+    - Enterprise Clients: 500+ → 5
+    - Projects Delivered: 1,200+ → 50
+    - Countries Served: 25+ → 10
+    - System Uptime: maintained at 99.9%
 ```
 
 ## User Preferences
