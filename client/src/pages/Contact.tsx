@@ -59,14 +59,14 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+1 (612) 508-8704",
+      href: "tel:+16125088704"
     },
     {
       icon: Mail,
       title: "Email",
-      value: "contact@qondala.com",
-      href: "mailto:contact@qondala.com"
+      value: "info@qondala.com",
+      href: "mailto:info@qondala.com"
     },
     {
       icon: MapPin,
