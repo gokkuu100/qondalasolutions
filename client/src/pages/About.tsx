@@ -49,12 +49,6 @@ export default function About() {
       image: "/ben-nielsen-optimized.jpg"
     },
     {
-      name: "Hussein Mohamed",
-      role: "VP of Operations",
-      initials: "HM",
-      bio: "Operations excellence with focus on process optimization and efficiency"
-    },
-    {
       name: "Morris Mbetsa",
       role: "Head of Security",
       initials: "MM",
@@ -165,7 +159,7 @@ export default function About() {
           {/* Leadership Team */}
           <div className="mb-20 bg-green-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-600 mb-12 text-left">Meet our team!</h2>
+              <h2 className="text-4xl font-bold text-gray-600 mb-12 text-left">Meet our Team!</h2>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {team.map((member, index) => {
