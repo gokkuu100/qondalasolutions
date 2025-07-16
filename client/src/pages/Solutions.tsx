@@ -197,24 +197,46 @@ export default function Solutions() {
           </div>
         </div>
 
-        {/* Call to Action Section */}
-        <div className="mt-20 relative overflow-visible max-w-4xl mx-auto">
-          <div className="bg-gray-100 rounded-lg relative min-h-[280px] flex flex-col lg:flex-row">
-            <div className="text-left p-6 lg:p-8 lg:flex-1 z-10 flex flex-col justify-center">
-              <h2 className="lg:text-3xl font-bold text-ms-green mb-6 text-[35px]">Ready to Transform Your Business?</h2>
-              <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-fit" asChild>
-                <Link href="/contact" className="flex items-center gap-2">
-                  Start Your Project
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
+        {/* Don't See Your Industry Section */}
+        <div className="mt-20 bg-gray-100 rounded-lg p-8 lg:p-12">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            {/* Text Content */}
+            <div className="lg:flex-1 space-y-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-ms-dark">
+                Don't See Your Industry?
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. Contact us to discuss how we can help transform your business.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg" 
+                  className="bg-ms-green text-black hover:bg-green-400 font-semibold px-8"
+                  asChild
+                >
+                  <Link href="/contact">
+                    Contact Our Experts
+                  </Link>
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-ms-green text-ms-green hover:bg-ms-green hover:text-black font-semibold px-8"
+                  asChild
+                >
+                  <Link href="/solutions">
+                    View All Solutions
+                  </Link>
+                </Button>
+              </div>
             </div>
-            <div className="relative flex items-end justify-end">
+            
+            {/* Image */}
+            <div className="lg:flex-shrink-0">
               <img 
                 src="/qondala-team-member-optimized.jpg" 
-                alt="Qondala Team Member" 
-                className="w-[400px] lg:w-[550px] h-auto object-contain object-bottom"
-                style={{ marginRight: '-20px' }}
+                alt="Qondala Industry Expert" 
+                className="w-80 lg:w-96 h-auto object-contain rounded-lg"
               />
             </div>
           </div>
