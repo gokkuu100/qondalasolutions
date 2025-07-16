@@ -234,9 +234,9 @@ export default function Solutions() {
             {/* Image */}
             <div className="lg:flex-shrink-0">
               <img 
-                src="/qondala-team-member-optimized.jpg" 
+                src="/qondala-team-member-transparent.png" 
                 alt="Qondala Industry Expert" 
-                className="w-80 lg:w-96 h-auto object-contain rounded-lg"
+                className="w-80 lg:w-96 h-auto object-contain"
               />
             </div>
           </div>
