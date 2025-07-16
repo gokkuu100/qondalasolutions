@@ -232,6 +232,8 @@ Changelog:
   - Removed Hussein Mohamed from team section and centered remaining 3 members
   - Optimized over 200MB additional image data with 95-99% file size reductions
   - Created responsive, centered layout for team section with proper spacing
+  - Fixed Industries page black background issue by creating transparent PNG for sales lady image
+  - Applied transparent background fix to both mobile and desktop layouts on Industries page
 ```
 
 ## User Preferences
