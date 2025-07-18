@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactInquirySchema, insertChatMessageSchema } from "@shared/schema";
 import { generateChatResponse } from "./openai";
+import { sendContactNotification } from "./email";
 import { v4 as uuidv4 } from "uuid";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -11,6 +12,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactInquirySchema.parse(req.body);
       const inquiry = await storage.createContactInquiry(validatedData);
+      
+      // Send email notification
+      const emailSent = await sendContactNotification({
+        firstName: validatedData.firstName,
+        lastName: validatedData.lastName,
+        email: validatedData.email,
+        company: validatedData.company,
+        industry: validatedData.industry,
+        message: validatedData.message
+      });
+      
+      if (!emailSent) {
+        console.warn('Failed to send email notification for contact inquiry');
+      }
+      
       res.json({ success: true, inquiry });
     } catch (error) {
       res.status(400).json({ 
