@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu, ChevronDown, Phone, Mail } from "lucide-react";
+import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 interface SubMenuItem {
   href: string;
@@ -20,8 +22,6 @@ export default function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  
-  const isHomePage = location === "/";
 
   const navItems: NavItem[] = [
     { href: "/", label: "Home" },
@@ -68,133 +68,187 @@ export default function Header() {
   };
 
   return (
-    <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-[100] w-full transition-all duration-300 bg-white shadow-sm border-b border-gray-200`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity -ml-2">
-              <img 
-                src="/zinex-logo.png" 
-                alt="Zinex Technology" 
-                className="h-12 w-auto"
-              />
-            </Link>
+    <header className="fixed top-0 z-[100] w-full">
+      {/* Top Bar */}
+      <div className="bg-zinex-blue text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Desktop Top Bar */}
+          <div className="hidden md:flex justify-between items-center h-10 text-sm">
+            <div className="flex items-center space-x-4">
+              <a href="https://linkedin.com/company/zinex" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                <FaLinkedin className="h-4 w-4" />
+              </a>
+              <a href="https://facebook.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                <FaFacebook className="h-4 w-4" />
+              </a>
+              <a href="https://instagram.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                <FaInstagram className="h-4 w-4" />
+              </a>
+              <a href="https://x.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                <FaXTwitter className="h-4 w-4" />
+              </a>
+            </div>
+            <div className="flex items-center space-x-6">
+              <a href="tel:+16125088704" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
+                <Phone className="h-4 w-4" />
+                <span>+1 (612) 508-8704</span>
+              </a>
+              <a href="mailto:info@zinextech.com" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
+                <Mail className="h-4 w-4" />
+                <span>Contact Us</span>
+              </a>
+            </div>
           </div>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <div
-                key={item.href}
-                className="relative"
-                onMouseEnter={() => item.subItems && handleMouseEnter(item.label)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link
-                  href={item.href}
-                  className={`px-4 py-2 flex items-center gap-1 transition-colors duration-200 ${
-                    location === item.href || location.startsWith(item.href + "/") || 
-                    (item.subItems && item.subItems.some(sub => location === sub.href))
-                      ? "text-zinex-red font-medium" 
-                      : "text-zinex-blue hover:text-zinex-red"
-                  }`}
+          {/* Mobile Top Bar */}
+          <div className="md:hidden py-2">
+            <div className="flex justify-center items-center space-x-6 mb-2">
+              <a href="https://linkedin.com/company/zinex" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaLinkedin className="h-5 w-5" />
+              </a>
+              <a href="https://facebook.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaFacebook className="h-5 w-5" />
+              </a>
+              <a href="https://instagram.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaInstagram className="h-5 w-5" />
+              </a>
+            </div>
+            <div className="flex justify-center items-center space-x-4 text-sm">
+              <a href="tel:+16125088704" className="flex items-center space-x-1">
+                <Phone className="h-3 w-3" />
+                <span>+1 (612) 508-8704</span>
+              </a>
+              <a href="mailto:info@zinextech.com" className="flex items-center space-x-1">
+                <Mail className="h-3 w-3" />
+                <span>Contact Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <div className="bg-white shadow-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex items-center">
+              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+                <img 
+                  src="/zinex-logo.png" 
+                  alt="Zinex Technology" 
+                  className="h-16 md:h-20 w-auto"
+                />
+              </Link>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center space-x-1">
+              {navItems.map((item) => (
+                <div
+                  key={item.href}
+                  className="relative"
+                  onMouseEnter={() => item.subItems && handleMouseEnter(item.label)}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  {item.label}
-                  {item.subItems && (
-                    <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === item.label ? 'rotate-180' : ''}`} />
-                  )}
-                </Link>
-
-                {/* Dropdown Menu */}
-                {item.subItems && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-0 w-72 bg-white shadow-lg border border-gray-200 rounded-b-lg overflow-hidden z-50">
-                    <div className="py-2">
-                      {item.subItems.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          href={subItem.href}
-                          className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-150"
-                          onClick={() => setActiveDropdown(null)}
-                        >
-                          <div className={`font-medium ${location === subItem.href ? 'text-zinex-red' : 'text-zinex-blue'}`}>
-                            {subItem.label}
-                          </div>
-                          {subItem.description && (
-                            <div className="text-sm text-gray-500 mt-0.5">
-                              {subItem.description}
-                            </div>
-                          )}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </nav>
-
-          <div className="flex items-center space-x-4">
-            <Button 
-              className="hidden md:block bg-zinex-red text-white hover:bg-zinex-red-dark"
-              asChild
-            >
-              <Link href="/contact">Get Started</Link>
-            </Button>
-
-            {/* Mobile Menu */}
-            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-              <SheetTrigger asChild>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  className="md:hidden text-zinex-blue hover:text-zinex-red"
-                >
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">Open menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
-                <div className="flex flex-col space-y-2 mt-6">
-                  {navItems.map((item) => (
-                    <div key={item.href}>
-                      <Link
-                        href={item.href}
-                        className={`block text-lg font-medium py-2 text-zinex-blue hover:text-zinex-red transition-colors ${
-                          location === item.href ? "text-zinex-red" : ""
-                        }`}
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
-                      {item.subItems && (
-                        <div className="ml-4 border-l-2 border-gray-200 pl-4 space-y-1">
-                          {item.subItems.map((subItem) => (
-                            <Link
-                              key={subItem.href}
-                              href={subItem.href}
-                              className={`block py-1.5 text-sm transition-colors ${
-                                location === subItem.href ? "text-zinex-red" : "text-gray-600 hover:text-zinex-red"
-                              }`}
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              {subItem.label}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                  <Button 
-                    className="bg-zinex-red text-white hover:bg-zinex-red-dark mt-4"
-                    asChild
+                  <Link
+                    href={item.href}
+                    className={`px-4 py-2 flex items-center gap-1 transition-colors duration-200 font-medium uppercase text-sm tracking-wide ${
+                      location === item.href || location.startsWith(item.href + "/") || 
+                      (item.subItems && item.subItems.some(sub => location === sub.href))
+                        ? "text-zinex-red" 
+                        : "text-zinex-blue hover:text-zinex-red"
+                    }`}
                   >
-                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                      Get Started
-                    </Link>
-                  </Button>
+                    {item.label}
+                    {item.subItems && (
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === item.label ? 'rotate-180' : ''}`} />
+                    )}
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  {item.subItems && activeDropdown === item.label && (
+                    <div className="absolute top-full left-0 mt-0 w-72 bg-white shadow-lg border border-gray-200 rounded-b-lg overflow-hidden z-50">
+                      <div className="py-2">
+                        {item.subItems.map((subItem) => (
+                          <Link
+                            key={subItem.href}
+                            href={subItem.href}
+                            className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-150"
+                            onClick={() => setActiveDropdown(null)}
+                          >
+                            <div className={`font-medium ${location === subItem.href ? 'text-zinex-red' : 'text-zinex-blue'}`}>
+                              {subItem.label}
+                            </div>
+                            {subItem.description && (
+                              <div className="text-sm text-gray-500 mt-0.5">
+                                {subItem.description}
+                              </div>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </SheetContent>
-            </Sheet>
+              ))}
+            </nav>
+
+            <div className="flex items-center space-x-4">
+              {/* Mobile Menu */}
+              <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="lg:hidden text-zinex-blue hover:text-zinex-red"
+                  >
+                    <Menu className="h-8 w-8" />
+                    <span className="sr-only">Open menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
+                  <div className="flex flex-col space-y-2 mt-6">
+                    {navItems.map((item) => (
+                      <div key={item.href}>
+                        <Link
+                          href={item.href}
+                          className={`block text-lg font-medium py-2 text-zinex-blue hover:text-zinex-red transition-colors ${
+                            location === item.href ? "text-zinex-red" : ""
+                          }`}
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                        {item.subItems && (
+                          <div className="ml-4 border-l-2 border-gray-200 pl-4 space-y-1">
+                            {item.subItems.map((subItem) => (
+                              <Link
+                                key={subItem.href}
+                                href={subItem.href}
+                                className={`block py-1.5 text-sm transition-colors ${
+                                  location === subItem.href ? "text-zinex-red" : "text-gray-600 hover:text-zinex-red"
+                                }`}
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {subItem.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                    <Button 
+                      className="bg-zinex-red text-white hover:bg-zinex-red-dark mt-4"
+                      asChild
+                    >
+                      <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                        Get Started
+                      </Link>
+                    </Button>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </div>

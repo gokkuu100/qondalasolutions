@@ -81,7 +81,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative text-white h-screen bg-gray-900 flex items-center overflow-hidden">
+    <section className="relative text-white min-h-screen bg-gray-900 flex items-center overflow-hidden pt-32 md:pt-28">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -100,28 +100,34 @@ export default function Hero() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
             style={{ backgroundImage: `url(${slide.mobileBg})` }}
           />
-          {/* Dark gradient overlay for text visibility on left side */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+          {/* Dark overlay for text visibility */}
+          <div className="absolute inset-0 bg-black/60" />
           
-          {/* Content */}
-          <div className="relative z-10 h-full flex items-end md:items-center pb-16 md:pb-0">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="text-left max-w-4xl pt-16 md:pt-20 ml-[16px] mr-[16px]">
-                <div className="fade-in">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-8 leading-tight">
-                    <div className="mb-1 md:mb-2">{slide.title.line1}</div>
-                    <div className="mb-1 md:mb-2">{slide.title.line2}</div>
-                    <div>{slide.title.line3}</div>
-                  </h1>
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-12 text-gray-200 leading-relaxed max-w-2xl">
-                    {slide.description}
-                  </p>
-                  <Link href={slide.ctaLink}>
-                    <button className="bg-ms-green hover:bg-ms-green-dark text-black font-semibold py-3 px-8 rounded-full transition-colors duration-200 text-sm md:text-base">
-                      {slide.ctaText}
-                    </button>
-                  </Link>
+          {/* Content - Centered */}
+          <div className="relative z-10 h-full flex items-center justify-center">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+              <div className="fade-in">
+                {/* Logo Icon */}
+                <div className="mb-6 md:mb-8">
+                  <img 
+                    src="/zinex-icon.png" 
+                    alt="" 
+                    className="h-16 md:h-20 w-auto mx-auto opacity-90"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
                 </div>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
+                  <span className="text-white">{slide.title.line1}</span>{" "}
+                  <span className="text-zinex-red">{slide.title.line2}</span>
+                </h1>
+                <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-200 leading-relaxed max-w-2xl mx-auto">
+                  {slide.description}
+                </p>
+                <Link href={slide.ctaLink}>
+                  <button className="bg-zinex-red hover:bg-zinex-red-dark text-white font-semibold py-3 px-8 transition-colors duration-200 text-sm md:text-base uppercase tracking-wide">
+                    {slide.ctaText}
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -147,7 +153,7 @@ export default function Hero() {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentSlide ? 'bg-ms-green' : 'bg-white/50 hover:bg-white/70'
+              index === currentSlide ? 'bg-zinex-red' : 'bg-white/50 hover:bg-white/70'
             }`}
           />
         ))}
