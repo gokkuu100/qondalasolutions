@@ -21,8 +21,8 @@ export default function Hero() {
       description: "Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.",
       ctaText: "EXPLORE MORE",
       ctaLink: "/about",
-      desktopBg: heroBackground,
-      mobileBg: mobileBackground
+      desktopBg: "/hero-team.jpg",
+      mobileBg: "/hero-team.jpg"
     },
     {
       id: 2,
@@ -100,6 +100,8 @@ export default function Hero() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
             style={{ backgroundImage: `url(${slide.mobileBg})` }}
           />
+          {/* Dark gradient overlay for text visibility on left side */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
           
           {/* Content */}
           <div className="relative z-10 h-full flex items-end md:items-center pb-16 md:pb-0">
