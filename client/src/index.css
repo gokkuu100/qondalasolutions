@@ -4,46 +4,45 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(0, 0%, 0%);
+  --foreground: hsl(220, 70%, 25%);
   --muted: hsl(220, 14%, 96%);
   --muted-foreground: hsl(220, 8.9%, 46.1%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(220, 70%, 25%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(0, 0%, 0%);
+  --card-foreground: hsl(220, 70%, 25%);
   --border: hsl(220, 13%, 91%);
   --input: hsl(220, 13%, 91%);
-  --primary: rgb(135, 218, 24);
+  --primary: rgb(227, 35, 34);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(220, 14%, 96%);
-  --secondary-foreground: hsl(0, 0%, 0%);
+  --secondary-foreground: hsl(220, 70%, 25%);
   --accent: hsl(220, 14%, 96%);
-  --accent-foreground: hsl(0, 0%, 0%);
+  --accent-foreground: hsl(220, 70%, 25%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: rgb(135, 218, 24);
+  --ring: rgb(227, 35, 34);
   --radius: 0.5rem;
-  --qondala-blue: rgb(135, 218, 24);
-  --qondala-blue-dark: rgb(115, 188, 20);
-  --qondala-green: rgb(135, 218, 24);
-  --qondala-green-dark: rgb(115, 188, 20);
-  --qondala-black: hsl(0, 0%, 0%);
-  --qondala-dark-gray: hsl(220, 9%, 15%);
-  --qondala-light-gray: hsl(220, 14%, 96%);
+  --zinex-red: rgb(227, 35, 34);
+  --zinex-red-dark: rgb(190, 30, 30);
+  --zinex-blue: rgb(27, 52, 132);
+  --zinex-blue-dark: rgb(20, 40, 100);
+  --zinex-blue-light: rgb(40, 70, 160);
+  --zinex-light-gray: hsl(220, 14%, 96%);
 }
 
 .dark {
-  --background: hsl(0, 0%, 0%);
+  --background: rgb(27, 52, 132);
   --foreground: hsl(0, 0%, 98%);
   --muted: hsl(220, 9%, 15%);
   --muted-foreground: hsl(220, 5%, 64.9%);
-  --popover: hsl(0, 0%, 0%);
+  --popover: rgb(27, 52, 132);
   --popover-foreground: hsl(0, 0%, 98%);
   --card: hsl(220, 9%, 15%);
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(220, 9%, 25%);
   --input: hsl(220, 9%, 25%);
-  --primary: rgb(135, 218, 24);
+  --primary: rgb(227, 35, 34);
   --primary-foreground: hsl(0, 0%, 98%);
   --secondary: hsl(220, 9%, 15%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -51,7 +50,7 @@
   --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: rgb(135, 218, 24);
+  --ring: rgb(227, 35, 34);
   --radius: 0.5rem;
 }
 
@@ -67,81 +66,105 @@
 }
 
 @layer components {
-  .qondala-blue {
-    color: var(--qondala-blue);
+  .zinex-red {
+    color: var(--zinex-red);
   }
   
-  .bg-qondala-blue {
-    background-color: var(--qondala-blue);
+  .bg-zinex-red {
+    background-color: var(--zinex-red);
   }
   
-  .bg-qondala-blue-dark {
-    background-color: var(--qondala-blue-dark);
+  .bg-zinex-red-dark {
+    background-color: var(--zinex-red-dark);
   }
   
-  .bg-qondala-black {
-    background-color: var(--qondala-black);
+  .bg-zinex-blue {
+    background-color: var(--zinex-blue);
   }
   
-  .bg-qondala-dark-gray {
-    background-color: var(--qondala-dark-gray);
+  .bg-zinex-blue-dark {
+    background-color: var(--zinex-blue-dark);
   }
   
-  .bg-qondala-light-gray {
-    background-color: var(--qondala-light-gray);
+  .bg-zinex-light-gray {
+    background-color: var(--zinex-light-gray);
   }
   
-  .text-qondala-blue {
-    color: var(--qondala-blue);
+  .text-zinex-red {
+    color: var(--zinex-red);
   }
   
-  .text-qondala-blue-dark {
-    color: var(--qondala-blue-dark);
+  .text-zinex-red-dark {
+    color: var(--zinex-red-dark);
   }
   
-  .text-qondala-black {
-    color: var(--qondala-black);
+  .text-zinex-blue {
+    color: var(--zinex-blue);
   }
   
-  .text-qondala-dark-gray {
-    color: var(--qondala-dark-gray);
+  .text-zinex-blue-dark {
+    color: var(--zinex-blue-dark);
   }
 
   /* Legacy class names for backward compatibility */
   .ms-blue {
-    color: var(--qondala-blue);
+    color: var(--zinex-red);
   }
   
   .bg-ms-blue {
-    background-color: var(--qondala-blue);
+    background-color: var(--zinex-red);
   }
   
   .bg-ms-blue-dark {
-    background-color: var(--qondala-blue-dark);
+    background-color: var(--zinex-red-dark);
+  }
+  
+  .bg-ms-green {
+    background-color: var(--zinex-red);
+  }
+  
+  .bg-ms-green-dark {
+    background-color: var(--zinex-red-dark);
   }
   
   .bg-ms-gray {
-    background-color: var(--qondala-light-gray);
+    background-color: var(--zinex-light-gray);
   }
   
   .bg-ms-dark {
-    background-color: var(--qondala-black);
+    background-color: var(--zinex-blue);
   }
   
   .bg-ms-light {
-    background-color: var(--qondala-light-gray);
+    background-color: var(--zinex-light-gray);
   }
   
   .text-ms-blue {
-    color: var(--qondala-blue);
+    color: var(--zinex-red);
   }
   
   .text-ms-blue-dark {
-    color: var(--qondala-blue-dark);
+    color: var(--zinex-red-dark);
+  }
+  
+  .text-ms-green {
+    color: var(--zinex-red);
+  }
+  
+  .text-ms-green-dark {
+    color: var(--zinex-red-dark);
   }
   
   .text-ms-dark {
-    color: var(--qondala-black);
+    color: var(--zinex-blue);
+  }
+  
+  .bg-qondala-black {
+    background-color: var(--zinex-blue);
+  }
+  
+  .bg-qondala-blue {
+    background-color: var(--zinex-red);
   }
 
   .card-hover {
@@ -150,11 +173,11 @@
   
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(135, 218, 24, 0.15);
+    box-shadow: 0 8px 25px rgba(227, 35, 34, 0.15);
   }
   
   .gradient-hero {
-    background: linear-gradient(135deg, var(--qondala-blue) 0%, var(--qondala-blue-dark) 100%);
+    background: linear-gradient(135deg, var(--zinex-red) 0%, var(--zinex-red-dark) 100%);
   }
   
   .fade-in {
@@ -173,7 +196,7 @@
   }
 
   .chat-bubble-user {
-    background: linear-gradient(135deg, var(--qondala-blue) 0%, var(--qondala-blue-dark) 100%);
+    background: linear-gradient(135deg, var(--zinex-red) 0%, var(--zinex-red-dark) 100%);
   }
 
   .chat-bubble-ai {
