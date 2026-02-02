@@ -27,28 +27,41 @@ export default function Hero() {
     {
       id: 2,
       title: {
-        line1: "Advanced AI.",
-        line2: "Seamless Integration.",
-        line3: "Unlimited Potential."
+        line1: "Enterprise Infrastructure.",
+        line2: "Built for Scale.",
+        line3: ""
       },
-      description: "Harness the power of artificial intelligence to transform your business operations and unlock new possibilities for growth.",
-      ctaText: "DISCOVER AI SOLUTIONS",
+      description: "Reliable data center solutions and cloud infrastructure that power your business with maximum uptime and security.",
+      ctaText: "DISCOVER INFRASTRUCTURE",
       ctaLink: "/solutions",
-      desktopBg: "/hero-slide-2-optimized.jpg",
-      mobileBg: "/hero-slide-2-optimized.jpg"
+      desktopBg: "/hero-slide-2.jpg",
+      mobileBg: "/hero-slide-2.jpg"
     },
     {
       id: 3,
       title: {
-        line1: "Innovation Driven.",
-        line2: "Future Ready.",
-        line3: "Zinex Powered."
+        line1: "Expert Leadership.",
+        line2: "Proven Results.",
+        line3: ""
       },
-      description: "Experience next-generation technology solutions designed to propel your organization into the digital future.",
+      description: "Our team of technology experts delivers innovative solutions tailored to your unique business challenges.",
+      ctaText: "MEET OUR TEAM",
+      ctaLink: "/about",
+      desktopBg: "/hero-slide-3.jpg",
+      mobileBg: "/hero-slide-3.jpg"
+    },
+    {
+      id: 4,
+      title: {
+        line1: "Collaborative Innovation.",
+        line2: "Your Success, Our Mission.",
+        line3: ""
+      },
+      description: "We partner with you to create custom software solutions that drive efficiency and accelerate growth.",
       ctaText: "START YOUR JOURNEY",
       ctaLink: "/contact",
-      desktopBg: "/hero-slide-3-optimized.jpg",
-      mobileBg: "/hero-slide-3-optimized.jpg"
+      desktopBg: "/hero-slide-4.jpg",
+      mobileBg: "/hero-slide-4.jpg"
     }
   ];
 
