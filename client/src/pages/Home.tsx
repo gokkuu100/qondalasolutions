@@ -178,12 +178,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-ms-dark mb-6">About Qondala</h2>
+              <h2 className="text-4xl font-bold text-zinex-blue mb-6">About Zinex Technology</h2>
               <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-                Qondala is transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.
+                Zinex Technology is transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Beyond technology, Qondala provides high-quality office supplies and equipment to government agencies and enterprises, integrating IT solutions with essential business needs. Driven by innovation and customer feedback, we create smarter, more connected ecosystems that drive progress across industries.
+                Beyond technology, Zinex Technology provides high-quality office supplies and equipment to government agencies and enterprises, integrating IT solutions with essential business needs. Driven by innovation and customer feedback, we create smarter, more connected ecosystems that drive progress across industries.
               </p>
               <div className="space-y-4">
                 {values.map((value, index) => {

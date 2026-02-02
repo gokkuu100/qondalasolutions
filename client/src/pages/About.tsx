@@ -38,7 +38,7 @@ export default function About() {
       name: "Misky Abshir",
       role: "Chief Executive Officer",
       initials: "MA",
-      bio: "Visionary leader driving Qondala's strategic growth and innovation",
+      bio: "Visionary leader driving Zinex Technology's strategic growth and innovation",
       image: "/misky-abshir-optimized.jpg"
     },
     {
@@ -78,7 +78,7 @@ export default function About() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            About Qondala
+            About Zinex Technology
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Founded on the principle of technological excellence, we deliver comprehensive enterprise solutions that drive innovation and operational efficiency across industries.
@@ -93,10 +93,10 @@ export default function About() {
           <div className="text-center mb-20">
             <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                Qondala is a technology company delivering innovative software, drone solutions, advanced hardware, and AI services to power smarter, more connected operations. With 22 years of combined experience, our team builds solutions that integrate systems and accelerate outcomes. Our platforms streamline workflows, unify data, and enable intelligent decisions. We provide real-time aerial insights through drone systems for logistics, agriculture, security, and environmental monitoring.
+                Zinex Technology is a technology company delivering innovative software, drone solutions, advanced hardware, and AI services to power smarter, more connected operations. With 22 years of combined experience, our team builds solutions that integrate systems and accelerate outcomes. Our platforms streamline workflows, unify data, and enable intelligent decisions. We provide real-time aerial insights through drone systems for logistics, agriculture, security, and environmental monitoring.
               </p>
               <p>
-                From high-performance computing to predictive AI, we help organizations automate, optimize, and scale. By bridging digital intelligence with physical assets, Qondala drives measurable impact across industries.
+                From high-performance computing to predictive AI, we help organizations automate, optimize, and scale. By bridging digital intelligence with physical assets, Zinex Technology drives measurable impact across industries.
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function About() {
           </div>
 
           {/* Leadership Team */}
-          <div className="mb-20 bg-green-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="mb-20 bg-red-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-4xl font-bold text-gray-600 mb-12 text-center">Meet our Team</h2>
               
@@ -201,19 +201,19 @@ export default function About() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
                 <div className="flex flex-col items-center">
-                  <div className="text-5xl font-bold text-green-500 mb-4">2023</div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">Qondala Founded</h3>
+                  <div className="text-5xl font-bold text-zinex-red mb-4">2023</div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">Zinex Technology Founded</h3>
                   <p className="text-gray-600 text-center">Launched with a mission to engineer intelligent software and digital infrastructure that bridges innovation and impact.</p>
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="text-5xl font-bold text-green-500 mb-4">2024</div>
+                  <div className="text-5xl font-bold text-zinex-red mb-4">2024</div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">Strategic Collaborations</h3>
                   <p className="text-gray-600 text-center">Formed pivotal partnerships with private sector, laying the foundation for trusted delivery in complex technology environments.</p>
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="text-5xl font-bold text-green-500 mb-4">2025</div>
+                  <div className="text-5xl font-bold text-zinex-red mb-4">2025</div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">Digital Evolution</h3>
                   <p className="text-gray-600 text-center">Introduced next-gen solutions in cloud, AI, and drone technologies—driving transformation across logistics, defense, and public service landscapes.</p>
                 </div>

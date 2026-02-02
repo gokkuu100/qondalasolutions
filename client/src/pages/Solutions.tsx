@@ -235,7 +235,7 @@ export default function Solutions() {
             <div className="lg:flex-shrink-0">
               <img 
                 src="/qondala-team-member-transparent.png" 
-                alt="Qondala Industry Expert" 
+                alt="Zinex Technology Industry Expert" 
                 className="w-80 lg:w-96 h-auto object-contain"
               />
             </div>

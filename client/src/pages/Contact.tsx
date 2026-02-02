@@ -65,8 +65,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "info@qondala.com",
-      href: "mailto:info@qondala.com"
+      value: "info@zinextech.com",
+      href: "mailto:info@zinextech.com"
     },
     {
       icon: MapPin,
@@ -98,7 +98,7 @@ export default function Contact() {
             Ready to Transform Your Business?
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Connect with our experts to discuss your technology needs and discover how Qondala can drive your digital transformation.
+            Connect with our experts to discuss your technology needs and discover how Zinex Technology can drive your digital transformation.
           </p>
         </div>
       </section>
@@ -317,7 +317,7 @@ export default function Contact() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Qondala Office Location"
+                  title="Zinex Technology Office Location"
                 />
               </div>
             </CardContent>

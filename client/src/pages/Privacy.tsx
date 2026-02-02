@@ -12,7 +12,7 @@ export default function Privacy() {
             
             <h2 className="text-2xl font-semibold text-ms-dark mt-8 mb-4">Information We Collect</h2>
             <p className="text-gray-600 mb-4">
-              Qondala collects information you provide directly to us, such as when you create an account, 
+              Zinex Technology collects information you provide directly to us, such as when you create an account, 
               request information about our services, or contact us for support.
             </p>
             

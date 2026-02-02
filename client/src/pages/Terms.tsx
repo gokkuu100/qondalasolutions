@@ -12,7 +12,7 @@ export default function Terms() {
             
             <h2 className="text-2xl font-semibold text-ms-dark mt-8 mb-4">Acceptance of Terms</h2>
             <p className="text-gray-600 mb-4">
-              By accessing and using Qondala's services, you accept and agree to be bound by the 
+              By accessing and using Zinex Technology's services, you accept and agree to be bound by the 
               terms and provision of this agreement.
             </p>
             
@@ -36,7 +36,7 @@ export default function Terms() {
             
             <h2 className="text-2xl font-semibold text-ms-dark mt-8 mb-4">Limitation of Liability</h2>
             <p className="text-gray-600 mb-4">
-              Qondala shall not be liable for any indirect, incidental, special, consequential, 
+              Zinex Technology shall not be liable for any indirect, incidental, special, consequential, 
               or punitive damages resulting from your use of our services.
             </p>
             

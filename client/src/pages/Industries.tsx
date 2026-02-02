@@ -198,7 +198,7 @@ export default function Industries() {
           <div className="lg:hidden flex justify-center bg-ms-light">
             <img 
               src="/industries-sales-lady-transparent.png" 
-              alt="Qondala Industry Expert" 
+              alt="Zinex Technology Industry Expert" 
               className="w-64 h-auto object-contain"
             />
           </div>
@@ -231,7 +231,7 @@ export default function Industries() {
             <div className="absolute bottom-0 right-0">
               <img 
                 src="/industries-sales-lady-transparent.png" 
-                alt="Qondala Industry Expert" 
+                alt="Zinex Technology Industry Expert" 
                 className="w-[550px] h-auto object-contain object-bottom"
               />
             </div>

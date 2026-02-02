@@ -42,7 +42,7 @@ export default function Hero() {
       title: {
         line1: "Innovation Driven.",
         line2: "Future Ready.",
-        line3: "Qondala Powered."
+        line3: "Zinex Powered."
       },
       description: "Experience next-generation technology solutions designed to propel your organization into the digital future.",
       ctaText: "START YOUR JOURNEY",

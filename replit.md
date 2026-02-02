@@ -1,7 +1,12 @@
-# Qondala - Enterprise Technology Solutions
+# Zinex Technology - Enterprise Technology Solutions
 
 ## Overview
-Qondala is a full-stack web application showcasing enterprise technology solutions. It combines software, hardware, and AI-driven automation services for various industries, including manufacturing, transportation, security, and business automation. The project aims to provide comprehensive technology services to businesses.
+Zinex Technology is a full-stack web application showcasing enterprise technology solutions. It combines software, hardware, and AI-driven automation services for various industries, including manufacturing, transportation, security, and business automation. The project aims to provide comprehensive technology services to businesses.
+
+## Brand Colors
+- **Primary Red**: RGB(227, 35, 34) - Used for accents, buttons, and highlights
+- **Primary Blue**: RGB(27, 52, 132) - Used for headings, backgrounds, and text
+- **Logo**: Zinex Technology logo with red arrow icon and blue text
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
@@ -31,11 +36,12 @@ Preferred communication style: Simple, everyday language.
 - **Type Safety**: Strict TypeScript configuration
 
 ### Key Features
-- **UI/UX**: Professional and modern design with green geometric backgrounds, updated industry images, dynamic hero carousels, and Google Maps integration on the contact page. Consistent branding with Qondala logo.
+- **UI/UX**: Professional and modern design with red and blue branding, updated industry images, dynamic hero carousels, and Google Maps integration on the contact page. Consistent branding with Zinex Technology logo.
 - **AI Chat Assistant**: Integrated OpenAI API (GPT-4o) with a floating, professional, and bot-themed chat interface. Includes chat message storage, session management, and company-specific knowledge.
 - **Content Management**: Dedicated pages for Solutions (Healthcare, Logistics, Connected Systems, Process Automation, Custom Enterprise Software) and Industries (Government, Enterprise, Business Automation, Custom Solutions).
 - **Image Optimization**: Comprehensive image optimization applied across the entire website for performance, reducing file sizes significantly.
 - **Responsive Design**: Ensured responsiveness for mobile and desktop views.
+- **Email Notifications**: SendGrid integration for contact form submissions (sends to info@zinextech.com)
 
 ## External Dependencies
 
@@ -59,3 +65,4 @@ Preferred communication style: Simple, everyday language.
 
 ### Other Integrations
 - **Google Maps**: Embedded on the Contact page.
+- **SendGrid**: Email notifications for contact form submissions.
