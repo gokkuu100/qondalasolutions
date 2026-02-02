@@ -23,8 +23,8 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <div className="text-2xl font-bold text-[hsl(207,90%,54%)] cursor-pointer">
-                Qondala
+              <div className="text-2xl font-bold text-zinex-blue cursor-pointer">
+                Zinex Technology
               </div>
             </Link>
           </div>

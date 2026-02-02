@@ -234,7 +234,7 @@ export default function Solutions() {
             {/* Image */}
             <div className="lg:flex-shrink-0">
               <img 
-                src="/qondala-team-member-transparent.png" 
+                src="/zinex-team-member-transparent.png" 
                 alt="Zinex Technology Industry Expert" 
                 className="w-80 lg:w-96 h-auto object-contain"
               />

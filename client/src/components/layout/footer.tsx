@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-white mb-4">Qondala</div>
+            <div className="text-2xl font-bold text-white mb-4">Zinex Technology</div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Empowering enterprises with innovative technology solutions that drive growth, efficiency, and digital transformation across industries.
             </p>
@@ -88,7 +88,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Qondala. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 Zinex Technology. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

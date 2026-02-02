@@ -167,11 +167,11 @@ export default function Government() {
         </div>
       </section>
 
-      {/* Why Choose Qondala */}
+      {/* Why Choose Zinex Technology */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ms-dark mb-4">Why Government Agencies Choose Qondala</h2>
+            <h2 className="text-3xl font-bold text-ms-dark mb-4">Why Government Agencies Choose Zinex Technology</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               We understand the unique requirements and challenges of government operations.
             </p>
