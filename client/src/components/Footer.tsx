@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <img 
-              src="/zinex-logo.png" 
+              src="/zinex-logo-white.png" 
               alt="Zinex Technology" 
-              className="h-12 w-auto mb-4"
+              className="h-14 w-auto mb-4"
             />
             <p className="text-gray-300 mb-6 leading-relaxed">
               Transforming healthcare and logistics through connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration.
