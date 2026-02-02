@@ -44,22 +44,16 @@ export default function Header() {
     }
   };
 
-  const showWhiteBackground = !isHomePage || (isHomePage && isScrolled);
-  
   return (
-    <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-[100] w-full transition-all duration-300 ${
-      showWhiteBackground
-        ? "bg-white shadow-sm border-b border-gray-200" 
-        : "bg-zinex-blue/80"
-    }`}>
+    <header className={`${isHomePage ? "fixed" : "sticky"} top-0 z-[100] w-full transition-all duration-300 bg-white shadow-sm border-b border-gray-200`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center ${showWhiteBackground ? "h-16" : "h-20 mt-4"}`}>
+        <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity -ml-2">
               <img 
                 src="/zinex-logo.png" 
                 alt="Zinex Technology" 
-                className={showWhiteBackground ? "h-12 w-auto" : "h-16 w-auto"}
+                className="h-12 w-auto"
               />
             </Link>
           </div>
@@ -71,9 +65,9 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`transition-colors duration-200 ${
-                  showWhiteBackground
-                    ? `text-zinex-blue hover:text-zinex-red ${location === item.href ? "text-zinex-red font-medium" : ""}`
-                    : `text-white hover:text-gray-200 ${location === item.href ? "text-zinex-red font-medium" : ""}`
+                  location === item.href 
+                    ? "text-zinex-red font-medium" 
+                    : "text-zinex-blue hover:text-zinex-red"
                 }`}
               >
                 {item.label}
@@ -83,11 +77,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <Button 
-              className={`hidden md:block ${
-                showWhiteBackground
-                  ? "bg-zinex-red text-white hover:bg-zinex-red-dark"
-                  : "bg-zinex-red text-white hover:bg-zinex-red-dark border border-zinex-red"
-              }`}
+              className="hidden md:block bg-zinex-red text-white hover:bg-zinex-red-dark"
               asChild
             >
               <Link href="/contact">Get Started</Link>
@@ -99,7 +89,7 @@ export default function Header() {
                 <Button 
                   variant="ghost" 
                   size="icon" 
-                  className={`md:hidden ${showWhiteBackground ? "text-zinex-blue hover:text-zinex-red" : "text-white hover:text-gray-200"}`}
+                  className="md:hidden text-zinex-blue hover:text-zinex-red"
                 >
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
