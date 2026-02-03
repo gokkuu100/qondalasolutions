@@ -62,30 +62,24 @@ export default function Logistics() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-20 min-h-[600px] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Back Button */}
-          <div className="mb-8">
-            <Button variant="ghost" className="text-white hover:bg-white/10" asChild>
-              <Link href="/">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-          
-          <div className="text-center">
+      <section 
+        className="relative h-[550px] bg-cover flex items-center pt-20"
+        style={{ backgroundImage: 'url(/logistics-hero-new-optimized.jpg)', backgroundPosition: 'center top' }}
+      >
+        <div className="absolute inset-0 bg-[#0a1a3a]/50"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center text-white">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Truck className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
               Logistics & Supply Chain Solutions
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-white max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl mb-8 text-white/90 max-w-4xl mx-auto drop-shadow-md">
               Advanced supply chain management solutions utilizing global trade intelligence for seamless, 
               secure, and timely inventory, asset, and personnel movement.
             </p>
-            <Button size="lg" className="bg-ms-green text-black hover:bg-green-400" asChild>
+            <Button size="lg" className="bg-zinex-red text-white hover:bg-red-700 border-0" asChild>
               <Link href="/contact">Optimize Your Supply Chain</Link>
             </Button>
           </div>
