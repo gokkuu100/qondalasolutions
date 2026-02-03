@@ -74,49 +74,65 @@ export default function Home() {
       <Hero />
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-20 bg-ms-light">
+      <section id="solutions" className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-ms-dark mb-4">Our Core Capabilities</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <span className="text-zinex-red font-semibold uppercase tracking-wider text-sm">What We Do</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-zinex-blue mt-3 mb-6">Our Core Capabilities</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Delivering advanced software, drone technology, high-performance computing, and AI solutions that connect operations, automate decisions, and accelerate progress across industries.
             </p>
           </div>
           
-          <div className="flex flex-col md:flex-row border border-gray-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {solutions.map((solution, index) => {
               const IconComponent = solution.icon;
+              const links = ["/connected-systems", "/advanced-software", "/drone-technology"];
               return (
-                <div 
-                  key={index} 
-                  className="group transition-all duration-300 cursor-pointer flex-1 p-6 border-r border-gray-300 last:border-r-0 flex flex-col justify-between hover:bg-ms-green"
-                >
-                  {/* Title at top */}
-                  <h3 className="text-lg font-light mb-4 transition-all duration-300 text-ms-dark group-hover:text-black">
-                    {solution.title}
-                  </h3>
-                  
-                  {/* Description (shows on hover) */}
-                  <div className="flex-1 transition-all duration-300 opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden">
-                    <p className="text-black text-sm leading-relaxed">
-                      {solution.description}
-                    </p>
-                  </div>
-                  
-                  {/* Icon and arrow at bottom */}
-                  <div className="flex items-center justify-between mt-4">
-                    <IconComponent className="text-ms-green group-hover:text-black h-16 w-16 transition-all duration-300 stroke-[0.65]" />
+                <Link key={index} href={links[index]}>
+                  <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
+                    {/* Image */}
+                    <div className="h-48 overflow-hidden">
+                      <img 
+                        src={solution.image} 
+                        alt={solution.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-zinex-blue/80 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+                    </div>
                     
-                    <Link
-                      href={index === 0 ? "/connected-systems" : index === 1 ? "/advanced-software" : "/drone-technology"}
-                      className="transition-all duration-300"
-                    >
-                      <ArrowRight className="h-5 w-5 transition-all duration-300 text-ms-green group-hover:text-black" />
-                    </Link>
+                    {/* Icon Badge */}
+                    <div className="absolute top-36 left-6 w-16 h-16 bg-zinex-red rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                      <IconComponent className="text-white h-8 w-8" />
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="p-6 pt-10">
+                      <h3 className="text-xl font-bold text-zinex-blue mb-3 group-hover:text-zinex-red transition-colors duration-300">
+                        {solution.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                        {solution.description}
+                      </p>
+                      <div className="flex items-center text-zinex-red font-semibold text-sm">
+                        <span>Learn More</span>
+                        <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-2 transition-transform duration-300" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               );
             })}
+          </div>
+          
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <Link href="/solutions">
+              <Button className="bg-zinex-blue hover:bg-zinex-blue/90 text-white px-8 py-3 text-lg">
+                View All Solutions
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
