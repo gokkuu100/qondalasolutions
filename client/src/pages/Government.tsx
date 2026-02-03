@@ -85,10 +85,10 @@ export default function Government() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section 
-        className="relative h-[500px] bg-cover bg-center flex items-center"
+        className="relative h-[550px] bg-cover bg-center flex items-center pt-20"
         style={{ backgroundImage: 'url(/government-hero.jpg)' }}
       >
-        <div className="absolute inset-0 bg-[#0a1a3a]/80"></div>
+        <div className="absolute inset-0 bg-[#0a1a3a]/50"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center text-white">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
