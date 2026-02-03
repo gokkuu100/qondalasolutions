@@ -71,7 +71,7 @@ export default function About() {
       <section 
         className="relative h-[500px] bg-cover bg-no-repeat flex items-center"
         style={{ 
-          backgroundImage: 'url(/about-hero-new.jpg)',
+          backgroundImage: 'url(/about-hero-new-optimized.jpg)',
           backgroundPosition: 'center center'
         }}
       >

@@ -21,8 +21,8 @@ export default function Hero() {
       description: "Connected systems, unified data, and intelligent tools that enhance efficiency, security, and collaboration across industries.",
       ctaText: "EXPLORE MORE",
       ctaLink: "/about",
-      desktopBg: "/hero-1.png",
-      mobileBg: "/hero-1.png"
+      desktopBg: "/hero-1-optimized.jpg",
+      mobileBg: "/hero-1-optimized.jpg"
     },
     {
       id: 2,
@@ -34,8 +34,8 @@ export default function Hero() {
       description: "Reliable data center solutions and cloud infrastructure that power your business with maximum uptime and security.",
       ctaText: "DISCOVER INFRASTRUCTURE",
       ctaLink: "/solutions",
-      desktopBg: "/hero-2.jpg",
-      mobileBg: "/hero-2.jpg"
+      desktopBg: "/hero-2-optimized.jpg",
+      mobileBg: "/hero-2-optimized.jpg"
     },
     {
       id: 3,
@@ -47,8 +47,8 @@ export default function Hero() {
       description: "Our team of technology experts delivers innovative solutions tailored to your unique business challenges.",
       ctaText: "MEET OUR TEAM",
       ctaLink: "/about",
-      desktopBg: "/hero-3.jpg",
-      mobileBg: "/hero-3.jpg"
+      desktopBg: "/hero-3-optimized.jpg",
+      mobileBg: "/hero-3-optimized.jpg"
     },
     {
       id: 4,

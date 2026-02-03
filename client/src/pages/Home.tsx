@@ -24,7 +24,7 @@ export default function Home() {
       icon: Plane,
       title: "Drone Technology & High-Performance Computing",
       description: "Cutting-edge drone systems integrated with powerful computing infrastructure for autonomous operations, data collection, and mission-critical applications across industries.",
-      image: "/drone-future.jpg"
+      image: "/drone-future-optimized.jpg"
     }
   ];
 
