@@ -86,18 +86,18 @@ export default function Contact() {
     <div>
       {/* Hero Section */}
       <section 
-        className="relative h-96 bg-cover bg-no-repeat flex items-center"
+        className="relative h-[500px] bg-cover bg-no-repeat flex items-center"
         style={{ 
-          backgroundImage: 'url(/contact-hero-optimized.jpg)',
-          backgroundPosition: 'center 60%'
+          backgroundImage: 'url(/contact-hero-new-optimized.jpg)',
+          backgroundPosition: 'center top'
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-[#0a1a3a]/50"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
             Ready to Transform Your Business?
           </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto drop-shadow-md">
             Connect with our experts to discuss your technology needs and discover how Zinex Technology can drive your digital transformation.
           </p>
         </div>
