@@ -75,7 +75,7 @@ export default function About() {
           backgroundPosition: 'center center'
         }}
       >
-        <div className="absolute inset-0 bg-zinex-blue/70"></div>
+        <div className="absolute inset-0 bg-[#0a1a3a]/85"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
             About Zinex Technology
