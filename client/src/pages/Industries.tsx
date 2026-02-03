@@ -94,7 +94,7 @@ export default function Industries() {
                 <TabsTrigger
                   key={index}
                   value={industry.name.toLowerCase().replace(/ /g, '-')}
-                  className="flex flex-col items-center gap-2 p-4 text-center data-[state=active]:bg-ms-green data-[state=active]:text-black hover:bg-ms-green/20 transition-all duration-200 rounded-lg"
+                  className="flex flex-col items-center gap-2 p-4 text-center data-[state=active]:bg-zinex-red data-[state=active]:text-white hover:bg-zinex-red/20 transition-all duration-200 rounded-lg"
                 >
                   <IconComponent className="h-6 w-6" />
                   <span className="text-xs lg:text-sm font-medium">{industry.name}</span>
@@ -120,8 +120,8 @@ export default function Industries() {
                       loading="lazy"
                       decoding="async"
                     />
-                    <div className="absolute top-6 left-6 bg-ms-green rounded-full p-4">
-                      <IconComponent className="text-black h-8 w-8" />
+                    <div className="absolute top-6 left-6 bg-zinex-red rounded-full p-4">
+                      <IconComponent className="text-white h-8 w-8" />
                     </div>
                   </div>
                   <CardContent className="p-8">
@@ -135,7 +135,7 @@ export default function Industries() {
                             <h4 className="font-semibold text-ms-dark mb-3 text-lg">Key Solutions:</h4>
                             <div className="flex flex-wrap gap-2">
                               {industry.solutions.map((solution, solutionIndex) => (
-                                <Badge key={solutionIndex} className="bg-ms-green/20 text-black font-normal px-3 py-1">
+                                <Badge key={solutionIndex} className="bg-zinex-red/20 text-zinex-red font-normal px-3 py-1">
                                   {solution}
                                 </Badge>
                               ))}
@@ -156,13 +156,13 @@ export default function Industries() {
                       </div>
                       
                       <div className="flex flex-col justify-center space-y-4">
-                        <Button size="lg" className="bg-ms-green text-black hover:bg-green-400 w-full" asChild>
+                        <Button size="lg" className="bg-zinex-red text-white hover:bg-red-700 w-full" asChild>
                           <Link href="/contact" className="flex items-center justify-center gap-2">
                             Get Started with {industry.name}
                             <ArrowRight className="h-5 w-5" />
                           </Link>
                         </Button>
-                        <Button size="lg" variant="outline" className="border-ms-green text-black hover:bg-ms-green hover:text-black w-full" asChild>
+                        <Button size="lg" variant="outline" className="border-zinex-red text-zinex-red hover:bg-zinex-red hover:text-white w-full" asChild>
                           <Link href="/solutions" className="flex items-center justify-center gap-2">
                             View All Solutions
                             <ArrowRight className="h-5 w-5" />
@@ -181,7 +181,7 @@ export default function Industries() {
         <div className="mt-20 bg-ms-light rounded-2xl relative overflow-hidden">
           {/* Mobile Layout - Stacked */}
           <div className="lg:hidden text-center p-8 pb-4">
-            <h2 className="text-2xl font-bold text-ms-green mb-4">Don't See Your Industry?</h2>
+            <h2 className="text-2xl font-bold text-zinex-blue mb-4">Don't See Your Industry?</h2>
             <p className="text-base text-gray-600 mb-6">
               We work across many additional sectors and can adapt our solutions to meet the unique needs of your industry. 
               Contact us to discuss how we can help transform your business.
@@ -189,7 +189,7 @@ export default function Industries() {
             <div className="mb-8">
               <a
                 href="/contact"
-                className="bg-ms-green text-black px-8 py-3 rounded-md font-semibold hover:bg-green-400 transition-colors duration-200 inline-block"
+                className="bg-zinex-red text-white px-8 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors duration-200 inline-block"
               >
                 Contact Our Experts
               </a>

@@ -32,7 +32,7 @@ export default function Solutions() {
     {
       category: "Hardware Solutions",
       icon: Cpu,
-      color: "bg-green-500",
+      color: "bg-zinex-red",
       services: [
         {
           name: "IoT Device Integration",
@@ -100,21 +100,21 @@ export default function Solutions() {
             <TabsList className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 bg-transparent mb-8 h-auto p-0">
               <TabsTrigger 
                 value="software" 
-                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
+                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-zinex-red data-[state=active]:text-white transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
               >
                 <Code className="h-4 w-4" />
                 <span className="whitespace-nowrap">Software Solutions</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="hardware" 
-                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
+                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-zinex-red data-[state=active]:text-white transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
               >
                 <Cpu className="h-4 w-4" />
                 <span className="whitespace-nowrap">Hardware Solutions</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="ai" 
-                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-ms-green data-[state=active]:text-black transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
+                className="flex items-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-full bg-white/80 text-gray-700 hover:bg-white/90 data-[state=active]:bg-zinex-red data-[state=active]:text-white transition-all duration-300 border-0 shadow-sm w-full sm:w-auto text-sm sm:text-base"
               >
                 <Brain className="h-4 w-4" />
                 <span className="whitespace-nowrap">AI & Analytics</span>
@@ -150,7 +150,7 @@ export default function Solutions() {
                           <h4 className="font-semibold text-ms-dark mb-3">Key Features:</h4>
                           <div className="flex flex-wrap gap-2">
                             {service.features.map((feature, featureIndex) => (
-                              <Badge key={featureIndex} variant="secondary" className="text-sm bg-green-100 text-black font-normal hover:bg-green-200">
+                              <Badge key={featureIndex} variant="secondary" className="text-sm bg-red-100 text-zinex-red font-normal hover:bg-red-200">
                                 {feature}
                               </Badge>
                             ))}
@@ -211,7 +211,7 @@ export default function Solutions() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-ms-green text-black hover:bg-green-400 font-semibold px-8"
+                  className="bg-zinex-red text-white hover:bg-red-700 font-semibold px-8"
                   asChild
                 >
                   <Link href="/contact">
@@ -221,7 +221,7 @@ export default function Solutions() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-ms-green text-ms-green hover:bg-ms-green hover:text-black font-semibold px-8"
+                  className="border-zinex-red text-zinex-red hover:bg-zinex-red hover:text-white font-semibold px-8"
                   asChild
                 >
                   <Link href="/solutions">
