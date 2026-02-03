@@ -80,7 +80,7 @@ export default function Solutions() {
     <div 
       className="py-20 min-h-screen"
       style={{
-        backgroundImage: 'url(/solutions-bg-new-optimized.jpg)',
+        backgroundImage: 'url(/solutions-bg-red-optimized.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
