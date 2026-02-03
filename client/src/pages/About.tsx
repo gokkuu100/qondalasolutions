@@ -69,18 +69,18 @@ export default function About() {
       <div className="relative z-10">
         {/* Hero Section */}
       <section 
-        className="relative h-96 bg-cover bg-no-repeat flex items-center"
+        className="relative h-[500px] bg-cover bg-no-repeat flex items-center"
         style={{ 
-          backgroundImage: 'url(/about-hero-optimized.jpg)',
+          backgroundImage: 'url(/about-hero-new.jpg)',
           backgroundPosition: 'center center'
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-zinex-blue/70"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
             About Zinex Technology
           </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto drop-shadow-md">
             Founded on the principle of technological excellence, we deliver comprehensive enterprise solutions that drive innovation and operational efficiency across industries.
           </p>
         </div>
