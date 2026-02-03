@@ -24,7 +24,7 @@ export default function Home() {
       icon: Plane,
       title: "Drone Technology & High-Performance Computing",
       description: "Cutting-edge drone systems integrated with powerful computing infrastructure for autonomous operations, data collection, and mission-critical applications across industries.",
-      image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300"
+      image: "/drone-modern.jpg"
     }
   ];
 
@@ -92,13 +92,12 @@ export default function Home() {
                 <Link key={index} href={links[index]}>
                   <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
                     {/* Image */}
-                    <div className="h-48 overflow-hidden">
+                    <div className="h-48 overflow-hidden relative">
                       <img 
                         src={solution.image} 
                         alt={solution.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-zinex-blue/80 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
                     </div>
                     
                     {/* Icon Badge */}
