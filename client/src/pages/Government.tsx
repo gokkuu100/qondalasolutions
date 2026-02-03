@@ -84,20 +84,24 @@ export default function Government() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-ms-blue to-ms-blue-dark text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+      <section 
+        className="relative h-[500px] bg-cover bg-center flex items-center"
+        style={{ backgroundImage: 'url(/government-hero.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-[#0a1a3a]/80"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center text-white">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Building className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
               Government Technology Solutions
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
+            <p className="text-xl lg:text-2xl mb-8 text-white/90 max-w-4xl mx-auto drop-shadow-md">
               Trusted technology solutions for federal, state, and local government agencies. 
               Secure, compliant, and designed to improve citizen services and operational efficiency.
             </p>
-            <Button size="lg" className="bg-white text-ms-blue hover:bg-gray-100" asChild>
+            <Button size="lg" className="bg-zinex-red text-white hover:bg-red-700 border-0" asChild>
               <Link href="/contact">Schedule a Consultation</Link>
             </Button>
           </div>
