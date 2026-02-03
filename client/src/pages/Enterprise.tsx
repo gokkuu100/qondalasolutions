@@ -94,8 +94,8 @@ export default function Enterprise() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section 
-        className="relative h-[550px] bg-cover bg-center flex items-center pt-20"
-        style={{ backgroundImage: 'url(/enterprise-hero.jpg)' }}
+        className="relative h-[550px] bg-cover flex items-center pt-20"
+        style={{ backgroundImage: 'url(/enterprise-hero.jpg)', backgroundPosition: 'center top' }}
       >
         <div className="absolute inset-0 bg-[#0a1a3a]/50"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
