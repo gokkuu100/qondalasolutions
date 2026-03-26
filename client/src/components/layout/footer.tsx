@@ -88,7 +88,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Zinex Technology. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2026 Zinex Technology. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>
