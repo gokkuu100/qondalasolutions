@@ -93,7 +93,7 @@ export default function Header() {
                 <Phone className="h-4 w-4" />
                 <span>+1 (612) 508-8704</span>
               </a>
-              <a href="mailto:info@zinextech.com" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
+              <a href="mailto:contact@zinextechnology.com" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
                 <Mail className="h-4 w-4" />
                 <span>Contact Us</span>
               </a>
@@ -118,7 +118,7 @@ export default function Header() {
                 <Phone className="h-3 w-3" />
                 <span>+1 (612) 508-8704</span>
               </a>
-              <a href="mailto:info@zinextech.com" className="flex items-center space-x-1">
+              <a href="mailto:contact@zinextechnology.com" className="flex items-center space-x-1">
                 <Mail className="h-3 w-3" />
                 <span>Contact Us</span>
               </a>

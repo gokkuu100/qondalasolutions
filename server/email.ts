@@ -19,7 +19,7 @@ interface ContactEmailData {
 export async function sendContactNotification(contactData: ContactEmailData): Promise<boolean> {
   try {
     const emailContent = {
-      to: 'info@zinextech.com',
+      to: 'contact@zinextechnology.com',
       from: 'noreply@zinextech.com', // This needs to be verified in SendGrid
       subject: `New Contact Form Submission from ${contactData.firstName} ${contactData.lastName}`,
       html: `
@@ -61,7 +61,7 @@ Submitted on: ${new Date().toLocaleString()}
     };
 
     await mailService.send(emailContent);
-    console.log('Contact notification email sent successfully to info@zinextech.com');
+    console.log('Contact notification email sent successfully to contact@zinextechnology.com');
     return true;
   } catch (error) {
     console.error('Failed to send contact notification email:', error);
