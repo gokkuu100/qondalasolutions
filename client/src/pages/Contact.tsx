@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,13 +9,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { insertContactInquirySchema, type InsertContactInquiry } from "@shared/schema";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export default function Contact() {
   const { toast } = useToast();
-  const queryClient = useQueryClient();
 
   const form = useForm<InsertContactInquiry>({
     resolver: zodResolver(insertContactInquirySchema),
@@ -31,7 +29,18 @@ export default function Contact() {
 
   const submitContactMutation = useMutation({
     mutationFn: async (data: InsertContactInquiry) => {
-      const response = await apiRequest("POST", "/api/contact", data);
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzBjhkcxshghF0-xtvOhuIPMlK2mIqmq702beD1rDQrJ4w6ZA5ZFcDpHoYLmUBpdYm1Qg/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(data),
+        }
+      );
+      
+      if (!response.ok) {
+        throw new Error("Failed to send message to Google Sheets");
+      }
+      
       return response.json();
     },
     onSuccess: () => {
@@ -40,12 +49,11 @@ export default function Contact() {
         description: "Thank you for contacting us. We'll get back to you within 24 hours.",
       });
       form.reset();
-      queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
     },
     onError: (error) => {
       toast({
         title: "Error Sending Message",
-        description: error.message,
+        description: error instanceof Error ? error.message : "Failed to send message",
         variant: "destructive",
       });
     },
