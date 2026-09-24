@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown, Phone, Mail } from "lucide-react";
-import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 interface SubMenuItem {
@@ -75,23 +75,20 @@ export default function Header() {
           {/* Desktop Top Bar */}
           <div className="hidden md:flex justify-between items-center h-10 text-sm">
             <div className="flex items-center space-x-4">
-              <a href="https://linkedin.com/company/zinex" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+              <a href="https://www.linkedin.com/company/zinex-technology" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
                 <FaLinkedin className="h-4 w-4" />
               </a>
-              <a href="https://facebook.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
-                <FaFacebook className="h-4 w-4" />
-              </a>
-              <a href="https://instagram.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+              <a href="https://www.instagram.com/zinextechnology/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
                 <FaInstagram className="h-4 w-4" />
               </a>
-              <a href="https://x.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+              <a href="https://x.com/zinextechnology" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
                 <FaXTwitter className="h-4 w-4" />
               </a>
             </div>
             <div className="flex items-center space-x-6">
-              <a href="tel:+16125088704" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
+              <a href="tel:+18884692910" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>+1 (612) 508-8704</span>
+                <span>(888) 469-2910</span>
               </a>
               <a href="mailto:contact@zinextechnology.com" className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
                 <Mail className="h-4 w-4" />
@@ -103,20 +100,20 @@ export default function Header() {
           {/* Mobile Top Bar */}
           <div className="md:hidden py-2">
             <div className="flex justify-center items-center space-x-6 mb-2">
-              <a href="https://linkedin.com/company/zinex" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <a href="https://www.linkedin.com/company/zinex-technology" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                 <FaLinkedin className="h-5 w-5" />
               </a>
-              <a href="https://facebook.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                <FaFacebook className="h-5 w-5" />
-              </a>
-              <a href="https://instagram.com/zinextech" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <a href="https://www.instagram.com/zinextechnology/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                 <FaInstagram className="h-5 w-5" />
+              </a>
+              <a href="https://x.com/zinextechnology" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaXTwitter className="h-5 w-5" />
               </a>
             </div>
             <div className="flex justify-center items-center space-x-4 text-sm">
-              <a href="tel:+16125088704" className="flex items-center space-x-1">
+              <a href="tel:+18884692910" className="flex items-center space-x-1">
                 <Phone className="h-3 w-3" />
-                <span>+1 (612) 508-8704</span>
+                <span>(888) 469-2910</span>
               </a>
               <a href="mailto:contact@zinextechnology.com" className="flex items-center space-x-1">
                 <Mail className="h-3 w-3" />

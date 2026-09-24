@@ -40,6 +40,6 @@ Always maintain a professional, corporate tone while being friendly and helpful.
     return response.choices[0].message.content || "I apologize, but I'm having trouble processing your request right now. Please try again or contact our support team directly.";
   } catch (error) {
     console.error("OpenAI API error:", error);
-    return "I'm currently experiencing technical difficulties. Please contact our support team directly for immediate assistance at contact@zinextech.com or +1 (612) 508-8704.";
+    return "I'm currently experiencing technical difficulties. Please contact our support team directly for immediate assistance at contact@zinextech.com or (888) 469-2910.";
   }
 }

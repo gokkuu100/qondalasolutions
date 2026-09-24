@@ -67,8 +67,8 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (612) 508-8704",
-      href: "tel:+16125088704"
+      value: "(888) 469-2910",
+      href: "tel:+18884692910"
     },
     {
       icon: Mail,
@@ -301,7 +301,7 @@ export default function Contact() {
                   className="bg-white text-[#0f0f0f] hover:bg-gray-100"
                   asChild
                 >
-                  <a href="tel:+16125088704">Call Now: +1 (612) 508-8704</a>
+                  <a href="tel:+18884692910">Call Now: (888) 469-2910</a>
                 </Button>
               </CardContent>
             </Card>

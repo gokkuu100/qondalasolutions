@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/company/zinex"
+                href="https://www.linkedin.com/company/zinex-technology"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-zinex-red rounded-full flex items-center justify-center hover:bg-zinex-red-dark transition-colors duration-200"
@@ -26,16 +26,16 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://x.com/ZinexTech"
+                href="https://x.com/zinextechnology"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-zinex-red rounded-full flex items-center justify-center hover:bg-zinex-red-dark transition-colors duration-200"
-                aria-label="Twitter"
+                aria-label="X"
               >
                 <Twitter className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://www.instagram.com/zinextech"
+                href="https://www.instagram.com/zinextechnology/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-zinex-red rounded-full flex items-center justify-center hover:bg-zinex-red-dark transition-colors duration-200"
