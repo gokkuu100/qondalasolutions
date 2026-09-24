@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-500 mt-12 pt-8 text-center text-gray-400">
           <p>
-            &copy; 2024 Zinex Technology. All rights reserved. | 
+            &copy; 2026 Zinex Technology. All rights reserved. | 
             <Link href="/about" className="hover:text-white transition-colors duration-200 ml-1 mr-1">About Us</Link> | 
             <Link href="/contact" className="hover:text-white transition-colors duration-200 ml-1">Contact</Link>
           </p>
